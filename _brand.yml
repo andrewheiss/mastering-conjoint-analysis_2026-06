@@ -1,0 +1,101 @@
+#
+# _brand.yml for conjoint analysis course
+#
+
+meta:
+  name: Conjoint analysis course
+  license: CC BY-SA 4.0
+  link:
+    home: https://www.andrewheiss.com/
+
+color:
+  # Colors from MetBrewer::met.brewer("Tiepolo")
+  palette:
+    blue: "#17486f"
+    red: "#802417"
+    orange: "#c06636"
+    yellow: "#e8b960"
+    green: "#646e3b"
+    teal: "#2b5851"
+    cyan: "#508ea2"
+
+    gray-100: "#f8f9fa"
+    gray-200: "#e9ecef"
+    gray-300: "#dddddd"
+    gray-400: "#ced4da"
+    gray-500: "#adb5bd"
+    gray-600: "#868e96"
+    gray-700: "#495057"
+    gray-800: "#343a40"
+    gray-900: "#212529"
+
+    off-white: "#F5F5F5"
+    black: "#111111"
+
+  foreground: black
+  background: off-white
+  dark: black
+
+  primary: blue
+  secondary: cyan
+  danger: red
+  warning: yellow
+  info: teal
+  success: green
+
+typography:
+  fonts:
+    - family: Lato
+      source: google
+      weight: [400, 700]
+    - family: Aleo
+      source: google
+      weight: [400, 700]
+
+  base:
+    family: Lato
+    weight: 400
+
+  headings:
+    family: Aleo
+    weight: 700
+    color: red
+
+  link:
+    weight: 700
+    color: orange
+    decoration: none
+
+defaults:
+  bootstrap:
+    functions: # string with SCSS functions
+    defaults:  # list of Bootstrap Sass variables to override
+      link-hover-color: $brand-yellow
+      code-color: $brand-cyan
+
+      font-family-headings: Aleo
+      navbar-font-family: Aleo
+      navbar-hl: $brand-orange
+      # navbar-bg: $brand-blue
+      navbar-fg: "#ffffff"
+
+      font-size-base: 1.1rem
+      h1-font-size: $font-size-base * 2.45
+      h2-font-size: $font-size-base * 1.85
+      h3-font-size: $font-size-base * 1.45
+      h4-font-size: $font-size-base * 1.2
+      h5-font-size: $font-size-base * 1
+      h6-font-size: $font-size-base * 0.8
+
+      # code-bg: lighten($brand-orange, 25%)  # Sass functions work here!
+      code-bg: rgba(233, 236, 239, 0.65)  # Same color as github div background
+    mixins:    # string with SCSS mixins
+    rules: |   # string with SCSS rules
+      #quarto-document-content h3 {
+          color: $brand-blue;
+          font-weight: 500;
+      }
+
+      .navbar-title {
+          font-size: 1.3em;
+      }

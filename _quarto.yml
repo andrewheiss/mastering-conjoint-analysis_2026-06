@@ -11,7 +11,7 @@ execute:
   freeze: auto
 
 website:
-  title: "Conjoints"
+  title: "Mastering Conjoint Analysis"
   description: "Materials for course on conjoint analysis"
   site-url: "https://andrewheiss.github.io/mastering-conjoint-analysis_2026-06/"
   # favicon: 
@@ -38,7 +38,7 @@ website:
 
   page-footer:
     border: false
-    background: "#dddddd"
+    background: "#e9ecef"
     left: |
       Content {{< fa brands creative-commons >}} 2026 by [Andrew Heiss](https://www.andrewheiss.com) <br>
       All content licensed under a {{< fa brands creative-commons >}}

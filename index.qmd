@@ -1,0 +1,60 @@
+---
+title: "Mastering Conjoint Analysis"
+subtitle: "Statistical Horizons Course"
+date: "2026-06-05"
+date-format: "MMMM [2-]D, YYYY"
+language:
+  title-block-published: Course dates
+---
+
+## Overview
+
+Conjoint experiments have become a popular tool in both social science and marketing research for understanding how people make decisions and what attributes matter most in their choices. Originally developed by marketers to measure consumer preferences for new products, conjoint analysis has expanded into political science, economics, sociology, and other fields as a powerful method for testing multiple causal effects simultaneously and eliciting respondent preferences. With a single well-designed survey, you can answer complex research questions about decision-making that would require dozens of traditional experiments.
+
+In this course, you'll learn the theory behind forced choice conjoint experiments, how to design studies that answer your research questions, how to program and field these survey experiments in online platforms, and how to analyze and visualize the results using open source tools like R, Quarto, {marginaleffects}, and {ggplot2}. You'll explore key causal estimands like average marginal component effects (AMCEs) and marginal means (MMs), as well as preference-focused measures like part-worth utilities and willingness-to-pay. By the end of the course, you'll be able to design and field your own conjoint experiments, analyze the results with appropriate methods, and communicate your findings effectively with publication-ready tables and figures.
+
+## Schedule
+
+All times are US Eastern (New York) time:
+
+```{r}
+#| label: schedule-table
+#| warning: false
+#| message: false
+#| echo: false
+
+library(tinytable)
+library(dplyr)
+library(glue)
+
+# To keep {tinytable} happy
+set.seed(1234)
+
+# fmt: skip
+schedule <- tribble(
+  ~Day,                 ~Time,         ~Title,                       ~Link,
+  "Day 1 (October 16)", "10:30–11:30", "Welcome + Intro to Quarto",  "/materials/01-intro/",
+  "Day 1 (October 16)", "11:30–12:30", "Creating basic websites",    "/materials/basic-websites/",
+  "Day 1 (October 16)", "12:30–13:00", "*Break*",                    NA,
+  "Day 1 (October 16)", "13:00–15:00", "Advanced website features",  "/materials/advanced-websites/",
+  "Day 2 (October 17)", "10:30–11:00", "Publishing",                 "/materials/publishing/",
+  "Day 2 (October 17)", "11:00–12:30", "Customization and branding", "/materials/brand/",
+  "Day 2 (October 17)", "12:30–13:00", "*Break*",                    NA,
+  "Day 2 (October 17)", "13:00–15:00", "Interactivity",              "/materials/interactivity/"
+) |> 
+  mutate(Content = ifelse(is.na(Link), Title, glue('[{Title}]({Link}){{target="_blank"}}')))
+
+schedule |>
+  select(Time, Content) |>
+  tt(width = c(0.2, 0.8), colnames = FALSE) |>
+  theme_empty() |>
+  group_tt(i = schedule$Day) |>
+  style_tt(i = "groupi", align = "l", bold = TRUE, background = "#dddddd") |>
+  style_tt(i = "~groupi", j = 1, indent = 1) |>
+  format_tt(j = 2, markdown = TRUE) |>
+  theme_html(engine = "bootstrap", class = "table table-sm")
+```
+
+## Instructor
+
+[Andrew Heiss](https://www.andrewheiss.com/) is an assistant professor in the Department of Public Management and Policy at the Andrew Young School of Policy Studies at Georgia State University. His research explores human rights and international nonprofit management, and focuses on authoritarian regulation of civil society and INGO responses to administrative crackdown. Heiss also studies and teaches quantitative research methods, causal inference, data visualization, and Bayesian analysis. He is an RStudio Certified Instructor whose work has appeared in journals such as the *Journal of Politics*, *Nonprofit and Voluntary Sector Quarterly*, the *Journal of Statistical Software*, the *Journal of Human Rights*, and *International Interactions*.

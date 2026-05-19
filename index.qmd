@@ -44,9 +44,9 @@ schedule <- tribble(
   "Day 3 (June 4)", "10:30–12:30", "Analyzing conjoint data for causal inference (§ 1)",       "#",
   "Day 3 (June 4)", "12:30–13:00", "*Break*",                                                  NA,
   "Day 3 (June 4)", "13:30–15:00", "Analyzing conjoint data for causal inference (§ 2)",       "#",
-  "Day 4 (June 5)", "10:30–12:30", "Analyzing conjoing data for respondent preferences (§ 1)", "#",
+  "Day 4 (June 5)", "10:30–12:30", "Analyzing conjoint data for respondent preferences (§ 1)", "#",
   "Day 4 (June 5)", "12:30–13:00", "*Break*",                                                  NA,
-  "Day 4 (June 5)", "13:30–15:00", "Analyzing conjoing data for respondent preferences (§ 2)", "#"
+  "Day 4 (June 5)", "13:30–15:00", "Analyzing conjoint data for respondent preferences (§ 2)", "#"
 ) |> 
   mutate(Content = ifelse(is.na(Link), Title, glue('[{Title}]({Link}){{target="_blank"}}')))
 

@@ -44,7 +44,7 @@ website:
           - text: Introduction
             href: "materials/intro/index.qmd"
           
-          - text: Designing conjoing experiments
+          - text: Designing conjoint experiments
             href: "materials/designing/index.qmd"
           
           - text: Implementing and fielding conjoint surveys

@@ -1,0 +1,223 @@
+---
+title: "Setup"
+
+format:
+  html:
+    include-in-header:
+      - text: |
+          <style type="text/css">
+          div.sourceCode > pre.sourceCode.sh::before {
+            content: 'Terminal';
+            display: block;
+            text-align: left;
+            font-size: 0.7em;
+            margin-bottom: 7px;
+            border-bottom: #4c4c4c 1px solid;
+            padding-left: 4.25px;
+            padding-bottom: 5px;
+            color: #aaaaaa;
+          }
+
+          div.sourceCode > pre.sourceCode.r::before {
+            content: 'R';
+            display: block;
+            text-align: left;
+            font-size: 0.7em;
+            margin-bottom: 7px;
+            border-bottom: #4c4c4c 1px solid;
+            padding-left: 4.25px;
+            padding-bottom: 5px;
+            color: #aaaaaa;
+          }
+          </style>
+---
+
+To follow along with the course exercises, you'll need R, Quarto, a code editor that supports R, and a few R packages.
+
+While the workshop isn't centered around Quarto, the exercises and examples will all be based on Quarto documents so that text and code and output can all be included together, making a nicer resource for future you.
+
+## Recommended setup options
+
+There are two ways to get set up for the workshop:
+
+1. Local installation
+2. Posit Cloud
+
+While Posit Cloud lets you run RStudio directly in your browser and makes it so you don't need to install anything on your computer (convenient!), **I *highly* recommend** installing R and RStudio/Positron on your computer. The Bayesian models we'll run won't run well on Posit Cloud, which by default only has once CPU core and limited RAM.
+
+### Option 1: Local installation (most recommended)
+
+Choose one editor and follow the steps:
+
+::: {.panel-tabset}
+
+#### RStudio
+
+- Download and install R: <https://cloud.r-project.org/>
+  - Make sure R is version 4.5+
+- Download and install RStudio: <https://posit.co/download/rstudio-desktop>
+  - Make sure RStudio is version 2026.04+
+- Quarto comes pre-installed with RStudio
+  - Make sure Quarto is version 1.9+; run `quarto --version` in RStudio's terminal to confirm
+
+#### Positron
+
+- Download and install R: <https://cloud.r-project.org/>
+  - Make sure R is version 4.5+
+- Download and install Positron: <https://positron.posit.co/download.html>
+- Download and install Quarto: <https://quarto.org/docs/get-started/>
+  - Make sure Quarto is version 1.9+
+
+:::
+
+### Option 2: Posit Cloud (RStudio in the cloud)
+
+- Create a free account at <https://posit.cloud/>
+- Join the Posit Cloud workspace: **LINK TO COME SOON**
+- Click "Yes" to join the space
+- Click Content and select the `mastering-conjoint-analysis-materials_2026-06` project
+- To save a copy of the project to your workspace, click "Save a permanent copy"
+
+## Accessing the course materials
+
+If you are using Posit Cloud option, the files will be included.
+
+If you are using RStudio or Positron locally:
+
+::: {.panel-tabset}
+
+#### If you don't use Git/GitHub
+
+- Go to the GitHub repository for the course materials:
+  - <https://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06>
+- Click the green "Code" button → "Download ZIP".
+- Unzip the folder and open it in your chosen editor.
+
+#### If you use Git/GitHub
+
+- Course materials are available here:
+  - <https://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06>
+
+- Clone the repository with Git:
+
+  ```bash
+  git clone https://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06.git
+  ```
+
+:::
+
+## Install the necessary R packages
+
+If you are using Posit Cloud, the packages will be pre-installed (kind of! there won't be any Bayesian stuff). 
+
+If you are using RStudio or Positron locally, install all the packages we'll use with:
+
+```{.r}
+install.packages(
+  c(
+    "tidyverse",
+    "brms",
+    "rstan",
+    "rstanarm",
+    "marginaleffects",
+    "tidybayes",
+    "ggdist",
+    "tinytable",
+    "modelsummary",
+    "ggforce",
+    "survey",
+    "parameters",
+    "broom",
+    "broom.mixed",
+    "logitr",
+    "mlogit",
+    "dfidx",
+    "remotes"
+  )
+)
+```
+
+## Install {CmdStanR}
+
+We'll use Stan through {brms} to run the Bayesian models. You should have already installed {brms} in the `install.packages()` command above.
+
+::: {.callout-note title="Raw Stan"}
+If you've never worked with Stan, don't worry! You won't have to write a single line of Stan code in this workshop. {brms} translates familiar R model syntax into Stan code, runs the MCMC sampler, and bring the results back into R, all without you needing to see what's happening. It's magical.
+:::
+
+Stan has two R-based interfaces for communicating between the two programs: RStan and CmdStanR. {brms} works with both backends. I recommend installing CmdStan. CmdStan is newer and has more modern features (like [speeding up sampling with multi-threading](https://mc-stan.org/docs/cmdstan-guide/parallelization.html)), and it works nicely with the more complex multinomial models we'll be running.
+
+The {CmdStanR} package helps you install CmdStan on your computer and provides the actual interface to bridge Stan and R. It is not on CRAN because it requires other binary software for connecting to Stan, so you have to install it a little differently:
+
+1. **Install the {CmdStanR} package.** Use this command in R to install the package from Stan's R-Universe repository:
+
+   ```{.r}
+   install.packages("cmdstanr", repos = c('https://stan-dev.r-universe.dev', getOption("repos")))
+   ```
+
+2. **Install a C++ toolchain.** Stan models need to be compiled to binary programs to run. [See here for complete instructions](https://mc-stan.org/docs/cmdstan-guide/installation.html#cpp-toolchain) for installing the required tools. In short:
+
+   - On Windows, download and install Rtools45: <https://cran.r-project.org/bin/windows/Rtools/>
+   - On macOS, install Xcode's command line tools by running this in a terminal:
+
+     ```sh
+     xcode-select --install
+     ```
+
+   - On Linux, install `g++` and `make`. `make` is typically pre-installed, and `g++` is generally also installed. If not, run something like this to install them (this assumes a Debian-based distribution like Ubuntu; adapt the command as necessary for your distribution):
+
+     ```sh
+     sudo apt install g++ make
+     ```
+
+3. **Make sure the C++ toolchain is working.** In R, run this in your console to make sure everything's set up correctly:
+
+   ```{.r}
+   cmdstanr::check_cmdstan_toolchain()
+   ```
+
+4. **Install CmdStan.** Finally, you need to compile and install CmdStan. You can do that with {cmdstanr} in R. Run this in your console:
+
+
+   ```{.r}
+   cmdstanr::install_cmdstan()
+   ```
+
+5. **Make sure everything works**. Run this in R to make sure everything's working correctly:
+
+   ```{.r}
+   library(brms)
+   
+   model <- brm(
+     bf(mpg ~ disp + am),
+     data = mtcars,
+     family = gaussian(),
+     backend = "cmdstan"
+   )
+   ```
+
+   You should see something like this:
+
+   ```{.r}
+   model
+   #>  Family: gaussian 
+   #>   Links: mu = identity 
+   #> Formula: mpg ~ disp + am 
+   #>    Data: mtcars (Number of observations: 32) 
+   #>   Draws: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;
+   #>          total post-warmup draws = 4000
+   #> 
+   #> Regression Coefficients:
+   #>           Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+   #> Intercept    27.81      1.90    24.08    31.52 1.00     2910     2508
+   #> disp         -0.04      0.01    -0.05    -0.03 1.00     3233     2894
+   #> am            1.87      1.48    -1.02     4.78 1.00     3117     2897
+   #> 
+   #> Further Distributional Parameters:
+   #>       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+   #> sigma     3.33      0.47     2.56     4.38 1.00     3026     2881
+   #> 
+   #> Draws were sampled using sample(hmc). For each parameter, Bulk_ESS
+   #> and Tail_ESS are effective sample size measures, and Rhat is the potential
+   #> scale reduction factor on split chains (at convergence, Rhat = 1).
+   ```

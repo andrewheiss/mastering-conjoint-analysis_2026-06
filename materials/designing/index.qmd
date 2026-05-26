@@ -1,0 +1,11 @@
+---
+title: "Designing conjoint experiments"
+---
+
+## Slides
+
+TODO
+
+## Exercises and materials
+
+TODO

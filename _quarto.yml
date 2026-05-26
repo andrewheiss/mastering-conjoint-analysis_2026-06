@@ -33,8 +33,28 @@ website:
     background: secondary
 
     contents:
-      - href: index.qmd
-        text: Home
+      - text: Home
+        href: index.qmd
+      
+      - text: Setup
+        href: "materials/setup/index.qmd"
+
+      - section: "Materials"
+        contents:
+          - text: Introduction
+            href: "materials/intro/index.qmd"
+          
+          - text: Designing conjoing experiments
+            href: "materials/designing/index.qmd"
+          
+          - text: Implementing and fielding conjoint surveys
+            href: "materials/implementing/index.qmd"
+          
+          - text: Causal inference analysis
+            href: "materials/causal-inference/index.qmd"
+          
+          - text: Preference analysis
+            href: "materials/preferences/index.qmd"
 
   page-footer:
     border: false

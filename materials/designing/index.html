@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mastering Conjoint Analysis</title>
+<title>Designing conjoint experiments – Mastering Conjoint Analysis</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,29 +26,29 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-23bbe8b5e4efc1e257f6d59dce478b08.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-21a32f13016c0f38f23726927afe20b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9b092b6abe016b1d61bb941df69c740d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-21a32f13016c0f38f23726927afe20b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-23bbe8b5e4efc1e257f6d59dce478b08.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-21a32f13016c0f38f23726927afe20b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-9b092b6abe016b1d61bb941df69c740d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-21a32f13016c0f38f23726927afe20b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -87,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Mastering Conjoint Analysis</span>
     </a>
   </div>
@@ -113,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../materials/intro/index.html">Materials</a></li><li class="breadcrumb-item"><a href="../../materials/designing/index.html">Designing conjoing experiments</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -127,13 +127,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./materials/setup/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../materials/setup/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Setup</span></a>
   </div>
 </li>
@@ -148,31 +148,31 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./materials/intro/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../materials/intro/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./materials/designing/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../materials/designing/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Designing conjoing experiments</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./materials/implementing/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../materials/implementing/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Implementing and fielding conjoint surveys</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./materials/causal-inference/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../materials/causal-inference/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Causal inference analysis</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./materials/preferences/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../materials/preferences/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preference analysis</span></a>
   </div>
 </li>
@@ -188,19 +188,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
-  <li><a href="#instructor" id="toc-instructor" class="nav-link" data-scroll-target="#instructor">Instructor</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#exercises-and-materials" id="toc-exercises-and-materials" class="nav-link" data-scroll-target="#exercises-and-materials">Exercises and materials</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/blob/main/materials/designing/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../materials/intro/index.html">Materials</a></li><li class="breadcrumb-item"><a href="../../materials/designing/index.html">Designing conjoing experiments</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Mastering Conjoint Analysis</h1>
-<p class="subtitle lead">Statistical Horizons Course</p>
+<h1 class="title">Designing conjoint experiments</h1>
 </div>
 
 
@@ -208,12 +206,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Course dates</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">June 2-5, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -223,133 +215,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="img/conjoint-banner.png" class="img-fluid"></p>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Conjoint experiments have become a popular tool in both social science and marketing research for understanding how people make decisions and what attributes matter most in their choices. Originally developed by marketers to measure consumer preferences for new products, conjoint analysis has expanded into political science, economics, sociology, and other fields as a powerful method for testing multiple causal effects simultaneously and eliciting respondent preferences. With a single well-designed survey, you can answer complex research questions about decision-making that would require dozens of traditional experiments.</p>
-<p>In this course, you’ll learn the theory behind forced choice conjoint experiments, how to design studies that answer your research questions, how to program and field these survey experiments in online platforms, and how to analyze and visualize the results using open source tools like R, Quarto, {marginaleffects}, and {ggplot2}. You’ll explore key causal estimands like average marginal component effects (AMCEs) and marginal means (MMs), as well as preference-focused measures like part-worth utilities and willingness-to-pay. By the end of the course, you’ll be able to design and field your own conjoint experiments, analyze the results with appropriate methods, and communicate your findings effectively with publication-ready tables and figures.</p>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p>TODO</p>
 </section>
-<section id="schedule" class="level2">
-<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
-<p>All times are US Eastern (New York) time:</p>
-<div class="cell">
-<div class="cell-output-display">
-<!-- preamble start -->
-
-    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
-
-    <script>
-      // Create table-specific functions using external factory
-      const tableFns_mii68ypflmrxky27i3ji = TinyTable.createTableFunctions("tinytable_mii68ypflmrxky27i3ji");
-      // tinytable span after
-      window.addEventListener('load', function () { tableFns_mii68ypflmrxky27i3ji.spanCell(13, 1, 1, 2) })
-      window.addEventListener('load', function () { tableFns_mii68ypflmrxky27i3ji.spanCell(9, 1, 1, 2) })
-      window.addEventListener('load', function () { tableFns_mii68ypflmrxky27i3ji.spanCell(5, 1, 1, 2) })
-      window.addEventListener('load', function () { tableFns_mii68ypflmrxky27i3ji.spanCell(1, 1, 1, 2) })
-      window.addEventListener('load', function () { tableFns_mii68ypflmrxky27i3ji.spanCell(1, 1, 1, 2) })
-      window.addEventListener('load', function () {
-          var cellsToStyle = [
-            // tinytable style arrays after
-          { positions: [ { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '6', j: 1 }, { i: '7', j: 1 }, { i: '8', j: 1 }, { i: '10', j: 1 }, { i: '11', j: 1 }, { i: '12', j: 1 }, { i: '14', j: 1 }, { i: '15', j: 1 }, { i: '16', j: 1 } ], css_id: 'tinytable_css_ihmu5673egnyhaw77lbj',}, 
-          { positions: [ { i: '1', j: 1 }, { i: '5', j: 1 }, { i: '9', j: 1 }, { i: '13', j: 1 }, { i: '1', j: 2 }, { i: '5', j: 2 }, { i: '9', j: 2 }, { i: '13', j: 2 } ], css_id: 'tinytable_css_6vgoy1t9lyof8jbg2lht',}, 
-          ];
-
-          // Loop over the arrays to style the cells
-          cellsToStyle.forEach(function (group) {
-              group.positions.forEach(function (cell) {
-                  tableFns_mii68ypflmrxky27i3ji.styleCell(cell.i, cell.j, group.css_id);
-              });
-          });
-      });
-    </script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
-    <style>
-    /* tinytable css entries after */
-    #tinytable_mii68ypflmrxky27i3ji td.tinytable_css_ihmu5673egnyhaw77lbj, #tinytable_mii68ypflmrxky27i3ji th.tinytable_css_ihmu5673egnyhaw77lbj { padding-left: 1em }
-    #tinytable_mii68ypflmrxky27i3ji td.tinytable_css_6vgoy1t9lyof8jbg2lht, #tinytable_mii68ypflmrxky27i3ji th.tinytable_css_6vgoy1t9lyof8jbg2lht { font-weight: bold; text-align: left; background-color: #dddddd }
-    </style>
-    <div class="container">
-      <table class="tinytable table table-sm" id="tinytable_mii68ypflmrxky27i3ji" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
-        
-        <thead>
-        </thead>
-        
-        <tbody>
-                <tr>
-                  <td data-row="1" data-col="1">Day 1 (June 2)</td>
-                  <td data-row="1" data-col="2">Day 1 (June 2)</td>
-                </tr>
-                <tr>
-                  <td data-row="2" data-col="1">10:30–12:30</td>
-                  <td data-row="2" data-col="2"><a href="#" target="_blank">Introduction to conjoint analysis</a></td>
-                </tr>
-                <tr>
-                  <td data-row="3" data-col="1">12:30–13:00</td>
-                  <td data-row="3" data-col="2"><em>Break</em></td>
-                </tr>
-                <tr>
-                  <td data-row="4" data-col="1">10:30–12:30</td>
-                  <td data-row="4" data-col="2"><a href="#" target="_blank">Designing conjoint experiments</a></td>
-                </tr>
-                <tr>
-                  <td data-row="5" data-col="1">Day 2 (June 3)</td>
-                  <td data-row="5" data-col="2">Day 2 (June 3)</td>
-                </tr>
-                <tr>
-                  <td data-row="6" data-col="1">10:30–12:30</td>
-                  <td data-row="6" data-col="2"><a href="#" target="_blank">Implementing and fielding conjoint surveys (§ 1)</a></td>
-                </tr>
-                <tr>
-                  <td data-row="7" data-col="1">12:30–13:00</td>
-                  <td data-row="7" data-col="2"><em>Break</em></td>
-                </tr>
-                <tr>
-                  <td data-row="8" data-col="1">13:00–15:00</td>
-                  <td data-row="8" data-col="2"><a href="#" target="_blank">Implementing and fielding conjoint surveys (§ 2)</a></td>
-                </tr>
-                <tr>
-                  <td data-row="9" data-col="1">Day 3 (June 4)</td>
-                  <td data-row="9" data-col="2">Day 3 (June 4)</td>
-                </tr>
-                <tr>
-                  <td data-row="10" data-col="1">10:30–12:30</td>
-                  <td data-row="10" data-col="2"><a href="#" target="_blank">Analyzing conjoint data for causal inference (§ 1)</a></td>
-                </tr>
-                <tr>
-                  <td data-row="11" data-col="1">12:30–13:00</td>
-                  <td data-row="11" data-col="2"><em>Break</em></td>
-                </tr>
-                <tr>
-                  <td data-row="12" data-col="1">13:30–15:00</td>
-                  <td data-row="12" data-col="2"><a href="#" target="_blank">Analyzing conjoint data for causal inference (§ 2)</a></td>
-                </tr>
-                <tr>
-                  <td data-row="13" data-col="1">Day 4 (June 5)</td>
-                  <td data-row="13" data-col="2">Day 4 (June 5)</td>
-                </tr>
-                <tr>
-                  <td data-row="14" data-col="1">10:30–12:30</td>
-                  <td data-row="14" data-col="2"><a href="#" target="_blank">Analyzing conjoint data for respondent preferences (§ 1)</a></td>
-                </tr>
-                <tr>
-                  <td data-row="15" data-col="1">12:30–13:00</td>
-                  <td data-row="15" data-col="2"><em>Break</em></td>
-                </tr>
-                <tr>
-                  <td data-row="16" data-col="1">13:30–15:00</td>
-                  <td data-row="16" data-col="2"><a href="#" target="_blank">Analyzing conjoint data for respondent preferences (§ 2)</a></td>
-                </tr>
-        </tbody>
-      </table>
-    </div>
-<!-- hack to avoid NA insertion in last line -->
-</div>
-</div>
-</section>
-<section id="instructor" class="level2">
-<h2 class="anchored" data-anchor-id="instructor">Instructor</h2>
-<p><a href="https://www.andrewheiss.com/">Andrew Heiss</a> is an assistant professor in the Department of Public Management and Policy at the Andrew Young School of Policy Studies at Georgia State University. His research explores human rights and international nonprofit management, and focuses on authoritarian regulation of civil society and INGO responses to administrative crackdown. Heiss also studies and teaches quantitative research methods, causal inference, data visualization, and Bayesian analysis. He is an RStudio Certified Instructor whose work has appeared in journals such as the <em>Journal of Politics</em>, <em>Nonprofit and Voluntary Sector Quarterly</em>, the <em>Journal of Statistical Software</em>, the <em>Journal of Human Rights</em>, and <em>International Interactions</em>.</p>
+<section id="exercises-and-materials" class="level2">
+<h2 class="anchored" data-anchor-id="exercises-and-materials">Exercises and materials</h2>
+<p>TODO</p>
 
 
 </section>
@@ -763,7 +635,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/blob/main/materials/designing/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></p>
 </div>

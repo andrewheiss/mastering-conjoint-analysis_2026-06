@@ -1,5 +1,121 @@
 [
   {
+    "objectID": "materials/setup/index.html",
+    "href": "materials/setup/index.html",
+    "title": "Setup",
+    "section": "",
+    "text": "To follow along with the course exercises, you’ll need R, Quarto, a code editor that supports R, and a few R packages.\nWhile the workshop isn’t centered around Quarto, the exercises and examples will all be based on Quarto documents so that text and code and output can all be included together, making a nicer resource for future you.",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "materials/setup/index.html#recommended-setup-options",
+    "href": "materials/setup/index.html#recommended-setup-options",
+    "title": "Setup",
+    "section": "Recommended setup options",
+    "text": "Recommended setup options\nThere are two ways to get set up for the workshop:\n\nLocal installation\nPosit Cloud\n\nWhile Posit Cloud lets you run RStudio directly in your browser and makes it so you don’t need to install anything on your computer (convenient!), I highly recommend installing R and RStudio/Positron on your computer. The Bayesian models we’ll run won’t run well on Posit Cloud, which by default only has once CPU core and limited RAM.\n\nOption 1: Local installation (most recommended)\nChoose one editor and follow the steps:\n\nRStudioPositron\n\n\n\nDownload and install R: https://cloud.r-project.org/\n\nMake sure R is version 4.5+\n\nDownload and install RStudio: https://posit.co/download/rstudio-desktop\n\nMake sure RStudio is version 2026.04+\n\nQuarto comes pre-installed with RStudio\n\nMake sure Quarto is version 1.9+; run quarto --version in RStudio’s terminal to confirm\n\n\n\n\n\nDownload and install R: https://cloud.r-project.org/\n\nMake sure R is version 4.5+\n\nDownload and install Positron: https://positron.posit.co/download.html\nDownload and install Quarto: https://quarto.org/docs/get-started/\n\nMake sure Quarto is version 1.9+\n\n\n\n\n\n\n\nOption 2: Posit Cloud (RStudio in the cloud)\n\nCreate a free account at https://posit.cloud/\nJoin the Posit Cloud workspace: LINK TO COME SOON\nClick “Yes” to join the space\nClick Content and select the mastering-conjoint-analysis-materials_2026-06 project\nTo save a copy of the project to your workspace, click “Save a permanent copy”",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "materials/setup/index.html#accessing-the-course-materials",
+    "href": "materials/setup/index.html#accessing-the-course-materials",
+    "title": "Setup",
+    "section": "Accessing the course materials",
+    "text": "Accessing the course materials\nIf you are using Posit Cloud option, the files will be included.\nIf you are using RStudio or Positron locally:\n\nIf you don’t use Git/GitHubIf you use Git/GitHub\n\n\n\nGo to the GitHub repository for the course materials:\n\nhttps://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06\n\nClick the green “Code” button → “Download ZIP”.\nUnzip the folder and open it in your chosen editor.\n\n\n\n\nCourse materials are available here:\n\nhttps://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06\n\nClone the repository with Git:\ngit clone https://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06.git",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "materials/setup/index.html#install-the-necessary-r-packages",
+    "href": "materials/setup/index.html#install-the-necessary-r-packages",
+    "title": "Setup",
+    "section": "Install the necessary R packages",
+    "text": "Install the necessary R packages\nIf you are using Posit Cloud, the packages will be pre-installed (kind of! there won’t be any Bayesian stuff).\nIf you are using RStudio or Positron locally, install all the packages we’ll use with:\ninstall.packages(\n  c(\n    \"tidyverse\",\n    \"brms\",\n    \"rstan\",\n    \"rstanarm\",\n    \"marginaleffects\",\n    \"tidybayes\",\n    \"ggdist\",\n    \"tinytable\",\n    \"modelsummary\",\n    \"ggforce\",\n    \"survey\",\n    \"parameters\",\n    \"broom\",\n    \"broom.mixed\",\n    \"logitr\",\n    \"mlogit\",\n    \"dfidx\",\n    \"remotes\"\n  )\n)",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "materials/setup/index.html#install-cmdstanr",
+    "href": "materials/setup/index.html#install-cmdstanr",
+    "title": "Setup",
+    "section": "Install {CmdStanR}",
+    "text": "Install {CmdStanR}\nWe’ll use Stan through {brms} to run the Bayesian models. You should have already installed {brms} in the install.packages() command above.\n\n\n\n\n\n\nNoteRaw Stan\n\n\n\nIf you’ve never worked with Stan, don’t worry! You won’t have to write a single line of Stan code in this workshop. {brms} translates familiar R model syntax into Stan code, runs the MCMC sampler, and bring the results back into R, all without you needing to see what’s happening. It’s magical.\n\n\nStan has two R-based interfaces for communicating between the two programs: RStan and CmdStanR. {brms} works with both backends. I recommend installing CmdStan. CmdStan is newer and has more modern features (like speeding up sampling with multi-threading), and it works nicely with the more complex multinomial models we’ll be running.\nThe {CmdStanR} package helps you install CmdStan on your computer and provides the actual interface to bridge Stan and R. It is not on CRAN because it requires other binary software for connecting to Stan, so you have to install it a little differently:\n\nInstall the {CmdStanR} package. Use this command in R to install the package from Stan’s R-Universe repository:\ninstall.packages(\"cmdstanr\", repos = c('https://stan-dev.r-universe.dev', getOption(\"repos\")))\nInstall a C++ toolchain. Stan models need to be compiled to binary programs to run. See here for complete instructions for installing the required tools. In short:\n\nOn Windows, download and install Rtools45: https://cran.r-project.org/bin/windows/Rtools/\nOn macOS, install Xcode’s command line tools by running this in a terminal:\nxcode-select --install\nOn Linux, install g++ and make. make is typically pre-installed, and g++ is generally also installed. If not, run something like this to install them (this assumes a Debian-based distribution like Ubuntu; adapt the command as necessary for your distribution):\nsudo apt install g++ make\n\nMake sure the C++ toolchain is working. In R, run this in your console to make sure everything’s set up correctly:\ncmdstanr::check_cmdstan_toolchain()\nInstall CmdStan. Finally, you need to compile and install CmdStan. You can do that with {cmdstanr} in R. Run this in your console:\ncmdstanr::install_cmdstan()\nMake sure everything works. Run this in R to make sure everything’s working correctly:\nlibrary(brms)\n\nmodel &lt;- brm(\n  bf(mpg ~ disp + am),\n  data = mtcars,\n  family = gaussian(),\n  backend = \"cmdstan\"\n)\nYou should see something like this:\nmodel\n#&gt;  Family: gaussian \n#&gt;   Links: mu = identity \n#&gt; Formula: mpg ~ disp + am \n#&gt;    Data: mtcars (Number of observations: 32) \n#&gt;   Draws: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;\n#&gt;          total post-warmup draws = 4000\n#&gt; \n#&gt; Regression Coefficients:\n#&gt;           Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS\n#&gt; Intercept    27.81      1.90    24.08    31.52 1.00     2910     2508\n#&gt; disp         -0.04      0.01    -0.05    -0.03 1.00     3233     2894\n#&gt; am            1.87      1.48    -1.02     4.78 1.00     3117     2897\n#&gt; \n#&gt; Further Distributional Parameters:\n#&gt;       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS\n#&gt; sigma     3.33      0.47     2.56     4.38 1.00     3026     2881\n#&gt; \n#&gt; Draws were sampled using sample(hmc). For each parameter, Bulk_ESS\n#&gt; and Tail_ESS are effective sample size measures, and Rhat is the potential\n#&gt; scale reduction factor on split chains (at convergence, Rhat = 1).",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "materials/intro/index.html",
+    "href": "materials/intro/index.html",
+    "title": "Introduction to conjoint analysis",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Materials",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "materials/intro/index.html#slides",
+    "href": "materials/intro/index.html#slides",
+    "title": "Introduction to conjoint analysis",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Materials",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "materials/intro/index.html#exercises-and-materials",
+    "href": "materials/intro/index.html#exercises-and-materials",
+    "title": "Introduction to conjoint analysis",
+    "section": "Exercises and materials",
+    "text": "Exercises and materials\nTODO",
+    "crumbs": [
+      "Materials",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "materials/designing/index.html",
+    "href": "materials/designing/index.html",
+    "title": "Designing conjoint experiments",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Materials",
+      "Designing conjoing experiments"
+    ]
+  },
+  {
+    "objectID": "materials/designing/index.html#slides",
+    "href": "materials/designing/index.html#slides",
+    "title": "Designing conjoint experiments",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Materials",
+      "Designing conjoing experiments"
+    ]
+  },
+  {
+    "objectID": "materials/designing/index.html#exercises-and-materials",
+    "href": "materials/designing/index.html#exercises-and-materials",
+    "title": "Designing conjoint experiments",
+    "section": "Exercises and materials",
+    "text": "Exercises and materials\nTODO",
+    "crumbs": [
+      "Materials",
+      "Designing conjoing experiments"
+    ]
+  },
+  {
     "objectID": "index.html#overview",
     "href": "index.html#overview",
     "title": "Mastering Conjoint Analysis",
@@ -27,6 +143,105 @@
     "text": "Instructor\nAndrew Heiss is an assistant professor in the Department of Public Management and Policy at the Andrew Young School of Policy Studies at Georgia State University. His research explores human rights and international nonprofit management, and focuses on authoritarian regulation of civil society and INGO responses to administrative crackdown. Heiss also studies and teaches quantitative research methods, causal inference, data visualization, and Bayesian analysis. He is an RStudio Certified Instructor whose work has appeared in journals such as the Journal of Politics, Nonprofit and Voluntary Sector Quarterly, the Journal of Statistical Software, the Journal of Human Rights, and International Interactions.",
     "crumbs": [
       "Home"
+    ]
+  },
+  {
+    "objectID": "materials/causal-inference/index.html",
+    "href": "materials/causal-inference/index.html",
+    "title": "Analyzing conjoint data for respondent preferences",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Materials",
+      "Causal inference analysis"
+    ]
+  },
+  {
+    "objectID": "materials/causal-inference/index.html#slides",
+    "href": "materials/causal-inference/index.html#slides",
+    "title": "Analyzing conjoint data for respondent preferences",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Materials",
+      "Causal inference analysis"
+    ]
+  },
+  {
+    "objectID": "materials/causal-inference/index.html#exercises-and-materials",
+    "href": "materials/causal-inference/index.html#exercises-and-materials",
+    "title": "Analyzing conjoint data for respondent preferences",
+    "section": "Exercises and materials",
+    "text": "Exercises and materials\nTODO",
+    "crumbs": [
+      "Materials",
+      "Causal inference analysis"
+    ]
+  },
+  {
+    "objectID": "materials/implementing/index.html",
+    "href": "materials/implementing/index.html",
+    "title": "Implementing and fielding conjoint surveys",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Materials",
+      "Implementing and fielding conjoint surveys"
+    ]
+  },
+  {
+    "objectID": "materials/implementing/index.html#slides",
+    "href": "materials/implementing/index.html#slides",
+    "title": "Implementing and fielding conjoint surveys",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Materials",
+      "Implementing and fielding conjoint surveys"
+    ]
+  },
+  {
+    "objectID": "materials/implementing/index.html#exercises-and-materials",
+    "href": "materials/implementing/index.html#exercises-and-materials",
+    "title": "Implementing and fielding conjoint surveys",
+    "section": "Exercises and materials",
+    "text": "Exercises and materials\nTODO",
+    "crumbs": [
+      "Materials",
+      "Implementing and fielding conjoint surveys"
+    ]
+  },
+  {
+    "objectID": "materials/preferences/index.html",
+    "href": "materials/preferences/index.html",
+    "title": "Analyzing conjoint data for respondent preferences",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Materials",
+      "Preference analysis"
+    ]
+  },
+  {
+    "objectID": "materials/preferences/index.html#slides",
+    "href": "materials/preferences/index.html#slides",
+    "title": "Analyzing conjoint data for respondent preferences",
+    "section": "",
+    "text": "TODO",
+    "crumbs": [
+      "Materials",
+      "Preference analysis"
+    ]
+  },
+  {
+    "objectID": "materials/preferences/index.html#exercises-and-materials",
+    "href": "materials/preferences/index.html#exercises-and-materials",
+    "title": "Analyzing conjoint data for respondent preferences",
+    "section": "Exercises and materials",
+    "text": "Exercises and materials\nTODO",
+    "crumbs": [
+      "Materials",
+      "Preference analysis"
     ]
   }
 ]

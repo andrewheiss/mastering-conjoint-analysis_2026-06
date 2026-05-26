@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://andrewheiss.github.io/mastering-conjoint-analysis_2026-06/materials/setup/index.html</loc>
+    <lastmod>2026-05-26T17:56:16.050Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/mastering-conjoint-analysis_2026-06/materials/intro/index.html</loc>
+    <lastmod>2026-05-26T17:52:10.771Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/mastering-conjoint-analysis_2026-06/materials/designing/index.html</loc>
+    <lastmod>2026-05-26T17:54:00.579Z</lastmod>
+  </url>
+  <url>
     <loc>https://andrewheiss.github.io/mastering-conjoint-analysis_2026-06/index.html</loc>
-    <lastmod>2026-05-19T03:51:00.832Z</lastmod>
+    <lastmod>2026-05-19T03:51:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/mastering-conjoint-analysis_2026-06/materials/causal-inference/index.html</loc>
+    <lastmod>2026-05-26T17:54:00.579Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/mastering-conjoint-analysis_2026-06/materials/implementing/index.html</loc>
+    <lastmod>2026-05-26T17:54:00.579Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewheiss.github.io/mastering-conjoint-analysis_2026-06/materials/preferences/index.html</loc>
+    <lastmod>2026-05-26T17:54:00.579Z</lastmod>
   </url>
 </urlset>

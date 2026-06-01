@@ -24,6 +24,9 @@ website:
   navbar:
     background: primary
     right:
+      - text: Workshop materials
+        icon: files
+        href: https://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06
       - icon: github
         href: https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06
 
@@ -47,14 +50,14 @@ website:
           - text: Designing conjoint experiments
             href: "materials/designing/index.qmd"
           
-          - text: Implementing and fielding conjoint surveys
-            href: "materials/implementing/index.qmd"
-          
           - text: Causal inference analysis
             href: "materials/causal-inference/index.qmd"
           
           - text: Preference analysis
             href: "materials/preferences/index.qmd"
+
+          - text: Implementing and fielding conjoint surveys
+            href: "materials/implementing/index.qmd"
 
   page-footer:
     border: false
@@ -74,6 +77,6 @@ format:
     highlight-style: github
     theme:
       - cosmo
-      # - css/site-styles.scss
+      - css/site-styles.scss
       - brand
     toc: true

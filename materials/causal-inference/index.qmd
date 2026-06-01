@@ -1,11 +1,17 @@
 ---
-title: "Analyzing conjoint data for respondent preferences"
+title: "Analyzing conjoint data for causal inference"
 ---
 
 ## Slides
 
-TODO
+<p style="line-height: 2.5"><a class="btn btn-success btn-sm" target="_blank" href="slides.html">{{< fa arrow-up-right-from-square >}} &ensp;Open slides in new window</a> <a class="btn btn-success btn-sm" target="_blank" href="slides.pdf" role="button">{{< fa file-pdf >}} &ensp;Download PDF of slides</a></p>
+
+```{=html}
+<div class="ratio ratio-16x9">
+<iframe class="slide-deck" src="slides.html" style="border: 1px solid #343a40;"></iframe>
+</div>
+```
 
 ## Exercises and materials
 
-TODO
+We'll be working through `02-1_causal-conjoints_exercise.qmd` and `02-2_causal-conjoints_exercise.qmd` together. Make sure you [grab the latest version of the workshop materials](https://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06) first!

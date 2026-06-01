@@ -86,7 +86,7 @@ div.sidebar-item-container .sidebar-link > code {
 }
 
 .dictionary-entry {
-    @include bordered-box($brand-pink);
+    @include bordered-box($brand-orange);
     margin: 1em 0 2em;
     font-size: 0.95em;
 

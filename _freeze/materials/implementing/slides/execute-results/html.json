@@ -1,8 +1,8 @@
 {
-  "hash": "e7c9973fc472e58157521923c0f197f3",
+  "hash": "09825b6833527a5062e503f19e3f8b9e",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Building and<br>fielding conjoints\"\nformat:\n  revealjs:\n    theme: [simple, ../../css/slide-styles.scss, brand]\n    title-slide-attributes: \n      data-background-image: ../../img/background-hex-shapes.svg\n      data-background-opacity: \"0.5\"\n      data-background-gradient: \"linear-gradient(30deg, {{< brand color teal >}}, {{< brand color red >}})\"\n      style: \"text-align: left; right: 10%\"\n      # data-background-color: \"{{< brand color blue >}}\"\n    include-in-header: \n      - text: |\n          <script>\n            if (window.location.search.includes('decktape=true')) {\n              document.documentElement.classList.add('decktape-export');\n            }\n          </script>\n---\n\n\n\n# Make your own! {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}\n",
+    "markdown": "---\ntitle: \"Building and<br>fielding conjoints\"\nformat:\n  revealjs:\n    theme: [simple, ../../css/slide-styles.scss, brand]\n    width: 1600\n    height: 900\n    auto-stretch: false\n\n    preview-links: true\n    code-block-height: 730px\n    controls: auto\n\n    title-slide-attributes: \n      data-background-image: ../../img/background-hex-shapes.svg\n      data-background-opacity: \"0.5\"\n      data-background-gradient: \"linear-gradient(30deg, {{< brand color teal >}}, {{< brand color red >}})\"\n\n    include-in-header: \n      - text: |\n          <script>\n            if (window.location.search.includes('decktape=true')) {\n              document.documentElement.classList.add('decktape-export');\n            }\n          </script>\n---\n\n\n\n# Make your own! {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

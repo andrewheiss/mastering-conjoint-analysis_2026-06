@@ -1,14 +1,21 @@
 ---
-title: "Intro to<br>conjoint analysis"
+title: "Introduction to<br>conjoint analysis"
 format:
   revealjs:
     theme: [simple, ../../css/slide-styles.scss, brand]
+    width: 1600
+    height: 900
+    auto-stretch: false
+
+    preview-links: true
+    code-block-height: 730px
+    controls: auto
+
     title-slide-attributes: 
       data-background-image: ../../img/background-hex-shapes.svg
       data-background-opacity: "0.5"
-      data-background-gradient: "linear-gradient(30deg, {{< brand color blue >}}, {{< brand color red >}})"
-      style: "text-align: left; right: 10%"
-      # data-background-color: "{{< brand color blue >}}"
+      data-background-gradient: "linear-gradient(30deg, {{< brand color orange >}}, {{< brand color red >}})"
+
     include-in-header: 
       - text: |
           <script>

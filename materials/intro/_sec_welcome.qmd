@@ -13,7 +13,9 @@
 :::
 
 
-## Schedule (Day 1)
+## Schedule 
+
+### Day 1
 
 | Time        | Activity                             |
 |:------------|:-------------------------------------|
@@ -21,7 +23,7 @@
 | 12:30–13:30 | *Break*                              |
 | 13:30–15:00 | Designing conjoint experiments       |
 
-## Schedule (Day 2)
+### Day 2
 
 | Time        | Activity                                    |
 |:------------|:--------------------------------------------|
@@ -29,7 +31,9 @@
 | 12:30–13:30 | *Break*                                     |
 | 13:30–15:00 | Conjoint data and causal inference (part 2) |
 
-## Schedule (Day 3)
+## Schedule
+
+### Day 3
 
 | Time        | Activity                                          |
 |:------------|:--------------------------------------------------|
@@ -37,7 +41,7 @@
 | 12:30–13:30 | *Break*                                           |
 | 13:30–15:00 | Conjoint data and respondent preferences (part 2) |
 
-## Schedule (Day 4)
+### Day 4
 
 | Time        | Activity                                            |
 |:------------|:----------------------------------------------------|

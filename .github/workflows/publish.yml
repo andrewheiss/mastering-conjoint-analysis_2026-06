@@ -1,0 +1,120 @@
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+name: quarto-render-publish
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      R_VERSION: '4.5.1'
+
+    permissions: 
+      contents: write
+      pages: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+        # I created this list of dependencies with {dockerfiler}, so it's 
+        # probably overly ambitious in installing stuff that might already be 
+        # in the runner image, but it works and it's better than playing 
+        # whack-a-mole with GHA to find any missing dependencies, so whatever 🤷‍♂️
+        #
+        # dock <- dockerfiler::dock_from_renv(
+        #   "renv.lock",
+        #   FROM = "rocker/r-ver", AS = "renv-base",
+        #   repos = c(
+        #     CRAN = "https://cran.rstudio.com/",
+        #     tinytable = "https://vincentarelbundock.r-universe.dev"
+        #   ),
+        #   use_pak = FALSE
+        # )
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y \
+            pandoc \
+            make \
+            cmake\
+            libicu-dev \
+            libx11-dev \
+            libcurl4-openssl-dev \
+            libssl-dev \
+            zlib1g-dev \
+            libcairo2-dev \
+            libfontconfig1-dev \
+            libfreetype6-dev \
+            libfribidi-dev \
+            libgdal-dev \
+            libharfbuzz-dev \
+            libjpeg-dev \
+            libpng-dev \
+            libtiff-dev \
+            libudunits2-dev \
+            libwebp-dev \
+            libxml2-dev
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: ${{ env.R_VERSION }}
+
+      - name: Install R dependencies
+        uses: r-lib/actions/setup-renv@v2
+        with:
+          cache-version: 1
+
+      - name: Render Quarto site
+        run: quarto render
+
+      - name: Convert slides to PDF with decktape
+        continue-on-error: true
+        run: |
+          # Install decktape and playwright
+          npm install -g decktape
+          npm install -g playwright
+          playwright install chromium
+
+          # Start local server in background
+          cd _site
+          python3 -m http.server 8000 &
+          SERVER_PID=$!
+          cd ..
+
+          # Wait for server to start
+          sleep 3
+
+          # Find and convert all slides
+          find _site/materials -name "slides.html" -type f | while read html_file; do
+            rel_path="${html_file#_site/}"
+            pdf_file="${html_file%.html}.pdf"
+
+            echo "Converting $rel_path to PDF..."
+            if decktape --chrome-arg=--no-sandbox reveal "http://localhost:8000/${rel_path}?decktape=true" "$pdf_file" 2>&1; then
+              echo "✓ Successfully converted $rel_path"
+            else
+              echo "✗ Failed to convert $rel_path (continuing anyway)"
+            fi
+          done
+
+          # Kill server
+          kill $SERVER_PID
+
+      - name: Render and publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+          render: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,27 @@
+---
+title: "Intro to<br>conjoint analysis"
+format:
+  revealjs:
+    theme: [simple, ../../css/slide-styles.scss, brand]
+    title-slide-attributes: 
+      data-background-image: ../../img/background-hex-shapes.svg
+      data-background-opacity: "0.5"
+      data-background-gradient: "linear-gradient(30deg, {{< brand color blue >}}, {{< brand color red >}})"
+      style: "text-align: left; right: 10%"
+      # data-background-color: "{{< brand color blue >}}"
+    include-in-header: 
+      - text: |
+          <script>
+            if (window.location.search.includes('decktape=true')) {
+              document.documentElement.classList.add('decktape-export');
+            }
+          </script>
+---
+
+```{r}
+#| include: false
+
+library(countdown)
+```
+
+{{< include _sec_welcome.qmd >}}

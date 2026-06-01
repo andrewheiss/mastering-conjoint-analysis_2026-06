@@ -36,17 +36,17 @@ set.seed(1234)
 schedule <- tribble(
   ~Day,             ~Time,         ~Title,                                                     ~Link,
   "Day 1 (June 2)", "10:30–12:30", "Introduction to conjoint analysis",                        "/materials/intro/",
-  "Day 1 (June 2)", "12:30–13:00", "*Break*",                                                  NA,
-  "Day 1 (June 2)", "10:30–12:30", "Designing conjoint experiments",                           "/materials/designing/",
-  "Day 2 (June 3)", "10:30–12:30", "Implementing and fielding conjoint surveys (§ 1)",         "/materials/implementing/",
-  "Day 2 (June 3)", "12:30–13:00", "*Break*",                                                  NA,
-  "Day 2 (June 3)", "13:00–15:00", "Implementing and fielding conjoint surveys (§ 2)",         "/materials/implementing/",
-  "Day 3 (June 4)", "10:30–12:30", "Analyzing conjoint data for causal inference (§ 1)",       "/materials/causal-inference/",
-  "Day 3 (June 4)", "12:30–13:00", "*Break*",                                                  NA,
-  "Day 3 (June 4)", "13:30–15:00", "Analyzing conjoint data for causal inference (§ 2)",       "/materials/causal-inference/",
-  "Day 4 (June 5)", "10:30–12:30", "Analyzing conjoint data for respondent preferences (§ 1)", "/materials/preferences/",
-  "Day 4 (June 5)", "12:30–13:00", "*Break*",                                                  NA,
-  "Day 4 (June 5)", "13:30–15:00", "Analyzing conjoint data for respondent preferences (§ 2)", "/materials/preferences/"
+  "Day 1 (June 2)", "12:30–13:30", "*Break*",                                                  NA,
+  "Day 1 (June 2)", "13:30–15:00", "Designing conjoint experiments",                           "/materials/designing/",
+  "Day 2 (June 3)", "10:30–12:30", "Analyzing conjoint data for causal inference (§ 1)",       "/materials/causal-inference/",
+  "Day 2 (June 3)", "12:30–13:30", "*Break*",                                                  NA,
+  "Day 2 (June 3)", "13:30–15:00", "Analyzing conjoint data for causal inference (§ 2)",       "/materials/causal-inference/",
+  "Day 3 (June 4)", "10:30–12:30", "Analyzing conjoint data for respondent preferences (§ 1)", "/materials/preferences/",
+  "Day 3 (June 4)", "12:30–13:30", "*Break*",                                                  NA,
+  "Day 3 (June 4)", "13:30–15:00", "Analyzing conjoint data for respondent preferences (§ 2)", "/materials/preferences/",
+  "Day 4 (June 5)", "10:30–12:30", "Implementing and fielding conjoint surveys (§ 1)",         "/materials/implementing/",
+  "Day 4 (June 5)", "12:30–13:30", "*Break*",                                                  NA,
+  "Day 4 (June 5)", "13:30–15:00", "Implementing and fielding conjoint surveys (§ 2)",         "/materials/implementing/"
 ) |> 
   mutate(Content = ifelse(is.na(Link), Title, glue('[{Title}]({Link}){{target="_blank"}}')))
 

@@ -247,77 +247,63 @@
   {
     "objectID": "materials/intro/slides.html#housekeeping",
     "href": "materials/intro/slides.html#housekeeping",
-    "title": "Intro toconjoint analysis",
+    "title": "Introduction toconjoint analysis",
     "section": "Housekeeping!",
     "text": "Housekeeping!\n\n\nBe kind and curious!\nSlack and Zoom chat\nAsk questions"
   },
   {
-    "objectID": "materials/intro/slides.html#schedule-day-1",
-    "href": "materials/intro/slides.html#schedule-day-1",
-    "title": "Intro toconjoint analysis",
-    "section": "Schedule (Day 1)",
-    "text": "Schedule (Day 1)\n\n\n\nTime\nActivity\n\n\n\n\n10:30–12:30\nWelcome + Intro to conjoint analysis\n\n\n12:30–13:30\nBreak\n\n\n13:30–15:00\nDesigning conjoint experiments"
+    "objectID": "materials/intro/slides.html#schedule",
+    "href": "materials/intro/slides.html#schedule",
+    "title": "Introduction toconjoint analysis",
+    "section": "Schedule",
+    "text": "Schedule\nDay 1\n\n\n\nTime\nActivity\n\n\n\n\n10:30–12:30\nWelcome + Intro to conjoint analysis\n\n\n12:30–13:30\nBreak\n\n\n13:30–15:00\nDesigning conjoint experiments\n\n\n\nDay 2\n\n\n\nTime\nActivity\n\n\n\n\n10:30–12:30\nConjoint data and causal inference (part 1)\n\n\n12:30–13:30\nBreak\n\n\n13:30–15:00\nConjoint data and causal inference (part 2)"
   },
   {
-    "objectID": "materials/intro/slides.html#schedule-day-2",
-    "href": "materials/intro/slides.html#schedule-day-2",
-    "title": "Intro toconjoint analysis",
-    "section": "Schedule (Day 2)",
-    "text": "Schedule (Day 2)\n\n\n\nTime\nActivity\n\n\n\n\n10:30–12:30\nConjoint data and causal inference (part 1)\n\n\n12:30–13:30\nBreak\n\n\n13:30–15:00\nConjoint data and causal inference (part 2)"
-  },
-  {
-    "objectID": "materials/intro/slides.html#schedule-day-3",
-    "href": "materials/intro/slides.html#schedule-day-3",
-    "title": "Intro toconjoint analysis",
-    "section": "Schedule (Day 3)",
-    "text": "Schedule (Day 3)\n\n\n\nTime\nActivity\n\n\n\n\n10:30–12:30\nConjoint data and respondent preferences (part 1)\n\n\n12:30–13:30\nBreak\n\n\n13:30–15:00\nConjoint data and respondent preferences (part 2)"
-  },
-  {
-    "objectID": "materials/intro/slides.html#schedule-day-4",
-    "href": "materials/intro/slides.html#schedule-day-4",
-    "title": "Intro toconjoint analysis",
-    "section": "Schedule (Day 4)",
-    "text": "Schedule (Day 4)\n\n\n\nTime\nActivity\n\n\n\n\n10:30–12:30\nImplementing and fielding conjoint surveys (part 1)\n\n\n12:30–13:30\nBreak\n\n\n13:30–15:00\nImplementing and fielding conjoint surveys (part 2)"
+    "objectID": "materials/intro/slides.html#schedule-1",
+    "href": "materials/intro/slides.html#schedule-1",
+    "title": "Introduction toconjoint analysis",
+    "section": "Schedule",
+    "text": "Schedule\nDay 3\n\n\n\nTime\nActivity\n\n\n\n\n10:30–12:30\nConjoint data and respondent preferences (part 1)\n\n\n12:30–13:30\nBreak\n\n\n13:30–15:00\nConjoint data and respondent preferences (part 2)\n\n\n\nDay 4\n\n\n\nTime\nActivity\n\n\n\n\n10:30–12:30\nImplementing and fielding conjoint surveys (part 1)\n\n\n12:30–13:30\nBreak\n\n\n13:30–15:00\nImplementing and fielding conjoint surveys (part 2)"
   },
   {
     "objectID": "materials/intro/slides.html#about-me",
     "href": "materials/intro/slides.html#about-me",
-    "title": "Intro toconjoint analysis",
+    "title": "Introduction toconjoint analysis",
     "section": "About me",
     "text": "About me\n\n\nAndrew Heiss\n\n andrewheiss.com  @andrew.heiss.phd\n @andrewheiss   andrewheiss\n\n\nAssistant professor of public policy international relations, Georgia State University Georgetown University in Qatar\nData visualization, statistics, and causal inference"
   },
   {
     "objectID": "materials/intro/slides.html#meeting-you-where-you-are",
     "href": "materials/intro/slides.html#meeting-you-where-you-are",
-    "title": "Intro toconjoint analysis",
+    "title": "Introduction toconjoint analysis",
     "section": "Meeting you where you are",
     "text": "Meeting you where you are\n\n\n\nThis course is designed for someone who:\n\nIs familiar with R (and ideally tidyverse)\nHas some experience with statistical modeling with linear models\nMaybe has an idea for a conjoint experiment\n\n\n\n\n\n\nYou’ll learn:\n\nWhat conjoint analysis is\nHow to measure causal effects and explore “product” and “consumer” preferences\nHow to design and run your own conjoint experiments"
   },
   {
     "objectID": "materials/intro/slides.html#course-structure",
     "href": "materials/intro/slides.html#course-structure",
-    "title": "Intro toconjoint analysis",
+    "title": "Introduction toconjoint analysis",
     "section": "Course structure",
     "text": "Course structure\n\n\nMy turn\n\nLecture segments\nFeel free to just watch, take notes, browse docs, or tinker around with the code\nLots of live-coding! Most content lives in Quarto files\n\n\nYour turn\n\nExercises for you to do\nWork on your own or with others"
   },
   {
     "objectID": "materials/intro/slides.html#bring-your-own-ideas",
     "href": "materials/intro/slides.html#bring-your-own-ideas",
-    "title": "Intro toconjoint analysis",
+    "title": "Introduction toconjoint analysis",
     "section": "Bring your own ideas!",
     "text": "Bring your own ideas!\n\nThe best way to learn is by building something\nI’ve given you playground code, but it’s fairly basic. This is by design!\nYou’ll have time during the “Your turn”s to to play around and experiment. Try to use these new principles and skills to create something!"
   },
   {
     "objectID": "materials/intro/slides.html#getting-help",
     "href": "materials/intro/slides.html#getting-help",
-    "title": "Intro toconjoint analysis",
+    "title": "Introduction toconjoint analysis",
     "section": "Getting help",
     "text": "Getting help\n\n\n\n\nUse Zoom reactions\n\n =“I’m stuck and need help!”\n =“I finished the exercise”\n\nAsk longer, more detailed questions in Slack"
   },
   {
     "objectID": "materials/intro/slides.html#your-turn",
     "href": "materials/intro/slides.html#your-turn",
-    "title": "Intro toconjoint analysis",
+    "title": "Introduction toconjoint analysis",
     "section": "Your turn",
     "text": "Your turn\nIntroduce yourself:\n\nName and professional affiliation\nOn a scale of 1–10, how well do you know…\n\nR?\nTidyverse?\nStatistical models like OLS, multinomial logit, and Bayesian methods?\nConjoint analysis?\n\nWhat do you hope to get out of this course?"
   }

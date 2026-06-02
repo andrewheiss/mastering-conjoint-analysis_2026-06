@@ -42,3 +42,16 @@ kbd.kbd.mac {
     system font to ensure the icons render with the same X-height as upper case letters. */
     font-family: inherit;
 }
+
+.box {
+  background: #f0f4ff;
+  border-left: 4px solid #1f77b4;
+  padding: 0.6em 1em;
+  margin: 0.5em 0;
+  border-radius: 4px;
+}
+
+.text-tiny {
+  font-size: 60%;
+  line-height: 1.1;
+}

@@ -1,4 +1,4 @@
-# Welcome! {background-color='{{< brand color blue >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+# Welcome! {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
 
 ## Housekeeping!
 

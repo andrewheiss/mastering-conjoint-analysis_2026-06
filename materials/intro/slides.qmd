@@ -7,7 +7,7 @@ format:
     height: 900
     auto-stretch: false
 
-    preview-links: true
+    preview-links: false
     code-block-height: 730px
     controls: auto
 
@@ -32,3 +32,262 @@ library(countdown)
 ```
 
 {{< include _sec_welcome.qmd >}}
+
+# What is conjoint analysis? {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## The problem of preferences
+
+How do you measure what people *really* want?
+
+::: {.incremental}
+- **Direct questions:** "Do you care about the environment?" → Everyone says yes
+- **Stated vs. revealed preference:** What people say ≠ what they do
+- **Single attributes:** "Is healthcare important?" Of course! But *how* important vs. cost? Do they interact?
+- **Ranking:** People rank things differently depending on context
+:::
+
+::: {.fragment}
+**People make trade-offs**. Survey experiments that don't force trade-offs can give misleading answers.
+:::
+
+## Ice cream!
+
+It's hot outside and you want to buy some ice cream. You go to your local ice cream shop and find a menu with all these possibilities:
+
+- Vanilla, chocolate, or strawberry
+- Served in a bowl or served in a waffle cone
+- No extra toppings, topped with nuts, or topped with sprinkles
+- Priced at $3, $4, or $5
+
+**Which kind do you want? Why?** 
+
+::: {.fragment}
+No ice cream maximizes everyone's happiness.
+
+There are too many trade-offs
+:::
+
+## What is conjoint analysis?
+
+::: {.box}
+Conjoint analysis is a family of survey-based techniques where respondents evaluate or choose among hypothetical profiles described by multiple attributes, revealing their preferences through the trade-offs they make.
+:::
+
+::: {.fragment}
+**conjoint** = *considered jointly*
+
+Respondents evaluate attributes **together** (as bundles), not separately
+
+Use statistics to uncover preferences from these bundles
+:::
+
+##
+
+::: {.r-fit-text .center}
+\ 
+
+[andhs.co/icecream](https://andhs.co/icecream)
+:::
+
+# Where did it come from? {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Psychology (1960s)
+
+::::: {.columns}
+
+:::: {.column width="65%"}
+::: {.text-tiny}
+Luce, R. Duncan, and John W. Tukey. 1964. “Simultaneous Conjoint Measurement: A New Type of Fundamental Measurement.” *Journal of Mathematical Psychology* 1 (1): 1–27. <https://doi.org/10.1016/0022-2496(64)90015-X>.
+:::
+
+::: {.fragment}
+\ 
+
+Originally developed to measure preferences of sets of features
+:::
+
+::::
+
+:::: {.column width="35%"}
+![](img/luce-tukey-min.png){style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+::::
+
+::::::
+
+## Marketing research (1970s)
+
+::::: {.columns}
+
+:::: {.column width="65%"}
+::: {.text-tiny}
+Green, Paul E., and Vithala R. Rao. 1971. “Conjoint Measurement for Quantifying Judgmental Data.” *Journal of Marketing Research* 8 (3): 355. <https://doi.org/10.2307/3149575>.
+:::
+
+::: {.fragment}
+Adapted to answer marketing questions:
+
+- How should we price our product?
+- Which features should we invest in?
+- What product will maximize market share?
+
+Uses: consumer electronics, airlines, credit cards, pharmaceuticals, automobiles
+:::
+
+::::
+
+:::: {.column width="35%"}
+![](img/green-rao-min.png){style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+::::
+
+::::::
+
+## Apple vs. Samsung (2012)
+
+::: {.incremental}
+- Apple sued Samsung for patent infringement: copied features like sliding to unlock, search, autocorrect, pinch-to-zoom, etc.
+- Apple hired MIT marketing professor [John Hauser](https://mitmgmtfaculty.mit.edu/jhauser/) to measure value of those features
+- Conjoint experiment analyzed with a hierarchical Bayesian model
+- Consumers would be willing to spend between \$32--\$102 extra for these features
+- These results (and other bits of evidence) scaled up to \$2 billion in damages awarded to Apple
+:::
+
+## Causal inference (2010s)
+
+::::: {.columns}
+
+:::: {.column width="65%"}
+::: {.text-tiny}
+Hainmueller, Jens, Daniel J. Hopkins, and Teppei Yamamoto. 2014. “Causal Inference in Conjoint Analysis: Understanding Multidimensional Choices via Stated Preference Experiments.” *Political Analysis* 22 (1): 1–30. <https://doi.org/10.1093/pan/mpt024>.
+:::
+
+::: {.fragment}
+**Instead of analyzing a whole constellation of attributes, look at specific levers individually.**
+:::
+
+::: {.fragment}
+Conjoints are like RCTs, just fancier. 
+
+Since treatment assignment is random, we can find the effect on the selection of probability (or favorability) when changing an attribute.
+
+Uses: Measure effects of political candidate characteristics, issue salience, organization characteristics
+:::
+
+::::
+
+:::: {.column width="35%"}
+![](img/hainmueller-et-al-min.png){style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+::::
+
+::::::
+
+## {.r-stretch .center}
+
+![](img/leeper-et-al-2019_fig1_excerpt.svg){fig-align="center" width="100%" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+
+# What can we estimate with it? {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+##
+
+:::: {.columns}
+
+::: {.column .fragment}
+### Preferences
+
+**Marketing**
+
+- How much do people value the overall constellation of features?
+- What product will sell best?
+- What are people willing to pay for this feature?
+- Estimands: **utilities, attribute importance, willingness to pay, market shares and simulations**
+:::
+
+::: {.column .fragment}
+### Causal inference
+
+**Social science**
+
+- Does feature X make people more or less likely to choose a "product"?
+- What is the average causal effect of a specific feature?
+- Estimands: **average marginal component effect (AMCE), marginal means, average feature choice probability (AFCP)**
+:::
+
+::::
+
+##
+
+::: {.r-fit-text .center}
+\ 
+
+Same data and same models,
+
+completely different estimands
+:::
+
+## Crossing traditions!
+
+:::: {.columns}
+
+::: {.column}
+![](img/who-cares-min.png){fig-align="center" width="75%" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+:::
+
+::: {.column}
+![](img/navigating-hostility-min.png){fig-align="center" width="75%" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+
+:::
+
+::::
+
+## Crossing traditions!
+
+::::: {.columns}
+
+:::: {.column}
+![](img/who-cares-results-min.png){fig-align="center" width="100%" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+
+::: {.text-tiny}
+Chaudhry, Suparna, Marc Dotson, and Andrew Heiss. 2021. “Who Cares about Crackdowns? Exploring the Role of Trust in Individual Philanthropy.” *Global Policy* 12 (S5): 45–58. <https://doi.org/10.1111/1758-5899.12984>.
+:::
+::::
+
+:::: {.column}
+![](img/navigating-hostility-results-min.png){fig-align="center" width="75%" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"}
+
+::: {.text-tiny}
+Chaudhry, Suparna, Marc Dotson, and Andrew Heiss. 2025. “Navigating Hostility: The Effect of Nonprofit Transparency and Accountability on Donor Preferences in the Face of Shrinking Civic Space.” *Nonprofit and Voluntary Sector Quarterly*, 1–27. <https://doi.org/10.1177/08997640251348654>.
+:::
+::::
+
+:::::
+
+# Roadmap for the workshop {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Live coding
+
+::: {.r-fit-text .center}
+**Hands-on practice** with minimal lectures<br>
+and slides per session. 
+
+\ 
+
+We'll work through live code together.
+:::
+
+## 
+
+::: {.r-fit-text .center}
+\ 
+
+[andhs.co/conjoint](https://andhs.co/conjoint)
+:::
+
+## Course outline
+
+- ✅ ~~Intro to conjoints~~
+- Designing conjoint experiments
+- Conjoint data and causal inference, part 1
+- Conjoint data and causal inference, part 2
+- Conjoint data and respondent preferences, part 1
+- Conjoint data and respondent preferences, part 2
+- Implementing and fielding conjoint surveys, part 1
+- Implementing and fielding conjoint surveys, part 2

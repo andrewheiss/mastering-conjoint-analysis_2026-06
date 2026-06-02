@@ -115,27 +115,36 @@ If you are using RStudio or Positron locally, install all the packages we'll use
 ```{.r}
 install.packages(
   c(
-    "tidyverse",
-    "brms",
-    "rstan",
-    "rstanarm",
-    "marginaleffects",
-    "tidybayes",
-    "ggdist",
-    "tinytable",
-    "modelsummary",
-    "ggforce",
-    "survey",
-    "parameters",
-    "broom",
-    "broom.mixed",
-    "logitr",
-    "mlogit",
-    "dfidx",
-    "remotes"
+    "tidyverse", 
+    "patchwork", 
+    "marginaleffects", 
+    "easystats", 
+    "cbcTools", 
+    "mclogit", 
+    "lme4", 
+    "logitr", 
+    "remotes", 
+    "pak", 
+    "brms", 
+    "rstan", 
+    "rstanarm", 
+    "collapse", 
+    "shiny", 
+    "bslib", 
+    "bsicons", 
+    "tidybayes", 
+    "ggdist", 
+    "modelsummary", 
+    "ggforce", 
+    "ggh4x", 
+    "broom", 
+    "broom.mixed"
   )
 )
+
+pak::pak("surveydown-dev/surveydown")
 ```
+
 
 ## Install {CmdStanR}
 

@@ -34,7 +34,7 @@
     "href": "materials/setup/index.html#install-the-necessary-r-packages",
     "title": "Setup",
     "section": "Install the necessary R packages",
-    "text": "Install the necessary R packages\nIf you are using Posit Cloud, the packages will be pre-installed (kind of! there won’t be any Bayesian stuff).\nIf you are using RStudio or Positron locally, install all the packages we’ll use with:\ninstall.packages(\n  c(\n    \"tidyverse\",\n    \"brms\",\n    \"rstan\",\n    \"rstanarm\",\n    \"marginaleffects\",\n    \"tidybayes\",\n    \"ggdist\",\n    \"tinytable\",\n    \"modelsummary\",\n    \"ggforce\",\n    \"survey\",\n    \"parameters\",\n    \"broom\",\n    \"broom.mixed\",\n    \"logitr\",\n    \"mlogit\",\n    \"dfidx\",\n    \"remotes\"\n  )\n)",
+    "text": "Install the necessary R packages\nIf you are using Posit Cloud, the packages will be pre-installed (kind of! there won’t be any Bayesian stuff).\nIf you are using RStudio or Positron locally, install all the packages we’ll use with:\ninstall.packages(\n  c(\n    \"tidyverse\", \n    \"patchwork\", \n    \"marginaleffects\", \n    \"easystats\", \n    \"cbcTools\", \n    \"mclogit\", \n    \"lme4\", \n    \"logitr\", \n    \"remotes\", \n    \"pak\", \n    \"brms\", \n    \"rstan\", \n    \"rstanarm\", \n    \"collapse\", \n    \"shiny\", \n    \"bslib\", \n    \"bsicons\", \n    \"tidybayes\", \n    \"ggdist\", \n    \"modelsummary\", \n    \"ggforce\", \n    \"ggh4x\", \n    \"broom\", \n    \"broom.mixed\"\n  )\n)\n\npak::pak(\"surveydown-dev/surveydown\")",
     "crumbs": [
       "Setup"
     ]

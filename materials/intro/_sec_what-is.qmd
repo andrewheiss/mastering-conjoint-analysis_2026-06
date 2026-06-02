@@ -1,0 +1,55 @@
+# What is conjoint analysis? {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## The problem of preferences
+
+How do you measure what people *really* want?
+
+::: {.incremental}
+- **Direct questions:** "Do you care about the environment?" → Everyone says yes
+- **Stated vs. revealed preference:** What people say ≠ what they do
+- **Single attributes:** "Is healthcare important?" Of course! But *how* important vs. cost? Do they interact?
+- **Ranking:** People rank things differently depending on context
+:::
+
+::: {.fragment}
+**People make trade-offs**. Survey experiments that don't force trade-offs can give misleading answers.
+:::
+
+## Ice cream!
+
+It's hot outside and you want to buy some ice cream. You go to your local ice cream shop and find a menu with all these possibilities:
+
+- Vanilla, chocolate, or strawberry
+- Served in a bowl or served in a waffle cone
+- No extra toppings, topped with nuts, or topped with sprinkles
+- Priced at $3, $4, or $5
+
+**Which kind do you want? Why?** 
+
+::: {.fragment}
+No ice cream maximizes everyone's happiness.
+
+There are too many trade-offs
+:::
+
+## What is conjoint analysis?
+
+::: {.box}
+Conjoint analysis is a family of survey-based techniques where respondents evaluate or choose among hypothetical profiles described by multiple attributes, revealing their preferences through the trade-offs they make.
+:::
+
+::: {.fragment}
+**conjoint** = *considered jointly*
+
+Respondents evaluate attributes **together** (as bundles), not separately
+
+Use statistics to uncover preferences from these bundles
+:::
+
+##
+
+::: {.r-fit-text .center}
+\ 
+
+[andhs.co/icecream](https://andhs.co/icecream)
+:::

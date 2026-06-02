@@ -1,0 +1,31 @@
+# Roadmap for the workshop {background-color='{{< brand color orange >}}' background-image='../../img/background-hex-shapes.svg' background-opacity='0.5'}
+
+## Live coding
+
+::: {.r-fit-text .center}
+**Hands-on practice** with minimal lectures<br>
+and slides per session. 
+
+\ 
+
+We'll work through live code together.
+:::
+
+## 
+
+::: {.r-fit-text .center}
+\ 
+
+[andhs.co/conjoint](https://andhs.co/conjoint)
+:::
+
+## Course outline
+
+- ✅ ~~Intro to conjoints~~
+- Designing conjoint experiments
+- Conjoint data and causal inference, part 1
+- Conjoint data and causal inference, part 2
+- Conjoint data and respondent preferences, part 1
+- Conjoint data and respondent preferences, part 2
+- Implementing and fielding conjoint surveys, part 1
+- Implementing and fielding conjoint surveys, part 2

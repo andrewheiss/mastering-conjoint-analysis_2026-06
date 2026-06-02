@@ -306,5 +306,110 @@
     "title": "Introduction toconjoint analysis",
     "section": "Your turn",
     "text": "Your turn\nIntroduce yourself:\n\nName and professional affiliation\nOn a scale of 1–10, how well do you know…\n\nR?\nTidyverse?\nStatistical models like OLS, multinomial logit, and Bayesian methods?\nConjoint analysis?\n\nWhat do you hope to get out of this course?"
+  },
+  {
+    "objectID": "materials/intro/slides.html#the-problem-of-preferences",
+    "href": "materials/intro/slides.html#the-problem-of-preferences",
+    "title": "Introduction toconjoint analysis",
+    "section": "The problem of preferences",
+    "text": "The problem of preferences\nHow do you measure what people really want?\n\nDirect questions: “Do you care about the environment?” → Everyone says yes\nStated vs. revealed preference: What people say ≠ what they do\nSingle attributes: “Is healthcare important?” Of course! But how important vs. cost? Do they interact?\nRanking: People rank things differently depending on context\n\n\nPeople make trade-offs. Survey experiments that don’t force trade-offs can give misleading answers."
+  },
+  {
+    "objectID": "materials/intro/slides.html#ice-cream",
+    "href": "materials/intro/slides.html#ice-cream",
+    "title": "Introduction toconjoint analysis",
+    "section": "Ice cream!",
+    "text": "Ice cream!\nIt’s hot outside and you want to buy some ice cream. You go to your local ice cream shop and find a menu with all these possibilities:\n\nVanilla, chocolate, or strawberry\nServed in a bowl or served in a waffle cone\nNo extra toppings, topped with nuts, or topped with sprinkles\nPriced at $3, $4, or $5\n\nWhich kind do you want? Why?\n\nNo ice cream maximizes everyone’s happiness.\nThere are too many trade-offs"
+  },
+  {
+    "objectID": "materials/intro/slides.html#what-is-conjoint-analysis-1",
+    "href": "materials/intro/slides.html#what-is-conjoint-analysis-1",
+    "title": "Introduction toconjoint analysis",
+    "section": "What is conjoint analysis?",
+    "text": "What is conjoint analysis?\n\nConjoint analysis is a family of survey-based techniques where respondents evaluate or choose among hypothetical profiles described by multiple attributes, revealing their preferences through the trade-offs they make.\n\n\nconjoint = considered jointly\nRespondents evaluate attributes together (as bundles), not separately\nUse statistics to uncover preferences from these bundles"
+  },
+  {
+    "objectID": "materials/intro/slides.html#section",
+    "href": "materials/intro/slides.html#section",
+    "title": "Introduction toconjoint analysis",
+    "section": "",
+    "text": "andhs.co/icecream"
+  },
+  {
+    "objectID": "materials/intro/slides.html#psychology-1960s",
+    "href": "materials/intro/slides.html#psychology-1960s",
+    "title": "Introduction toconjoint analysis",
+    "section": "Psychology (1960s)",
+    "text": "Psychology (1960s)\n\n\n\nLuce, R. Duncan, and John W. Tukey. 1964. “Simultaneous Conjoint Measurement: A New Type of Fundamental Measurement.” Journal of Mathematical Psychology 1 (1): 1–27. https://doi.org/10.1016/0022-2496(64)90015-X.\n\n\n \nOriginally developed to measure preferences of sets of features"
+  },
+  {
+    "objectID": "materials/intro/slides.html#marketing-research-1970s",
+    "href": "materials/intro/slides.html#marketing-research-1970s",
+    "title": "Introduction toconjoint analysis",
+    "section": "Marketing research (1970s)",
+    "text": "Marketing research (1970s)\n\n\n\nGreen, Paul E., and Vithala R. Rao. 1971. “Conjoint Measurement for Quantifying Judgmental Data.” Journal of Marketing Research 8 (3): 355. https://doi.org/10.2307/3149575.\n\n\nAdapted to answer marketing questions:\n\nHow should we price our product?\nWhich features should we invest in?\nWhat product will maximize market share?\n\nUses: consumer electronics, airlines, credit cards, pharmaceuticals, automobiles"
+  },
+  {
+    "objectID": "materials/intro/slides.html#apple-vs.-samsung-2012",
+    "href": "materials/intro/slides.html#apple-vs.-samsung-2012",
+    "title": "Introduction toconjoint analysis",
+    "section": "Apple vs. Samsung (2012)",
+    "text": "Apple vs. Samsung (2012)\n\nApple sued Samsung for patent infringement: copied features like sliding to unlock, search, autocorrect, pinch-to-zoom, etc.\nApple hired MIT marketing professor John Hauser to measure value of those features\nConjoint experiment analyzed with a hierarchical Bayesian model\nConsumers would be willing to spend between $32–$102 extra for these features\nThese results (and other bits of evidence) scaled up to $2 billion in damages awarded to Apple"
+  },
+  {
+    "objectID": "materials/intro/slides.html#causal-inference-2010s",
+    "href": "materials/intro/slides.html#causal-inference-2010s",
+    "title": "Introduction toconjoint analysis",
+    "section": "Causal inference (2010s)",
+    "text": "Causal inference (2010s)\n\n\n\nHainmueller, Jens, Daniel J. Hopkins, and Teppei Yamamoto. 2014. “Causal Inference in Conjoint Analysis: Understanding Multidimensional Choices via Stated Preference Experiments.” Political Analysis 22 (1): 1–30. https://doi.org/10.1093/pan/mpt024.\n\n\nInstead of analyzing a whole constellation of attributes, look at specific levers individually.\n\n\nConjoints are like RCTs, just fancier.\nSince treatment assignment is random, we can find the effect on the selection of probability (or favorability) when changing an attribute.\nUses: Measure effects of political candidate characteristics, issue salience, organization characteristics"
+  },
+  {
+    "objectID": "materials/intro/slides.html#section-2",
+    "href": "materials/intro/slides.html#section-2",
+    "title": "Introduction toconjoint analysis",
+    "section": "",
+    "text": "Preferences\nMarketing\n\nHow much do people value the overall constellation of features?\nWhat product will sell best?\nWhat are people willing to pay for this feature?\nEstimands: utilities, attribute importance, willingness to pay, market shares and simulations\n\n\nCausal inference\nSocial science\n\nDoes feature X make people more or less likely to choose a “product”?\nWhat is the average causal effect of a specific feature?\nEstimands: average marginal component effect (AMCE), marginal means, average feature choice probability (AFCP)"
+  },
+  {
+    "objectID": "materials/intro/slides.html#section-3",
+    "href": "materials/intro/slides.html#section-3",
+    "title": "Introduction toconjoint analysis",
+    "section": "",
+    "text": "Same data and same models,\ncompletely different estimands"
+  },
+  {
+    "objectID": "materials/intro/slides.html#crossing-traditions",
+    "href": "materials/intro/slides.html#crossing-traditions",
+    "title": "Introduction toconjoint analysis",
+    "section": "Crossing traditions!",
+    "text": "Crossing traditions!"
+  },
+  {
+    "objectID": "materials/intro/slides.html#crossing-traditions-1",
+    "href": "materials/intro/slides.html#crossing-traditions-1",
+    "title": "Introduction toconjoint analysis",
+    "section": "Crossing traditions!",
+    "text": "Crossing traditions!\n\n\n\n\n\n\n\n\nChaudhry, Suparna, Marc Dotson, and Andrew Heiss. 2021. “Who Cares about Crackdowns? Exploring the Role of Trust in Individual Philanthropy.” Global Policy 12 (S5): 45–58. https://doi.org/10.1111/1758-5899.12984.\n\n\n\n\n\n\n\n\nChaudhry, Suparna, Marc Dotson, and Andrew Heiss. 2025. “Navigating Hostility: The Effect of Nonprofit Transparency and Accountability on Donor Preferences in the Face of Shrinking Civic Space.” Nonprofit and Voluntary Sector Quarterly, 1–27. https://doi.org/10.1177/08997640251348654."
+  },
+  {
+    "objectID": "materials/intro/slides.html#live-coding",
+    "href": "materials/intro/slides.html#live-coding",
+    "title": "Introduction toconjoint analysis",
+    "section": "Live coding",
+    "text": "Live coding\n\nHands-on practice with minimal lectures and slides per session.\n \nWe’ll work through live code together."
+  },
+  {
+    "objectID": "materials/intro/slides.html#section-4",
+    "href": "materials/intro/slides.html#section-4",
+    "title": "Introduction toconjoint analysis",
+    "section": "",
+    "text": "andhs.co/conjoint"
+  },
+  {
+    "objectID": "materials/intro/slides.html#course-outline",
+    "href": "materials/intro/slides.html#course-outline",
+    "title": "Introduction toconjoint analysis",
+    "section": "Course outline",
+    "text": "Course outline\n\n✅ Intro to conjoints\nDesigning conjoint experiments\nConjoint data and causal inference, part 1\nConjoint data and causal inference, part 2\nConjoint data and respondent preferences, part 1\nConjoint data and respondent preferences, part 2\nImplementing and fielding conjoint surveys, part 1\nImplementing and fielding conjoint surveys, part 2"
   }
 ]

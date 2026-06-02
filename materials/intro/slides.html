@@ -33,7 +33,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-185a0ff3bf636aec1275f971ddc9513c.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-1efe82b6588eff783a5000a69552ac80.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -145,7 +145,7 @@
 
 </section>
 <section>
-<section id="welcome" class="title-slide slide level1 center" data-background-color="#17486f" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
+<section id="welcome" class="title-slide slide level1 center" data-background-color="#c06636" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
 <h1>Welcome!</h1>
 
 </section>
@@ -359,9 +359,245 @@
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<countdown-timer class="countdown" id="timer_f303f110" minutes="4" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
+<countdown-timer class="countdown" id="timer_cd2e4fc8" minutes="4" seconds="0" update-every="1" tabindex="0" style="right:0;bottom:0;"></countdown-timer>
 </div>
 </div>
+</section></section>
+<section>
+<section id="what-is-conjoint-analysis" class="title-slide slide level1 center" data-background-color="#c06636" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
+<h1>What is conjoint analysis?</h1>
+
+</section>
+<section id="the-problem-of-preferences" class="slide level2">
+<h2>The problem of preferences</h2>
+<p>How do you measure what people <em>really</em> want?</p>
+<ul>
+<li class="fragment"><strong>Direct questions:</strong> “Do you care about the environment?” → Everyone says yes</li>
+<li class="fragment"><strong>Stated vs.&nbsp;revealed preference:</strong> What people say ≠ what they do</li>
+<li class="fragment"><strong>Single attributes:</strong> “Is healthcare important?” Of course! But <em>how</em> important vs.&nbsp;cost? Do they interact?</li>
+<li class="fragment"><strong>Ranking:</strong> People rank things differently depending on context</li>
+</ul>
+<div class="fragment">
+<p><strong>People make trade-offs</strong>. Survey experiments that don’t force trade-offs can give misleading answers.</p>
+</div>
+</section>
+<section id="ice-cream" class="slide level2">
+<h2>Ice cream!</h2>
+<p>It’s hot outside and you want to buy some ice cream. You go to your local ice cream shop and find a menu with all these possibilities:</p>
+<ul>
+<li>Vanilla, chocolate, or strawberry</li>
+<li>Served in a bowl or served in a waffle cone</li>
+<li>No extra toppings, topped with nuts, or topped with sprinkles</li>
+<li>Priced at $3, $4, or $5</li>
+</ul>
+<p><strong>Which kind do you want? Why?</strong></p>
+<div class="fragment">
+<p>No ice cream maximizes everyone’s happiness.</p>
+<p>There are too many trade-offs</p>
+</div>
+</section>
+<section id="what-is-conjoint-analysis-1" class="slide level2">
+<h2>What is conjoint analysis?</h2>
+<div class="box">
+<p>Conjoint analysis is a family of survey-based techniques where respondents evaluate or choose among hypothetical profiles described by multiple attributes, revealing their preferences through the trade-offs they make.</p>
+</div>
+<div class="fragment">
+<p><strong>conjoint</strong> = <em>considered jointly</em></p>
+<p>Respondents evaluate attributes <strong>together</strong> (as bundles), not separately</p>
+<p>Use statistics to uncover preferences from these bundles</p>
+</div>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="r-fit-text center">
+<p>&nbsp;</p>
+<p><a href="https://andhs.co/icecream">andhs.co/icecream</a></p>
+</div>
+</section></section>
+<section>
+<section id="where-did-it-come-from" class="title-slide slide level1 center" data-background-color="#c06636" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
+<h1>Where did it come from?</h1>
+
+</section>
+<section id="psychology-1960s" class="slide level2">
+<h2>Psychology (1960s)</h2>
+<div class="columns">
+<div class="column" style="width:65%;">
+<div class="text-tiny">
+<p>Luce, R. Duncan, and John W. Tukey. 1964. “Simultaneous Conjoint Measurement: A New Type of Fundamental Measurement.” <em>Journal of Mathematical Psychology</em> 1 (1): 1–27. <a href="https://doi.org/10.1016/0022-2496(64)90015-X" class="uri">https://doi.org/10.1016/0022-2496(64)90015-X</a>.</p>
+</div>
+<div class="fragment">
+<p>&nbsp;</p>
+<p>Originally developed to measure preferences of sets of features</p>
+</div>
+</div><div class="column" style="width:35%;">
+<p><img data-src="img/luce-tukey-min.png" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"></p>
+</div></div>
+</section>
+<section id="marketing-research-1970s" class="slide level2">
+<h2>Marketing research (1970s)</h2>
+<div class="columns">
+<div class="column" style="width:65%;">
+<div class="text-tiny">
+<p>Green, Paul E., and Vithala R. Rao. 1971. “Conjoint Measurement for Quantifying Judgmental Data.” <em>Journal of Marketing Research</em> 8 (3): 355. <a href="https://doi.org/10.2307/3149575" class="uri">https://doi.org/10.2307/3149575</a>.</p>
+</div>
+<div class="fragment">
+<p>Adapted to answer marketing questions:</p>
+<ul>
+<li>How should we price our product?</li>
+<li>Which features should we invest in?</li>
+<li>What product will maximize market share?</li>
+</ul>
+<p>Uses: consumer electronics, airlines, credit cards, pharmaceuticals, automobiles</p>
+</div>
+</div><div class="column" style="width:35%;">
+<p><img data-src="img/green-rao-min.png" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"></p>
+</div></div>
+</section>
+<section id="apple-vs.-samsung-2012" class="slide level2">
+<h2>Apple vs.&nbsp;Samsung (2012)</h2>
+<ul>
+<li class="fragment">Apple sued Samsung for patent infringement: copied features like sliding to unlock, search, autocorrect, pinch-to-zoom, etc.</li>
+<li class="fragment">Apple hired MIT marketing professor <a href="https://mitmgmtfaculty.mit.edu/jhauser/">John Hauser</a> to measure value of those features</li>
+<li class="fragment">Conjoint experiment analyzed with a hierarchical Bayesian model</li>
+<li class="fragment">Consumers would be willing to spend between $32–$102 extra for these features</li>
+<li class="fragment">These results (and other bits of evidence) scaled up to $2 billion in damages awarded to Apple</li>
+</ul>
+</section>
+<section id="causal-inference-2010s" class="slide level2">
+<h2>Causal inference (2010s)</h2>
+<div class="columns">
+<div class="column" style="width:65%;">
+<div class="text-tiny">
+<p>Hainmueller, Jens, Daniel J. Hopkins, and Teppei Yamamoto. 2014. “Causal Inference in Conjoint Analysis: Understanding Multidimensional Choices via Stated Preference Experiments.” <em>Political Analysis</em> 22 (1): 1–30. <a href="https://doi.org/10.1093/pan/mpt024" class="uri">https://doi.org/10.1093/pan/mpt024</a>.</p>
+</div>
+<div class="fragment">
+<p><strong>Instead of analyzing a whole constellation of attributes, look at specific levers individually.</strong></p>
+</div>
+<div class="fragment">
+<p>Conjoints are like RCTs, just fancier.</p>
+<p>Since treatment assignment is random, we can find the effect on the selection of probability (or favorability) when changing an attribute.</p>
+<p>Uses: Measure effects of political candidate characteristics, issue salience, organization characteristics</p>
+</div>
+</div><div class="column" style="width:35%;">
+<p><img data-src="img/hainmueller-et-al-min.png" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;"></p>
+</div></div>
+</section>
+<section id="section-1" class="slide level2 r-stretch center">
+<h2></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/leeper-et-al-2019_fig1_excerpt.svg" class="quarto-figure quarto-figure-center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;;width:100.0%"></p>
+</figure>
+</div>
+</section></section>
+<section>
+<section id="what-can-we-estimate-with-it" class="title-slide slide level1 center" data-background-color="#c06636" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
+<h1>What can we estimate with it?</h1>
+
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column fragment">
+<h3 id="preferences">Preferences</h3>
+<p><strong>Marketing</strong></p>
+<ul>
+<li>How much do people value the overall constellation of features?</li>
+<li>What product will sell best?</li>
+<li>What are people willing to pay for this feature?</li>
+<li>Estimands: <strong>utilities, attribute importance, willingness to pay, market shares and simulations</strong></li>
+</ul>
+</div><div class="column fragment">
+<h3 id="causal-inference">Causal inference</h3>
+<p><strong>Social science</strong></p>
+<ul>
+<li>Does feature X make people more or less likely to choose a “product”?</li>
+<li>What is the average causal effect of a specific feature?</li>
+<li>Estimands: <strong>average marginal component effect (AMCE), marginal means, average feature choice probability (AFCP)</strong></li>
+</ul>
+</div></div>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<div class="r-fit-text center">
+<p>&nbsp;</p>
+<p>Same data and same models,</p>
+<p>completely different estimands</p>
+</div>
+</section>
+<section id="crossing-traditions" class="slide level2">
+<h2>Crossing traditions!</h2>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/who-cares-min.png" class="quarto-figure quarto-figure-center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;;width:75.0%"></p>
+</figure>
+</div>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/navigating-hostility-min.png" class="quarto-figure quarto-figure-center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;;width:75.0%"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="crossing-traditions-1" class="slide level2">
+<h2>Crossing traditions!</h2>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/who-cares-results-min.png" class="quarto-figure quarto-figure-center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;;width:100.0%"></p>
+</figure>
+</div>
+<div class="text-tiny">
+<p>Chaudhry, Suparna, Marc Dotson, and Andrew Heiss. 2021. “Who Cares about Crackdowns? Exploring the Role of Trust in Individual Philanthropy.” <em>Global Policy</em> 12 (S5): 45–58. <a href="https://doi.org/10.1111/1758-5899.12984" class="uri">https://doi.org/10.1111/1758-5899.12984</a>.</p>
+</div>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/navigating-hostility-results-min.png" class="quarto-figure quarto-figure-center" style="box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); border-radius: 5px;;width:75.0%"></p>
+</figure>
+</div>
+<div class="text-tiny">
+<p>Chaudhry, Suparna, Marc Dotson, and Andrew Heiss. 2025. “Navigating Hostility: The Effect of Nonprofit Transparency and Accountability on Donor Preferences in the Face of Shrinking Civic Space.” <em>Nonprofit and Voluntary Sector Quarterly</em>, 1–27. <a href="https://doi.org/10.1177/08997640251348654" class="uri">https://doi.org/10.1177/08997640251348654</a>.</p>
+</div>
+</div></div>
+</section></section>
+<section>
+<section id="roadmap-for-the-workshop" class="title-slide slide level1 center" data-background-color="#c06636" data-background-image="../../img/background-hex-shapes.svg" data-background-opacity="0.5">
+<h1>Roadmap for the workshop</h1>
+
+</section>
+<section id="live-coding" class="slide level2">
+<h2>Live coding</h2>
+<div class="r-fit-text center">
+<p><strong>Hands-on practice</strong> with minimal lectures<br> and slides per session.</p>
+<p>&nbsp;</p>
+<p>We’ll work through live code together.</p>
+</div>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<div class="r-fit-text center">
+<p>&nbsp;</p>
+<p><a href="https://andhs.co/conjoint">andhs.co/conjoint</a></p>
+</div>
+</section>
+<section id="course-outline" class="slide level2">
+<h2>Course outline</h2>
+<ul>
+<li>✅ <del>Intro to conjoints</del></li>
+<li>Designing conjoint experiments</li>
+<li>Conjoint data and causal inference, part 1</li>
+<li>Conjoint data and causal inference, part 2</li>
+<li>Conjoint data and respondent preferences, part 1</li>
+<li>Conjoint data and respondent preferences, part 2</li>
+<li>Implementing and fielding conjoint surveys, part 1</li>
+<li>Implementing and fielding conjoint surveys, part 2</li>
+</ul>
 
 
 </section></section>
@@ -523,7 +759,7 @@
         hideCursorTime: 5000,
 
         // Opens links in an iframe preview overlay
-        previewLinks: true,
+        previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
         transition: 'none',

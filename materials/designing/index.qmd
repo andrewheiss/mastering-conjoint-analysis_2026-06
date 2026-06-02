@@ -4,13 +4,12 @@ title: "Designing conjoint experiments"
 
 ## Slides
 
-<p style="line-height: 2.5"><a class="btn btn-success btn-sm" target="_blank" href="slides.html">{{< fa arrow-up-right-from-square >}} &ensp;Open slides in new window</a> <a class="btn btn-success btn-sm" target="_blank" href="slides.pdf" role="button">{{< fa file-pdf >}} &ensp;Download PDF of slides</a></p>
+No slides for this one! But we will use these: 
 
-```{=html}
-<div class="ratio ratio-16x9">
-<iframe class="slide-deck" src="slides.html" style="border: 1px solid #343a40;"></iframe>
-</div>
-```
+- [Statistical testing in null worlds](https://nullworlds.andrewheiss.com/)
+- [{cbcTools}](https://jhelvy.github.io/cbcTools/)
+
+![](img/flowchart.png)
 
 ## Exercises and materials
 

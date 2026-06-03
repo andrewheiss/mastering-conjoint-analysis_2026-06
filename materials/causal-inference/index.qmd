@@ -15,3 +15,9 @@ title: "Analyzing conjoint data for causal inference"
 ## Exercises and materials
 
 We'll be working through `02-1_causal-conjoints_exercise.qmd` and `02-2_causal-conjoints_exercise.qmd` together. Make sure you [grab the latest version of the workshop materials](https://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06) first!
+
+Download the pre-run Bayesian models:
+
+- [`models.zip`](https://osf.io/k347f/files/osfstorage/6a202d3db9ccd028637df40e)
+
+Unzip that file and put `model_cand_brms.rds` and `model_cand_brms_mega.rds` in the `models/` folder in your project. This will make it so you don't have re-run the models on your computer.

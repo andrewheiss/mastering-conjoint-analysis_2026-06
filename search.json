@@ -208,7 +208,7 @@
     "href": "materials/causal-inference/index.html#exercises-and-materials",
     "title": "Analyzing conjoint data for causal inference",
     "section": "Exercises and materials",
-    "text": "Exercises and materials\nWe’ll be working through 02-1_causal-conjoints_exercise.qmd and 02-2_causal-conjoints_exercise.qmd together. Make sure you grab the latest version of the workshop materials first!\nDownload the pre-run Bayesian models:\n\nmodels.zip\n\nUnzip that file and put model_cand_brms.rds and model_cand_brms_mega.rds in the models/ folder in your project. This will make it so you don’t have re-run the models on your computer.",
+    "text": "Exercises and materials\nWe’ll be working through 02-1_causal-conjoints_exercise.qmd and 02-2_causal-conjoints_exercise.qmd together. Make sure you grab the latest version of the workshop materials first!\nDownload the pre-run Bayesian models:\n\nmodels.zip\n\nUnzip that file and put model_cand_brms.rds and model_cand_brms_mega.rds in the models/ folder in your project. This will make it so you don’t have re-run the models on your computer.\nHere’s a helpful little illustration of the offset-approach to multilevel models.",
     "crumbs": [
       "Materials",
       "Causal inference analysis"

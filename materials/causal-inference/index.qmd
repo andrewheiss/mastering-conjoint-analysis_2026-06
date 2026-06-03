@@ -21,3 +21,5 @@ Download the pre-run Bayesian models:
 - [`models.zip`](https://osf.io/k347f/files/osfstorage/6a202d3db9ccd028637df40e)
 
 Unzip that file and put `model_cand_brms.rds` and `model_cand_brms_mega.rds` in the `models/` folder in your project. This will make it so you don't have re-run the models on your computer.
+
+[Here's a helpful little illustration](https://andrewheiss.quarto.pub/random-effects-and-marginaleffects/) of the offset-approach to multilevel models.

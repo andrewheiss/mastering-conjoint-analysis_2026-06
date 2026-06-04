@@ -4,14 +4,23 @@ title: "Implementing and fielding conjoint surveys"
 
 ## Slides
 
-<p style="line-height: 2.5"><a class="btn btn-success btn-sm" target="_blank" href="slides.html">{{< fa arrow-up-right-from-square >}} &ensp;Open slides in new window</a> <a class="btn btn-success btn-sm" target="_blank" href="slides.pdf" role="button">{{< fa file-pdf >}} &ensp;Download PDF of slides</a></p>
-
-```{=html}
-<div class="ratio ratio-16x9">
-<iframe class="slide-deck" src="slides.html" style="border: 1px solid #343a40;"></iframe>
-</div>
-```
+No slides for this one! 
 
 ## Exercises and materials
 
 We'll be building a survey together with [{surveydown}](https://surveydown.org/). Make sure you [grab the latest version of the workshop materials](https://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06) first!
+
+We will use these: 
+
+- [Posit Connect Cloud](https://connect.posit.cloud/)
+- [{surveydown}](https://surveydown.org/)
+- [{sdstudio}](https://sdstudio.surveydown.org/)
+- [{cbcTools}](https://jhelvy.github.io/cbcTools/)
+
+Make sure you install the latest development version of {sruveydown} and {sdstudio}:
+
+```{.r}
+# install.packages("pak")
+pak::pak('surveydown-dev/surveydown')
+pak::pak("surveydown-dev/sdstudio")
+```

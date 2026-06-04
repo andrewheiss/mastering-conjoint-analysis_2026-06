@@ -4,21 +4,28 @@ title: "Analyzing conjoint data for respondent preferences"
 
 ## Slides
 
-<p style="line-height: 2.5"><a class="btn btn-success btn-sm" target="_blank" href="slides.html">{{< fa arrow-up-right-from-square >}} &ensp;Open slides in new window</a> <a class="btn btn-success btn-sm" target="_blank" href="slides.pdf" role="button">{{< fa file-pdf >}} &ensp;Download PDF of slides</a></p>
-
-```{=html}
-<div class="ratio ratio-16x9">
-<iframe class="slide-deck" src="slides.html" style="border: 1px solid #343a40;"></iframe>
-</div>
-```
+No slides for this one!
 
 ## Exercises and materials
 
 We'll be working through these things together:
 
 - `03-1_preference-conjoints_exercise.qmd`
-- `03-2_preference-conjoints_exercise.qmd`
+- `03-2_preferences-hierarchical-bayes.qmd`
 - `03-3_shiny-example.qmd`
 - `03-4_market-simulator.qmd`
 
 Make sure you [grab the latest version of the workshop materials](https://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06) first!
+
+Download the pre-run Bayesian models:
+
+- [`models.zip`](https://osf.io/k347f/files/osfstorage/6a21863dd477d86f790bd14b)
+
+Unzip that file and put these:
+
+- `model_brms_minivan_carpool.rds`
+- `model_brms_minivan_hb.rds`
+- `model_brms_minivan_wtp.rds`
+- `model_brms_minivan.rds`
+
+…in the `models/` folder in your project. This will make it so you don't have re-run the models on your computer.

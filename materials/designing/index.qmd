@@ -4,13 +4,15 @@ title: "Designing conjoint experiments"
 
 ## Slides
 
-No slides for this one! But we will use these: 
+No slides for this one!
+
+## Exercises and materials
+
+Make sure you [grab the latest version of the workshop materials](https://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06) first!
+
+We will use these resources: 
 
 - [Statistical testing in null worlds](https://nullworlds.andrewheiss.com/)
 - [{cbcTools}](https://jhelvy.github.io/cbcTools/)
 
 ![](img/flowchart.png)
-
-## Exercises and materials
-
-Make sure you [grab the latest version of the workshop materials](https://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06) first!

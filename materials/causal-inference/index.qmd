@@ -18,8 +18,13 @@ We'll be working through `02-1_causal-conjoints_exercise.qmd` and `02-2_causal-c
 
 Download the pre-run Bayesian models:
 
-- [`models.zip`](https://osf.io/k347f/files/osfstorage/6a202d3db9ccd028637df40e)
+- [`models.zip`](https://osf.io/k347f/files/osfstorage/6a21863dd477d86f790bd14b)
 
-Unzip that file and put `model_cand_brms.rds` and `model_cand_brms_mega.rds` in the `models/` folder in your project. This will make it so you don't have re-run the models on your computer.
+Unzip that file and put these:
+
+- `model_cand_brms.rds`
+- `model_cand_brms_mega.rds`
+
+…in the `models/` folder in your project. This will make it so you don't have re-run the models on your computer.
 
 [Here's a helpful little illustration](https://andrewheiss.quarto.pub/random-effects-and-marginaleffects/) of the offset-approach to multilevel models.

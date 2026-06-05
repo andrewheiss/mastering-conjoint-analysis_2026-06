@@ -8,6 +8,8 @@ No slides for this one!
 
 ## Exercises and materials
 
+(*Here's the code for the survey we took on the first day.*)[https://github.com/andrewheiss/ice-cream-conjoint]
+
 We'll be building a survey together with [{surveydown}](https://surveydown.org/). Make sure you [grab the latest version of the workshop materials](https://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06) first!
 
 We will use these: 
@@ -16,6 +18,7 @@ We will use these:
 - [{surveydown}](https://surveydown.org/)
 - [{sdstudio}](https://sdstudio.surveydown.org/)
 - [{cbcTools}](https://jhelvy.github.io/cbcTools/)
+- [supabase](https://supabase.com/)
 
 Make sure you install the latest development version of {sruveydown} and {sdstudio}:
 

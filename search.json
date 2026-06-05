@@ -223,7 +223,7 @@
     "href": "materials/implementing/index.html#exercises-and-materials",
     "title": "Implementing and fielding conjoint surveys",
     "section": "Exercises and materials",
-    "text": "Exercises and materials\n(Here’s the code for the survey we took on the first day.)[https://github.com/andrewheiss/ice-cream-conjoint]\nWe’ll be building a survey together with {surveydown}. Make sure you grab the latest version of the workshop materials first!\nWe will use these:\n\nPosit Connect Cloud\n{surveydown}\n{sdstudio}\n{cbcTools}\nsupabase\n\nMake sure you install the latest development version of {sruveydown} and {sdstudio}:\n# install.packages(\"pak\")\npak::pak('surveydown-dev/surveydown')\npak::pak(\"surveydown-dev/sdstudio\")",
+    "text": "Exercises and materials\nHere’s the code for the survey we took on the first day.\nWe’ll be building a survey together with {surveydown}. Make sure you grab the latest version of the workshop materials first!\nWe will use these:\n\nPosit Connect Cloud\n{surveydown}\n{sdstudio}\n{cbcTools}\nsupabase\n\nMake sure you install the latest development version of {sruveydown} and {sdstudio}:\n# install.packages(\"pak\")\npak::pak('surveydown-dev/surveydown')\npak::pak(\"surveydown-dev/sdstudio\")",
     "crumbs": [
       "Materials",
       "Implementing and fielding conjoint surveys"

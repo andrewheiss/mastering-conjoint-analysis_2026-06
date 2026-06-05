@@ -223,7 +223,7 @@
     "href": "materials/implementing/index.html#exercises-and-materials",
     "title": "Implementing and fielding conjoint surveys",
     "section": "Exercises and materials",
-    "text": "Exercises and materials\nWe’ll be building a survey together with {surveydown}. Make sure you grab the latest version of the workshop materials first!\nWe will use these:\n\nPosit Connect Cloud\n{surveydown}\n{sdstudio}\n{cbcTools}\n\nMake sure you install the latest development version of {sruveydown} and {sdstudio}:\n# install.packages(\"pak\")\npak::pak('surveydown-dev/surveydown')\npak::pak(\"surveydown-dev/sdstudio\")",
+    "text": "Exercises and materials\n(Here’s the code for the survey we took on the first day.)[https://github.com/andrewheiss/ice-cream-conjoint]\nWe’ll be building a survey together with {surveydown}. Make sure you grab the latest version of the workshop materials first!\nWe will use these:\n\nPosit Connect Cloud\n{surveydown}\n{sdstudio}\n{cbcTools}\nsupabase\n\nMake sure you install the latest development version of {sruveydown} and {sdstudio}:\n# install.packages(\"pak\")\npak::pak('surveydown-dev/surveydown')\npak::pak(\"surveydown-dev/sdstudio\")",
     "crumbs": [
       "Materials",
       "Implementing and fielding conjoint surveys"
@@ -470,6 +470,17 @@
     "title": "Analyzing conjoint data for respondent preferences",
     "section": "Exercises and materials",
     "text": "Exercises and materials\nWe’ll be working through these things together:\n\n03-1_preference-conjoints_exercise.qmd\n03-2_preferences-hierarchical-bayes.qmd\n03-3_shiny-example.qmd\n03-4_market-simulator.qmd\n\nMake sure you grab the latest version of the workshop materials first!\nDownload the pre-run Bayesian models:\n\nmodels.zip\n\nUnzip that file and put these:\n\nmodel_brms_minivan_carpool.rds\nmodel_brms_minivan_hb.rds\nmodel_brms_minivan_wtp.rds\nmodel_brms_minivan.rds\n\n…in the models/ folder in your project. This will make it so you don’t have re-run the models on your computer.",
+    "crumbs": [
+      "Materials",
+      "Preference analysis"
+    ]
+  },
+  {
+    "objectID": "materials/preferences/index.html#crash-course-in-shiny",
+    "href": "materials/preferences/index.html#crash-course-in-shiny",
+    "title": "Analyzing conjoint data for respondent preferences",
+    "section": "Crash course in Shiny",
+    "text": "Crash course in Shiny\n\nGeneral resources\n\nWelcome to Shiny\nShiny components\nShiny layouts\n{bslib}\n\n\n\nShinylive\n\n{shinylive}\nShinylive examples\nShinylive Quarto extension\nWebR and Quarto Live\nwebRios and webRoid\n\n\n\nPublishing\n\nPosit Connect Cloud\n\n\n\nBare minimum app skeleton\nlibrary(shiny)\nlibrary(bslib)\n\n# Define UI ----\nui &lt;- page_sidebar(\n \n)\n\n# Define server logic ----\nserver &lt;- function(input, output) {\n\n}\n\n# Run the app ----\nshinyApp(ui = ui, server = server)",
     "crumbs": [
       "Materials",
       "Preference analysis"

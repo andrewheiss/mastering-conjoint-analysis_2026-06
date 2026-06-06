@@ -1,0 +1,34 @@
+---
+title: "Extra resources and readings"
+---
+
+## My pair of papers using the same experiment
+
+- **Marketing-style estimands** (preferences, market shares): Chaudhry, Suparna, Marc Dotson, and Andrew Heiss. 2021. "Who Cares about Crackdowns? Exploring the Role of Trust in Individual Philanthropy." *Global Policy* 12 (S5): 45–58. <https://doi.org/10.1111/1758-5899.12984> | ([preprint](https://www.andrewheiss.com/research/articles/chaudhry-dotson-heiss-2021/)).
+- **Causal inference-style estimands** (marginal means, average marginal component effects): Chaudhry, Suparna, Marc Dotson, and Andrew Heiss. 2025. "Navigating Hostility: The Effect of Nonprofit Transparency and Accountability on Donor Preferences in the Face of Shrinking Civic Space." *Nonprofit and Voluntary Sector Quarterly*, 1–27. <https://doi.org/10.1177/08997640251348654> | ([preprint](https://www.andrewheiss.com/research/articles/chaudhry-dotson-heiss-navigating-hostility-2025/)).
+
+## Other tutorials
+
+- [The ultimate practical guide to conjoint analysis with R](https://www.andrewheiss.com/blog/2023/07/25/conjoint-bayesian-frequentist-guide/)
+- [The ultimate practical guide to multilevel multinomial conjoint analysis with R](https://www.andrewheiss.com/blog/2023/08/12/conjoint-multilevel-multinomial-guide/)
+- [Conjoint Experiments](https://marginaleffects.com/bonus/conjoint.html)
+
+## Causal inference-focused resources
+
+- **Original paper that launched the conjoint causal revolution**: Hainmueller, Jens, Daniel J. Hopkins, and Teppei Yamamoto. 2014. "Causal Inference in Conjoint Analysis: Understanding Multidimensional Choices via Stated Preference Experiments." *Political Analysis* 22 (1): 1–30. <https://doi.org/10.1093/pan/mpt024>.
+- **Be careful about relying only on AMCEs; their differences are illusory because of reference cases**: Leeper, Thomas J., Sara B. Hobolt, and James Tilley. 2020. "Measuring Subgroup Preferences in Conjoint Experiments." *Political Analysis* 28 (2): 207–21. <https://doi.org/10.1017/pan.2019.30>.
+- **Use Bayesian multilevel models to get richer information about about respondent-level details**: Jensen, Amalie, William Marble, Kenneth Scheve, and Matthew J. Slaughter. 2021. "City Limits to Partisan Polarization in the American Public." *Political Science Research and Methods* 9 (2): 223–41. <https://doi.org/10.1017/psrm.2020.56>.
+- **Consider the Average Feature Choice Probability (AFCP) as an alternative to AMCEs to better account for preference transitivity**: Abramson, Scott F., Korhan Kocak, Asya Magazinnik, and Anton Strezhnev. 2024. "Aggregation, Interpretation, and Estimation of Preferences in Conjoint Experiments." Preprint, *SocArXiv*, October 1. <https://doi.org/10.31235/osf.io/xjre9>.
+- **Consider the Average Component Preference (ACP) as an alternative to AMCEs when looking at preferences**: Ganter, Flavien. 2023. "Identification of Preferences in Forced-Choice Conjoint Experiments: Reassessing the Quantity of Interest." *Political Analysis* 31 (1): 98–112. <https://doi.org/10.1017/pan.2021.41>.
+
+### Packages
+
+- [{projoint}](https://yhoriuchi.github.io/projoint/): Quick ways to calculate marginal means and AMCEs (a successor to [{cregg}](https://thomasleeper.com/cregg/))
+
+## Marketing-focused resources
+
+- Chapman, Chris, and Elea McDonnell Feit. 2019. *R for Marketing Research and Analytics*. 2nd ed. <https://doi.org/10.1007/978-3-030-14316-9>.
+
+### Packages
+
+- [{logitr}](https://jhelvy.github.io/logitr/index.html): Quick ways to calculate preferences, WTPs, and market shares

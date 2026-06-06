@@ -59,6 +59,8 @@ website:
           - text: Implementing and fielding conjoint surveys
             href: "materials/implementing/index.qmd"
       
+      - resources.qmd
+
       - colophon.qmd
 
   page-footer:

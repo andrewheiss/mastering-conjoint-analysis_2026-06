@@ -1,0 +1,117 @@
+---
+title: Colophon
+freeze: false
+format:
+  html:
+    knitr:
+      opts_chunk:
+        dev-args:
+          bg: "transparent"
+---
+
+```{r}
+#| label: packages-functions
+#| include: false
+
+library(tidyverse)
+library(scales)
+
+show_nice_pal <- function(pal, nrow = 1, show_text = TRUE) {
+  out <- tibble(x = 1:length(pal), color = pal) |>
+    mutate(color = fct_inorder(color)) |>
+    ggplot(aes(x = color, y = 1, fill = color)) +
+    geom_tile() +
+    scale_x_discrete(expand = c(0, 0)) +
+    scale_fill_identity() +
+    facet_wrap(vars(x), scales = "free_x", nrow = nrow) +
+    theme_void(base_family = "Inconsolata") +
+    theme(
+      panel.spacing.x = unit(-1, units = "pt"),
+      panel.spacing.y = unit(-0.5, units = "lines"),
+      strip.text = element_blank()
+    )
+
+  if (show_text) {
+    out <- out +
+      theme(
+        axis.text.x = element_text(margin = margin(b = 5)),
+        panel.spacing.y = unit(0, units = "lines")
+      )
+  }
+
+  return(out)
+}
+
+time_updated <- format(
+  lubridate::now(tzone = "America/New_York"),
+  "%F at %T US Eastern"
+)
+```
+
+::: {.dictionary-entry}
+
+[colophon]{.headword} [(noun)]{.part-of-speech}
+
+[col&thinsp;•&thinsp;o&thinsp;•&thinsp;phon&emsp;/ˈkä-lə-fən, -fän/&emsp;/ˈkɒləfən, -fɒn/]{.pronunciation}
+
+1. an inscription at the end of a book or manuscript containing information about its production
+2. this page
+
+:::
+
+## Technology
+
+- **Last built**: `{r} time_updated`
+- **Software**: Quarto version {{< version >}} and {{< fa brands r-project >}} `{r} R.version$version.string`
+- **Hosting**: Hosted at [{{< fa brands github >}} GitHub Pages](https://andrewheiss.github.io/mastering-conjoint-analysis_2026-06/) and built and deployed using [{{< fa brands github >}} GitHub Actions](https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/blob/main/.github/workflows/publish.yml)
+
+
+## Design
+
+The typography, colors, and custom CSS settings are all controlled with [this `_brand.yml` file](https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/blob/main/_brand.yml):
+
+<details>
+<summary>Show `_brand.yml` for this site</summary>
+
+```{.yaml filename="_brand.yml"}
+{{< include _brand.yml >}}
+```
+
+</details>
+
+[(See more about brand.yml [here](https://posit-dev.github.io/brand-yml/)).]{.small}
+
+
+### Typefaces
+
+I use [Lato](https://en.wikipedia.org/wiki/Lato_(typeface)) [([Google Fonts](https://fonts.google.com/specimen/Lato))]{.small} as the main body font throughout the site, and I use [Aleo](https://alessiolaiso.com/aleo-font){style="font-family: 'Aleo'"} [([Google Fonts](https://fonts.google.com/specimen/Aleo))]{.small} for all headings.
+
+::: {.font-example}
+[A heading]{.fake-heading}
+
+Whereas recognition of the *inherent dignity* and of the ***equal and inalienable*** rights of all members of the human family is the foundation of freedom, justice and peace in the world…
+:::
+
+### Colors
+
+The colors for this course website come primarily from the ["Tiepolo" palette](https://github.com/BlakeRMills/MetBrewer#tiepolo) from [the {MetBrewer} R package](https://github.com/BlakeRMills/MetBrewer). The colors come from "The Glorification of the Barbaro Family" (1750) by Giovanni Battista Tiepolo.
+
+::: {.column-margin}
+![The Glorification of the Barbaro Family, 1750, Giovanni Battista Tiepolo, Italian, [Met link](https://www.metmuseum.org/art/collection/search/437798).](img/tiepolo.jpg){width="100%" fig-align="left"}
+:::
+
+```{r}
+#| label: show-tiepolo
+#| fig-width: 8
+#| fig-height: 1
+#| out-width: 100%
+#| echo: false
+
+MetBrewer::met.brewer("Tiepolo") |> 
+  show_nice_pal(show_text = TRUE, nrow = 1)
+```
+
+
+## License and credits
+
+All the materials and content for this course are licensed under [{{< fa brands creative-commons >}} Creative Commons CC-BY-SA {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}}](https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/blob/main/LICENSE.md).

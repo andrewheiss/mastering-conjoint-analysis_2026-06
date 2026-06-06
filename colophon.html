@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mastering Conjoint Analysis</title>
+<title>Colophon – Mastering Conjoint Analysis</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -80,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -118,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./colophon.html">Colophon</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -132,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
@@ -191,7 +226,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./colophon.html" class="sidebar-item-text sidebar-link">
+  <a href="./colophon.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Colophon</span></a>
   </div>
 </li>
@@ -205,19 +240,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
-  <li><a href="#instructor" id="toc-instructor" class="nav-link" data-scroll-target="#instructor">Instructor</a></li>
+  <li><a href="#technology" id="toc-technology" class="nav-link active" data-scroll-target="#technology">Technology</a></li>
+  <li><a href="#design" id="toc-design" class="nav-link" data-scroll-target="#design">Design</a>
+  <ul class="collapse">
+  <li><a href="#typefaces" id="toc-typefaces" class="nav-link" data-scroll-target="#typefaces">Typefaces</a></li>
+  <li><a href="#colors" id="toc-colors" class="nav-link" data-scroll-target="#colors">Colors</a></li>
+  </ul></li>
+  <li><a href="#license-and-credits" id="toc-license-and-credits" class="nav-link" data-scroll-target="#license-and-credits">License and credits</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/blob/main/colophon.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Mastering Conjoint Analysis</h1>
-<p class="subtitle lead">Statistical Horizons Course</p>
+<h1 class="title">Colophon</h1>
 </div>
 
 
@@ -225,12 +263,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Course dates</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">June 2-5, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -240,133 +272,170 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="img/conjoint-banner.png" class="img-fluid"></p>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Conjoint experiments have become a popular tool in both social science and marketing research for understanding how people make decisions and what attributes matter most in their choices. Originally developed by marketers to measure consumer preferences for new products, conjoint analysis has expanded into political science, economics, sociology, and other fields as a powerful method for testing multiple causal effects simultaneously and eliciting respondent preferences. With a single well-designed survey, you can answer complex research questions about decision-making that would require dozens of traditional experiments.</p>
-<p>In this course, you’ll learn the theory behind forced choice conjoint experiments, how to design studies that answer your research questions, how to program and field these survey experiments in online platforms, and how to analyze and visualize the results using open source tools like R, Quarto, {marginaleffects}, and {ggplot2}. You’ll explore key causal estimands like average marginal component effects (AMCEs) and marginal means (MMs), as well as preference-focused measures like part-worth utilities and willingness-to-pay. By the end of the course, you’ll be able to design and field your own conjoint experiments, analyze the results with appropriate methods, and communicate your findings effectively with publication-ready tables and figures.</p>
+<div class="dictionary-entry">
+<p><span class="headword">colophon</span> <span class="part-of-speech">(noun)</span></p>
+<p><span class="pronunciation">col • o • phon /ˈkä-lə-fən, -fän/ /ˈkɒləfən, -fɒn/</span></p>
+<ol type="1">
+<li>an inscription at the end of a book or manuscript containing information about its production</li>
+<li>this page</li>
+</ol>
+</div>
+<section id="technology" class="level2">
+<h2 class="anchored" data-anchor-id="technology">Technology</h2>
+<ul>
+<li><strong>Last built</strong>: 2026-06-05 at 23:37:00 US Eastern</li>
+<li><strong>Software</strong>: Quarto version 1.9.38 and <i class="fa-brands fa-r-project" aria-label="r-project"></i> R version 4.5.1 (2025-06-13)</li>
+<li><strong>Hosting</strong>: Hosted at <a href="https://andrewheiss.github.io/mastering-conjoint-analysis_2026-06/"><i class="fa-brands fa-github" aria-label="github"></i> GitHub Pages</a> and built and deployed using <a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/blob/main/.github/workflows/publish.yml"><i class="fa-brands fa-github" aria-label="github"></i> GitHub Actions</a></li>
+</ul>
 </section>
-<section id="schedule" class="level2">
-<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
-<p>All times are US Eastern (New York) time:</p>
-<div class="cell">
+<section id="design" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="design">Design</h2>
+<p>The typography, colors, and custom CSS settings are all controlled with <a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/blob/main/_brand.yml">this <code>_brand.yml</code> file</a>:</p>
+<details>
+<summary>
+Show <code>_brand.yml</code> for this site
+</summary>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>_brand.yml</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="_brand.yml"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># _brand.yml for conjoint analysis course</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">meta</span><span class="kw">:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Conjoint analysis course</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">license</span><span class="kw">:</span><span class="at"> CC BY-SA 4.0</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">link</span><span class="kw">:</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">home</span><span class="kw">:</span><span class="at"> https://www.andrewheiss.com/</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">color</span><span class="kw">:</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  # Colors from MetBrewer::met.brewer("Tiepolo")</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">palette</span><span class="kw">:</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">blue</span><span class="kw">:</span><span class="at"> </span><span class="st">"#17486f"</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">red</span><span class="kw">:</span><span class="at"> </span><span class="st">"#802417"</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">orange</span><span class="kw">:</span><span class="at"> </span><span class="st">"#c06636"</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">yellow</span><span class="kw">:</span><span class="at"> </span><span class="st">"#e8b960"</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">green</span><span class="kw">:</span><span class="at"> </span><span class="st">"#646e3b"</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">teal</span><span class="kw">:</span><span class="at"> </span><span class="st">"#2b5851"</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">cyan</span><span class="kw">:</span><span class="at"> </span><span class="st">"#508ea2"</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">gray-100</span><span class="kw">:</span><span class="at"> </span><span class="st">"#f8f9fa"</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">gray-200</span><span class="kw">:</span><span class="at"> </span><span class="st">"#e9ecef"</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">gray-300</span><span class="kw">:</span><span class="at"> </span><span class="st">"#dddddd"</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">gray-400</span><span class="kw">:</span><span class="at"> </span><span class="st">"#ced4da"</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">gray-500</span><span class="kw">:</span><span class="at"> </span><span class="st">"#adb5bd"</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">gray-600</span><span class="kw">:</span><span class="at"> </span><span class="st">"#868e96"</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">gray-700</span><span class="kw">:</span><span class="at"> </span><span class="st">"#495057"</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">gray-800</span><span class="kw">:</span><span class="at"> </span><span class="st">"#343a40"</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">gray-900</span><span class="kw">:</span><span class="at"> </span><span class="st">"#212529"</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">off-white</span><span class="kw">:</span><span class="at"> </span><span class="st">"#F5F5F5"</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">black</span><span class="kw">:</span><span class="at"> </span><span class="st">"#111111"</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">foreground</span><span class="kw">:</span><span class="at"> black</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">background</span><span class="kw">:</span><span class="at"> off-white</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">dark</span><span class="kw">:</span><span class="at"> black</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">primary</span><span class="kw">:</span><span class="at"> blue</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">secondary</span><span class="kw">:</span><span class="at"> cyan</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">danger</span><span class="kw">:</span><span class="at"> red</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">warning</span><span class="kw">:</span><span class="at"> yellow</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">info</span><span class="kw">:</span><span class="at"> teal</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">success</span><span class="kw">:</span><span class="at"> green</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="fu">typography</span><span class="kw">:</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">fonts</span><span class="kw">:</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Lato</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">source</span><span class="kw">:</span><span class="at"> google</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">weight</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="dv">400</span><span class="kw">,</span><span class="at"> </span><span class="dv">700</span><span class="kw">]</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Aleo</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">source</span><span class="kw">:</span><span class="at"> google</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">weight</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="dv">400</span><span class="kw">,</span><span class="at"> </span><span class="dv">700</span><span class="kw">]</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">base</span><span class="kw">:</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Lato</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">weight</span><span class="kw">:</span><span class="at"> </span><span class="dv">400</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">headings</span><span class="kw">:</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Aleo</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">weight</span><span class="kw">:</span><span class="at"> </span><span class="dv">700</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">color</span><span class="kw">:</span><span class="at"> red</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">link</span><span class="kw">:</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">weight</span><span class="kw">:</span><span class="at"> </span><span class="dv">700</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">color</span><span class="kw">:</span><span class="at"> orange</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">decoration</span><span class="kw">:</span><span class="at"> none</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="fu">defaults</span><span class="kw">:</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">bootstrap</span><span class="kw">:</span></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">functions</span><span class="kw">:</span><span class="co"> # string with SCSS functions</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">defaults</span><span class="kw">:</span><span class="co">  # list of Bootstrap Sass variables to override</span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">link-hover-color</span><span class="kw">:</span><span class="at"> $brand-yellow</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">code-color</span><span class="kw">:</span><span class="at"> $brand-cyan</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">font-family-headings</span><span class="kw">:</span><span class="at"> Aleo</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">navbar-font-family</span><span class="kw">:</span><span class="at"> Aleo</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">navbar-hl</span><span class="kw">:</span><span class="at"> $brand-orange</span></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="co">      # navbar-bg: $brand-blue</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">navbar-fg</span><span class="kw">:</span><span class="at"> </span><span class="st">"#ffffff"</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">font-size-base</span><span class="kw">:</span><span class="at"> 1.1rem</span></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">h1-font-size</span><span class="kw">:</span><span class="at"> $font-size-base * 2.45</span></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">h2-font-size</span><span class="kw">:</span><span class="at"> $font-size-base * 1.85</span></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">h3-font-size</span><span class="kw">:</span><span class="at"> $font-size-base * 1.45</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">h4-font-size</span><span class="kw">:</span><span class="at"> $font-size-base * 1.2</span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">h5-font-size</span><span class="kw">:</span><span class="at"> $font-size-base * 1</span></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">h6-font-size</span><span class="kw">:</span><span class="at"> $font-size-base * 0.8</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="co">      # code-bg: lighten($brand-orange, 25%)  # Sass functions work here!</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">code-bg</span><span class="kw">:</span><span class="at"> rgba(233, 236, 239, 0.65)</span><span class="co">  # Same color as github div background</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">mixins</span><span class="kw">:</span><span class="co">    # string with SCSS mixins</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="fu">    rules</span><span class="kw">: </span><span class="ch">|</span><span class="co">   # string with SCSS rules</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>      #quarto-document-content h3 {</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>          color: $brand-blue;</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>          font-weight: 500;</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>      .navbar-title {</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>          font-size: 1.3em;</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>      }</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</details>
+<p><span class="small">(See more about brand.yml <a href="https://posit-dev.github.io/brand-yml/">here</a>).</span></p>
+<section id="typefaces" class="level3">
+<h3 class="anchored" data-anchor-id="typefaces">Typefaces</h3>
+<p>I use <a href="https://en.wikipedia.org/wiki/Lato_(typeface)">Lato</a> <span class="small">(<a href="https://fonts.google.com/specimen/Lato">Google Fonts</a>)</span> as the main body font throughout the site, and I use <a href="https://alessiolaiso.com/aleo-font" style="font-family: 'Aleo'">Aleo</a> <span class="small">(<a href="https://fonts.google.com/specimen/Aleo">Google Fonts</a>)</span> for all headings.</p>
+<div class="font-example">
+<p><span class="fake-heading">A heading</span></p>
+<p>Whereas recognition of the <em>inherent dignity</em> and of the <strong><em>equal and inalienable</em></strong> rights of all members of the human family is the foundation of freedom, justice and peace in the world…</p>
+</div>
+</section>
+<section id="colors" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="colors">Colors</h3>
+<p>The colors for this course website come primarily from the <a href="https://github.com/BlakeRMills/MetBrewer#tiepolo">“Tiepolo” palette</a> from <a href="https://github.com/BlakeRMills/MetBrewer">the {MetBrewer} R package</a>. The colors come from “The Glorification of the Barbaro Family” (1750) by Giovanni Battista Tiepolo.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="img/tiepolo.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>The Glorification of the Barbaro Family, 1750, Giovanni Battista Tiepolo, Italian, <a href="https://www.metmuseum.org/art/collection/search/437798">Met link</a>.</figcaption>
+</figure>
+</div>
+</div></div><div class="cell">
 <div class="cell-output-display">
-<!-- preamble start -->
-
-    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
-
-    <script>
-      // Create table-specific functions using external factory
-      const tableFns_mii68ypflmrxky27i3ji = TinyTable.createTableFunctions("tinytable_mii68ypflmrxky27i3ji");
-      // tinytable span after
-      window.addEventListener('load', function () { tableFns_mii68ypflmrxky27i3ji.spanCell(13, 1, 1, 2) })
-      window.addEventListener('load', function () { tableFns_mii68ypflmrxky27i3ji.spanCell(9, 1, 1, 2) })
-      window.addEventListener('load', function () { tableFns_mii68ypflmrxky27i3ji.spanCell(5, 1, 1, 2) })
-      window.addEventListener('load', function () { tableFns_mii68ypflmrxky27i3ji.spanCell(1, 1, 1, 2) })
-      window.addEventListener('load', function () { tableFns_mii68ypflmrxky27i3ji.spanCell(1, 1, 1, 2) })
-      window.addEventListener('load', function () {
-          var cellsToStyle = [
-            // tinytable style arrays after
-          { positions: [ { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '6', j: 1 }, { i: '7', j: 1 }, { i: '8', j: 1 }, { i: '10', j: 1 }, { i: '11', j: 1 }, { i: '12', j: 1 }, { i: '14', j: 1 }, { i: '15', j: 1 }, { i: '16', j: 1 } ], css_id: 'tinytable_css_ihmu5673egnyhaw77lbj',}, 
-          { positions: [ { i: '1', j: 1 }, { i: '5', j: 1 }, { i: '9', j: 1 }, { i: '13', j: 1 }, { i: '1', j: 2 }, { i: '5', j: 2 }, { i: '9', j: 2 }, { i: '13', j: 2 } ], css_id: 'tinytable_css_6vgoy1t9lyof8jbg2lht',}, 
-          ];
-
-          // Loop over the arrays to style the cells
-          cellsToStyle.forEach(function (group) {
-              group.positions.forEach(function (cell) {
-                  tableFns_mii68ypflmrxky27i3ji.styleCell(cell.i, cell.j, group.css_id);
-              });
-          });
-      });
-    </script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
-    <style>
-    /* tinytable css entries after */
-    #tinytable_mii68ypflmrxky27i3ji td.tinytable_css_ihmu5673egnyhaw77lbj, #tinytable_mii68ypflmrxky27i3ji th.tinytable_css_ihmu5673egnyhaw77lbj { padding-left: 1em }
-    #tinytable_mii68ypflmrxky27i3ji td.tinytable_css_6vgoy1t9lyof8jbg2lht, #tinytable_mii68ypflmrxky27i3ji th.tinytable_css_6vgoy1t9lyof8jbg2lht { font-weight: bold; text-align: left; background-color: #dddddd }
-    </style>
-    <div class="container">
-      <table class="tinytable table table-sm" id="tinytable_mii68ypflmrxky27i3ji" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
-        
-        <thead>
-        </thead>
-        
-        <tbody>
-                <tr>
-                  <td data-row="1" data-col="1">Day 1 (June 2)</td>
-                  <td data-row="1" data-col="2">Day 1 (June 2)</td>
-                </tr>
-                <tr>
-                  <td data-row="2" data-col="1">10:30–12:30</td>
-                  <td data-row="2" data-col="2"><a href="./materials/intro/" target="_blank">Introduction to conjoint analysis</a></td>
-                </tr>
-                <tr>
-                  <td data-row="3" data-col="1">12:30–13:30</td>
-                  <td data-row="3" data-col="2"><em>Break</em></td>
-                </tr>
-                <tr>
-                  <td data-row="4" data-col="1">13:30–15:00</td>
-                  <td data-row="4" data-col="2"><a href="./materials/designing/" target="_blank">Designing conjoint experiments</a></td>
-                </tr>
-                <tr>
-                  <td data-row="5" data-col="1">Day 2 (June 3)</td>
-                  <td data-row="5" data-col="2">Day 2 (June 3)</td>
-                </tr>
-                <tr>
-                  <td data-row="6" data-col="1">10:30–12:30</td>
-                  <td data-row="6" data-col="2"><a href="./materials/causal-inference/" target="_blank">Analyzing conjoint data for causal inference (§ 1)</a></td>
-                </tr>
-                <tr>
-                  <td data-row="7" data-col="1">12:30–13:30</td>
-                  <td data-row="7" data-col="2"><em>Break</em></td>
-                </tr>
-                <tr>
-                  <td data-row="8" data-col="1">13:30–15:00</td>
-                  <td data-row="8" data-col="2"><a href="./materials/causal-inference/" target="_blank">Analyzing conjoint data for causal inference (§ 2)</a></td>
-                </tr>
-                <tr>
-                  <td data-row="9" data-col="1">Day 3 (June 4)</td>
-                  <td data-row="9" data-col="2">Day 3 (June 4)</td>
-                </tr>
-                <tr>
-                  <td data-row="10" data-col="1">10:30–12:30</td>
-                  <td data-row="10" data-col="2"><a href="./materials/preferences/" target="_blank">Analyzing conjoint data for respondent preferences (§ 1)</a></td>
-                </tr>
-                <tr>
-                  <td data-row="11" data-col="1">12:30–13:30</td>
-                  <td data-row="11" data-col="2"><em>Break</em></td>
-                </tr>
-                <tr>
-                  <td data-row="12" data-col="1">13:30–15:00</td>
-                  <td data-row="12" data-col="2"><a href="./materials/preferences/" target="_blank">Analyzing conjoint data for respondent preferences (§ 2)</a></td>
-                </tr>
-                <tr>
-                  <td data-row="13" data-col="1">Day 4 (June 5)</td>
-                  <td data-row="13" data-col="2">Day 4 (June 5)</td>
-                </tr>
-                <tr>
-                  <td data-row="14" data-col="1">10:30–12:30</td>
-                  <td data-row="14" data-col="2"><a href="./materials/implementing/" target="_blank">Implementing and fielding conjoint surveys (§ 1)</a></td>
-                </tr>
-                <tr>
-                  <td data-row="15" data-col="1">12:30–13:30</td>
-                  <td data-row="15" data-col="2"><em>Break</em></td>
-                </tr>
-                <tr>
-                  <td data-row="16" data-col="1">13:30–15:00</td>
-                  <td data-row="16" data-col="2"><a href="./materials/implementing/" target="_blank">Implementing and fielding conjoint surveys (§ 2)</a></td>
-                </tr>
-        </tbody>
-      </table>
-    </div>
-<!-- hack to avoid NA insertion in last line -->
+<div>
+<figure class="figure">
+<p><img src="colophon_files/figure-html/show-tiepolo-1.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
-<section id="instructor" class="level2">
-<h2 class="anchored" data-anchor-id="instructor">Instructor</h2>
-<p><a href="https://www.andrewheiss.com/">Andrew Heiss</a> is an assistant professor in the Department of Public Management and Policy at the Andrew Young School of Policy Studies at Georgia State University. His research explores human rights and international nonprofit management, and focuses on authoritarian regulation of civil society and INGO responses to administrative crackdown. Heiss also studies and teaches quantitative research methods, causal inference, data visualization, and Bayesian analysis. He is an RStudio Certified Instructor whose work has appeared in journals such as the <em>Journal of Politics</em>, <em>Nonprofit and Voluntary Sector Quarterly</em>, the <em>Journal of Statistical Software</em>, the <em>Journal of Human Rights</em>, and <em>International Interactions</em>.</p>
+</section>
+<section id="license-and-credits" class="level2">
+<h2 class="anchored" data-anchor-id="license-and-credits">License and credits</h2>
+<p>All the materials and content for this course are licensed under <a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/blob/main/LICENSE.md"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> Creative Commons CC-BY-SA <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i></a>.</p>
 
 
 </section>
@@ -780,7 +849,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/blob/main/colophon.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/andrewheiss/mastering-conjoint-analysis_2026-06">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></p>
 </div>

@@ -1,52 +1,382 @@
 [
   {
-    "objectID": "materials/setup/index.html",
-    "href": "materials/setup/index.html",
-    "title": "Setup",
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Extra resources and readings",
     "section": "",
-    "text": "To follow along with the course exercises, you’ll need R, Quarto, a code editor that supports R, and a few R packages.\nWhile the workshop isn’t centered around Quarto, the exercises and examples will all be based on Quarto documents so that text and code and output can all be included together, making a nicer resource for future you.",
+    "text": "Marketing-style estimands (preferences, market shares): Chaudhry, Suparna, Marc Dotson, and Andrew Heiss. 2021. “Who Cares about Crackdowns? Exploring the Role of Trust in Individual Philanthropy.” Global Policy 12 (S5): 45–58. https://doi.org/10.1111/1758-5899.12984 | (preprint).\nCausal inference-style estimands (marginal means, average marginal component effects): Chaudhry, Suparna, Marc Dotson, and Andrew Heiss. 2025. “Navigating Hostility: The Effect of Nonprofit Transparency and Accountability on Donor Preferences in the Face of Shrinking Civic Space.” Nonprofit and Voluntary Sector Quarterly, 1–27. https://doi.org/10.1177/08997640251348654 | (preprint).",
     "crumbs": [
-      "Setup"
+      "Extra resources and readings"
     ]
   },
   {
-    "objectID": "materials/setup/index.html#recommended-setup-options",
-    "href": "materials/setup/index.html#recommended-setup-options",
-    "title": "Setup",
-    "section": "Recommended setup options",
-    "text": "Recommended setup options\nThere are two ways to get set up for the workshop:\n\nLocal installation\nPosit Cloud\n\nWhile Posit Cloud lets you run RStudio directly in your browser and makes it so you don’t need to install anything on your computer (convenient!), I highly recommend installing R and RStudio/Positron on your computer. The Bayesian models we’ll run won’t run well on Posit Cloud, which by default only has once CPU core and limited RAM.\n\nOption 1: Local installation (most recommended)\nChoose one editor and follow the steps:\n\nRStudioPositron\n\n\n\nDownload and install R: https://cloud.r-project.org/\n\nMake sure R is version 4.5+\n\nDownload and install RStudio: https://posit.co/download/rstudio-desktop\n\nMake sure RStudio is version 2026.04+\n\nQuarto comes pre-installed with RStudio\n\nMake sure Quarto is version 1.9+; run quarto --version in RStudio’s terminal to confirm\n\n\n\n\n\nDownload and install R: https://cloud.r-project.org/\n\nMake sure R is version 4.5+\n\nDownload and install Positron: https://positron.posit.co/download.html\nDownload and install Quarto: https://quarto.org/docs/get-started/\n\nMake sure Quarto is version 1.9+\n\n\n\n\n\n\n\nOption 2: Posit Cloud (RStudio in the cloud)\n\nCreate a free account at https://posit.cloud/\nJoin the Posit Cloud workspace: https://posit.cloud/spaces/791899/join?access_code=irmcMZ3L9XLiffB-iP2a7RhtqsH8MZ78JVcgXndk\nClick “Yes” to join the space\nClick Content and select the mastering-conjoint-analysis-materials_2026-06 project\nTo save a copy of the project to your workspace, click “Save a permanent copy”",
+    "objectID": "resources.html#my-pair-of-papers-using-the-same-experiment",
+    "href": "resources.html#my-pair-of-papers-using-the-same-experiment",
+    "title": "Extra resources and readings",
+    "section": "",
+    "text": "Marketing-style estimands (preferences, market shares): Chaudhry, Suparna, Marc Dotson, and Andrew Heiss. 2021. “Who Cares about Crackdowns? Exploring the Role of Trust in Individual Philanthropy.” Global Policy 12 (S5): 45–58. https://doi.org/10.1111/1758-5899.12984 | (preprint).\nCausal inference-style estimands (marginal means, average marginal component effects): Chaudhry, Suparna, Marc Dotson, and Andrew Heiss. 2025. “Navigating Hostility: The Effect of Nonprofit Transparency and Accountability on Donor Preferences in the Face of Shrinking Civic Space.” Nonprofit and Voluntary Sector Quarterly, 1–27. https://doi.org/10.1177/08997640251348654 | (preprint).",
     "crumbs": [
-      "Setup"
+      "Extra resources and readings"
     ]
   },
   {
-    "objectID": "materials/setup/index.html#accessing-the-course-materials",
-    "href": "materials/setup/index.html#accessing-the-course-materials",
-    "title": "Setup",
-    "section": "Accessing the course materials",
-    "text": "Accessing the course materials\nIf you are using Posit Cloud option, the files will be included.\nIf you are using RStudio or Positron locally:\n\nIf you don’t use Git/GitHubIf you use Git/GitHub\n\n\n\nGo to the GitHub repository for the course materials:\n\nhttps://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06\n\nClick the green “Code” button → “Download ZIP”.\nUnzip the folder and open it in your chosen editor.\n\n\n\n\nCourse materials are available here:\n\nhttps://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06\n\nClone the repository with Git:\ngit clone https://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06.git",
+    "objectID": "resources.html#other-tutorials",
+    "href": "resources.html#other-tutorials",
+    "title": "Extra resources and readings",
+    "section": "Other tutorials",
+    "text": "Other tutorials\n\nThe ultimate practical guide to conjoint analysis with R\nThe ultimate practical guide to multilevel multinomial conjoint analysis with R\nConjoint Experiments",
     "crumbs": [
-      "Setup"
+      "Extra resources and readings"
     ]
   },
   {
-    "objectID": "materials/setup/index.html#install-the-necessary-r-packages",
-    "href": "materials/setup/index.html#install-the-necessary-r-packages",
-    "title": "Setup",
-    "section": "Install the necessary R packages",
-    "text": "Install the necessary R packages\nIf you are using Posit Cloud, the packages will be pre-installed (kind of! there won’t be any Bayesian stuff).\nIf you are using RStudio or Positron locally, install all the packages we’ll use with:\ninstall.packages(\n  c(\n    \"tidyverse\", \n    \"patchwork\", \n    \"marginaleffects\", \n    \"easystats\", \n    \"cbcTools\", \n    \"mclogit\", \n    \"lme4\", \n    \"logitr\", \n    \"remotes\", \n    \"pak\", \n    \"brms\", \n    \"rstan\", \n    \"rstanarm\", \n    \"collapse\", \n    \"shiny\", \n    \"bslib\", \n    \"bsicons\", \n    \"tidybayes\", \n    \"ggdist\", \n    \"modelsummary\", \n    \"ggforce\", \n    \"ggh4x\", \n    \"broom\", \n    \"broom.mixed\"\n  )\n)\n\npak::pak(\"surveydown-dev/surveydown\")",
+    "objectID": "resources.html#causal-inference-focused-resources",
+    "href": "resources.html#causal-inference-focused-resources",
+    "title": "Extra resources and readings",
+    "section": "Causal inference-focused resources",
+    "text": "Causal inference-focused resources\n\nOriginal paper that launched the conjoint causal revolution: Hainmueller, Jens, Daniel J. Hopkins, and Teppei Yamamoto. 2014. “Causal Inference in Conjoint Analysis: Understanding Multidimensional Choices via Stated Preference Experiments.” Political Analysis 22 (1): 1–30. https://doi.org/10.1093/pan/mpt024.\nBe careful about relying only on AMCEs; their differences are illusory because of reference cases: Leeper, Thomas J., Sara B. Hobolt, and James Tilley. 2020. “Measuring Subgroup Preferences in Conjoint Experiments.” Political Analysis 28 (2): 207–21. https://doi.org/10.1017/pan.2019.30.\nUse Bayesian multilevel models to get richer information about about respondent-level details: Jensen, Amalie, William Marble, Kenneth Scheve, and Matthew J. Slaughter. 2021. “City Limits to Partisan Polarization in the American Public.” Political Science Research and Methods 9 (2): 223–41. https://doi.org/10.1017/psrm.2020.56.\nConsider the Average Feature Choice Probability (AFCP) as an alternative to AMCEs to better account for preference transitivity: Abramson, Scott F., Korhan Kocak, Asya Magazinnik, and Anton Strezhnev. 2024. “Aggregation, Interpretation, and Estimation of Preferences in Conjoint Experiments.” Preprint, SocArXiv, October 1. https://doi.org/10.31235/osf.io/xjre9.\nConsider the Average Component Preference (ACP) as an alternative to AMCEs when looking at preferences: Ganter, Flavien. 2023. “Identification of Preferences in Forced-Choice Conjoint Experiments: Reassessing the Quantity of Interest.” Political Analysis 31 (1): 98–112. https://doi.org/10.1017/pan.2021.41.\n\n\nPackages\n\n{projoint}: Quick ways to calculate marginal means and AMCEs (a successor to {cregg})",
     "crumbs": [
-      "Setup"
+      "Extra resources and readings"
     ]
   },
   {
-    "objectID": "materials/setup/index.html#install-cmdstanr",
-    "href": "materials/setup/index.html#install-cmdstanr",
-    "title": "Setup",
-    "section": "Install {CmdStanR}",
-    "text": "Install {CmdStanR}\nWe’ll use Stan through {brms} to run the Bayesian models. You should have already installed {brms} in the install.packages() command above.\n\n\n\n\n\n\nNoteRaw Stan\n\n\n\nIf you’ve never worked with Stan, don’t worry! You won’t have to write a single line of Stan code in this workshop. {brms} translates familiar R model syntax into Stan code, runs the MCMC sampler, and bring the results back into R, all without you needing to see what’s happening. It’s magical.\n\n\nStan has two R-based interfaces for communicating between the two programs: RStan and CmdStanR. {brms} works with both backends. I recommend installing CmdStan. CmdStan is newer and has more modern features (like speeding up sampling with multi-threading), and it works nicely with the more complex multinomial models we’ll be running.\nThe {CmdStanR} package helps you install CmdStan on your computer and provides the actual interface to bridge Stan and R. It is not on CRAN because it requires other binary software for connecting to Stan, so you have to install it a little differently:\n\nInstall the {CmdStanR} package. Use this command in R to install the package from Stan’s R-Universe repository:\ninstall.packages(\"cmdstanr\", repos = c('https://stan-dev.r-universe.dev', getOption(\"repos\")))\nInstall a C++ toolchain. Stan models need to be compiled to binary programs to run. See here for complete instructions for installing the required tools. In short:\n\nOn Windows, download and install Rtools45: https://cran.r-project.org/bin/windows/Rtools/\nOn macOS, install Xcode’s command line tools by running this in a terminal:\nxcode-select --install\nOn Linux, install g++ and make. make is typically pre-installed, and g++ is generally also installed. If not, run something like this to install them (this assumes a Debian-based distribution like Ubuntu; adapt the command as necessary for your distribution):\nsudo apt install g++ make\n\nMake sure the C++ toolchain is working. In R, run this in your console to make sure everything’s set up correctly:\ncmdstanr::check_cmdstan_toolchain()\nInstall CmdStan. Finally, you need to compile and install CmdStan. You can do that with {cmdstanr} in R. Run this in your console:\ncmdstanr::install_cmdstan()\nMake sure everything works. Run this in R to make sure everything’s working correctly:\nlibrary(brms)\n\nmodel &lt;- brm(\n  bf(mpg ~ disp + am),\n  data = mtcars,\n  family = gaussian(),\n  backend = \"cmdstan\"\n)\nYou should see something like this:\nmodel\n#&gt;  Family: gaussian \n#&gt;   Links: mu = identity \n#&gt; Formula: mpg ~ disp + am \n#&gt;    Data: mtcars (Number of observations: 32) \n#&gt;   Draws: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;\n#&gt;          total post-warmup draws = 4000\n#&gt; \n#&gt; Regression Coefficients:\n#&gt;           Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS\n#&gt; Intercept    27.81      1.90    24.08    31.52 1.00     2910     2508\n#&gt; disp         -0.04      0.01    -0.05    -0.03 1.00     3233     2894\n#&gt; am            1.87      1.48    -1.02     4.78 1.00     3117     2897\n#&gt; \n#&gt; Further Distributional Parameters:\n#&gt;       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS\n#&gt; sigma     3.33      0.47     2.56     4.38 1.00     3026     2881\n#&gt; \n#&gt; Draws were sampled using sample(hmc). For each parameter, Bulk_ESS\n#&gt; and Tail_ESS are effective sample size measures, and Rhat is the potential\n#&gt; scale reduction factor on split chains (at convergence, Rhat = 1).",
+    "objectID": "resources.html#marketing-focused-resources",
+    "href": "resources.html#marketing-focused-resources",
+    "title": "Extra resources and readings",
+    "section": "Marketing-focused resources",
+    "text": "Marketing-focused resources\n\nChapman, Chris, and Elea McDonnell Feit. 2019. R for Marketing Research and Analytics. 2nd ed. https://doi.org/10.1007/978-3-030-14316-9.\n\n\nPackages\n\n{logitr}: Quick ways to calculate preferences, WTPs, and market shares",
     "crumbs": [
-      "Setup"
+      "Extra resources and readings"
+    ]
+  },
+  {
+    "objectID": "materials/preferences/index.html",
+    "href": "materials/preferences/index.html",
+    "title": "Analyzing conjoint data for respondent preferences",
+    "section": "",
+    "text": "No slides for this one!",
+    "crumbs": [
+      "Materials",
+      "Preference analysis"
+    ]
+  },
+  {
+    "objectID": "materials/preferences/index.html#slides",
+    "href": "materials/preferences/index.html#slides",
+    "title": "Analyzing conjoint data for respondent preferences",
+    "section": "",
+    "text": "No slides for this one!",
+    "crumbs": [
+      "Materials",
+      "Preference analysis"
+    ]
+  },
+  {
+    "objectID": "materials/preferences/index.html#exercises-and-materials",
+    "href": "materials/preferences/index.html#exercises-and-materials",
+    "title": "Analyzing conjoint data for respondent preferences",
+    "section": "Exercises and materials",
+    "text": "Exercises and materials\nWe’ll be working through these things together:\n\n03-1_preference-conjoints_exercise.qmd\n03-2_preferences-hierarchical-bayes.qmd\n03-3_shiny-example.qmd\n03-4_market-simulator.qmd\n\nMake sure you grab the latest version of the workshop materials first!\nDownload the pre-run Bayesian models:\n\nmodels.zip\n\nUnzip that file and put these:\n\nmodel_brms_minivan_carpool.rds\nmodel_brms_minivan_hb.rds\nmodel_brms_minivan_wtp.rds\nmodel_brms_minivan.rds\n\n…in the models/ folder in your project. This will make it so you don’t have re-run the models on your computer.",
+    "crumbs": [
+      "Materials",
+      "Preference analysis"
+    ]
+  },
+  {
+    "objectID": "materials/preferences/index.html#crash-course-in-shiny",
+    "href": "materials/preferences/index.html#crash-course-in-shiny",
+    "title": "Analyzing conjoint data for respondent preferences",
+    "section": "Crash course in Shiny",
+    "text": "Crash course in Shiny\n\nGeneral resources\n\nWelcome to Shiny\nShiny components\nShiny layouts\n{bslib}\n\n\n\nShinylive\n\n{shinylive}\nShinylive examples\nShinylive Quarto extension\nWebR and Quarto Live\nwebRios and webRoid\n\n\n\nPublishing\n\nPosit Connect Cloud\n\n\n\nBare minimum app skeleton\nlibrary(shiny)\nlibrary(bslib)\n\n# Define UI ----\nui &lt;- page_sidebar(\n \n)\n\n# Define server logic ----\nserver &lt;- function(input, output) {\n\n}\n\n# Run the app ----\nshinyApp(ui = ui, server = server)",
+    "crumbs": [
+      "Materials",
+      "Preference analysis"
+    ]
+  },
+  {
+    "objectID": "materials/intro/index.html",
+    "href": "materials/intro/index.html",
+    "title": "Introduction to conjoint analysis",
+    "section": "",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "materials/intro/index.html#slides",
+    "href": "materials/intro/index.html#slides",
+    "title": "Introduction to conjoint analysis",
+    "section": "",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "materials/intro/index.html#exercises-and-materials",
+    "href": "materials/intro/index.html#exercises-and-materials",
+    "title": "Introduction to conjoint analysis",
+    "section": "Exercises and materials",
+    "text": "Exercises and materials\nWe’ll be working through 01_intro-to-conjoints_exercise.qmd together. Make sure you grab the latest version of the workshop materials first!",
+    "crumbs": [
+      "Materials",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "materials/designing/index.html",
+    "href": "materials/designing/index.html",
+    "title": "Designing conjoint experiments",
+    "section": "",
+    "text": "No slides for this one!",
+    "crumbs": [
+      "Materials",
+      "Designing conjoint experiments"
+    ]
+  },
+  {
+    "objectID": "materials/designing/index.html#slides",
+    "href": "materials/designing/index.html#slides",
+    "title": "Designing conjoint experiments",
+    "section": "",
+    "text": "No slides for this one!",
+    "crumbs": [
+      "Materials",
+      "Designing conjoint experiments"
+    ]
+  },
+  {
+    "objectID": "materials/designing/index.html#exercises-and-materials",
+    "href": "materials/designing/index.html#exercises-and-materials",
+    "title": "Designing conjoint experiments",
+    "section": "Exercises and materials",
+    "text": "Exercises and materials\nMake sure you grab the latest version of the workshop materials first!\nWe will use these resources:\n\nStatistical testing in null worlds\n{cbcTools}",
+    "crumbs": [
+      "Materials",
+      "Designing conjoint experiments"
+    ]
+  },
+  {
+    "objectID": "materials/causal-inference/index.html",
+    "href": "materials/causal-inference/index.html",
+    "title": "Analyzing conjoint data for causal inference",
+    "section": "",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Causal inference analysis"
+    ]
+  },
+  {
+    "objectID": "materials/causal-inference/index.html#slides",
+    "href": "materials/causal-inference/index.html#slides",
+    "title": "Analyzing conjoint data for causal inference",
+    "section": "",
+    "text": "Open slides in new window   Download PDF of slides",
+    "crumbs": [
+      "Materials",
+      "Causal inference analysis"
+    ]
+  },
+  {
+    "objectID": "materials/causal-inference/index.html#exercises-and-materials",
+    "href": "materials/causal-inference/index.html#exercises-and-materials",
+    "title": "Analyzing conjoint data for causal inference",
+    "section": "Exercises and materials",
+    "text": "Exercises and materials\nWe’ll be working through 02-1_causal-conjoints_exercise.qmd and 02-2_causal-conjoints_exercise.qmd together. Make sure you grab the latest version of the workshop materials first!\nDownload the pre-run Bayesian models:\n\nmodels.zip\n\nUnzip that file and put these:\n\nmodel_cand_brms.rds\nmodel_cand_brms_mega.rds\n\n…in the models/ folder in your project. This will make it so you don’t have re-run the models on your computer.\nHere’s a helpful little illustration of the offset-approach to multilevel models.",
+    "crumbs": [
+      "Materials",
+      "Causal inference analysis"
+    ]
+  },
+  {
+    "objectID": "colophon.html",
+    "href": "colophon.html",
+    "title": "Colophon",
+    "section": "",
+    "text": "colophon (noun)\ncol • o • phon /ˈkä-lə-fən, -fän/ /ˈkɒləfən, -fɒn/\n\nan inscription at the end of a book or manuscript containing information about its production\nthis page",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#technology",
+    "href": "colophon.html#technology",
+    "title": "Colophon",
+    "section": "Technology",
+    "text": "Technology\n\nLast built: 2026-06-05 at 23:37:00 US Eastern\nSoftware: Quarto version 1.9.38 and  R version 4.5.1 (2025-06-13)\nHosting: Hosted at  GitHub Pages and built and deployed using  GitHub Actions",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#design",
+    "href": "colophon.html#design",
+    "title": "Colophon",
+    "section": "Design",
+    "text": "Design\nThe typography, colors, and custom CSS settings are all controlled with this _brand.yml file:\n\n\nShow _brand.yml for this site\n\n\n\n_brand.yml\n\n#\n# _brand.yml for conjoint analysis course\n#\n\nmeta:\n  name: Conjoint analysis course\n  license: CC BY-SA 4.0\n  link:\n    home: https://www.andrewheiss.com/\n\ncolor:\n  # Colors from MetBrewer::met.brewer(\"Tiepolo\")\n  palette:\n    blue: \"#17486f\"\n    red: \"#802417\"\n    orange: \"#c06636\"\n    yellow: \"#e8b960\"\n    green: \"#646e3b\"\n    teal: \"#2b5851\"\n    cyan: \"#508ea2\"\n\n    gray-100: \"#f8f9fa\"\n    gray-200: \"#e9ecef\"\n    gray-300: \"#dddddd\"\n    gray-400: \"#ced4da\"\n    gray-500: \"#adb5bd\"\n    gray-600: \"#868e96\"\n    gray-700: \"#495057\"\n    gray-800: \"#343a40\"\n    gray-900: \"#212529\"\n\n    off-white: \"#F5F5F5\"\n    black: \"#111111\"\n\n  foreground: black\n  background: off-white\n  dark: black\n\n  primary: blue\n  secondary: cyan\n  danger: red\n  warning: yellow\n  info: teal\n  success: green\n\ntypography:\n  fonts:\n    - family: Lato\n      source: google\n      weight: [400, 700]\n    - family: Aleo\n      source: google\n      weight: [400, 700]\n\n  base:\n    family: Lato\n    weight: 400\n\n  headings:\n    family: Aleo\n    weight: 700\n    color: red\n\n  link:\n    weight: 700\n    color: orange\n    decoration: none\n\ndefaults:\n  bootstrap:\n    functions: # string with SCSS functions\n    defaults:  # list of Bootstrap Sass variables to override\n      link-hover-color: $brand-yellow\n      code-color: $brand-cyan\n\n      font-family-headings: Aleo\n      navbar-font-family: Aleo\n      navbar-hl: $brand-orange\n      # navbar-bg: $brand-blue\n      navbar-fg: \"#ffffff\"\n\n      font-size-base: 1.1rem\n      h1-font-size: $font-size-base * 2.45\n      h2-font-size: $font-size-base * 1.85\n      h3-font-size: $font-size-base * 1.45\n      h4-font-size: $font-size-base * 1.2\n      h5-font-size: $font-size-base * 1\n      h6-font-size: $font-size-base * 0.8\n\n      # code-bg: lighten($brand-orange, 25%)  # Sass functions work here!\n      code-bg: rgba(233, 236, 239, 0.65)  # Same color as github div background\n    mixins:    # string with SCSS mixins\n    rules: |   # string with SCSS rules\n      #quarto-document-content h3 {\n          color: $brand-blue;\n          font-weight: 500;\n      }\n\n      .navbar-title {\n          font-size: 1.3em;\n      }\n\n\n(See more about brand.yml here).\n\nTypefaces\nI use Lato (Google Fonts) as the main body font throughout the site, and I use Aleo (Google Fonts) for all headings.\n\nA heading\nWhereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world…\n\n\n\nColors\nThe colors for this course website come primarily from the “Tiepolo” palette from the {MetBrewer} R package. The colors come from “The Glorification of the Barbaro Family” (1750) by Giovanni Battista Tiepolo.\n\n\n\n\n\nThe Glorification of the Barbaro Family, 1750, Giovanni Battista Tiepolo, Italian, Met link.",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "colophon.html#license-and-credits",
+    "href": "colophon.html#license-and-credits",
+    "title": "Colophon",
+    "section": "License and credits",
+    "text": "License and credits\nAll the materials and content for this course are licensed under  Creative Commons CC-BY-SA  .",
+    "crumbs": [
+      "Colophon"
+    ]
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Mastering Conjoint Analysis",
+    "section": "Overview",
+    "text": "Overview\nConjoint experiments have become a popular tool in both social science and marketing research for understanding how people make decisions and what attributes matter most in their choices. Originally developed by marketers to measure consumer preferences for new products, conjoint analysis has expanded into political science, economics, sociology, and other fields as a powerful method for testing multiple causal effects simultaneously and eliciting respondent preferences. With a single well-designed survey, you can answer complex research questions about decision-making that would require dozens of traditional experiments.\nIn this course, you’ll learn the theory behind forced choice conjoint experiments, how to design studies that answer your research questions, how to program and field these survey experiments in online platforms, and how to analyze and visualize the results using open source tools like R, Quarto, {marginaleffects}, and {ggplot2}. You’ll explore key causal estimands like average marginal component effects (AMCEs) and marginal means (MMs), as well as preference-focused measures like part-worth utilities and willingness-to-pay. By the end of the course, you’ll be able to design and field your own conjoint experiments, analyze the results with appropriate methods, and communicate your findings effectively with publication-ready tables and figures.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Mastering Conjoint Analysis",
+    "section": "Schedule",
+    "text": "Schedule\nAll times are US Eastern (New York) time:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n        \n        \n        \n                \n                  Day 1 (June 2)\n                  Day 1 (June 2)\n                \n                \n                  10:30–12:30\n                  Introduction to conjoint analysis\n                \n                \n                  12:30–13:30\n                  Break\n                \n                \n                  13:30–15:00\n                  Designing conjoint experiments\n                \n                \n                  Day 2 (June 3)\n                  Day 2 (June 3)\n                \n                \n                  10:30–12:30\n                  Analyzing conjoint data for causal inference (§ 1)\n                \n                \n                  12:30–13:30\n                  Break\n                \n                \n                  13:30–15:00\n                  Analyzing conjoint data for causal inference (§ 2)\n                \n                \n                  Day 3 (June 4)\n                  Day 3 (June 4)\n                \n                \n                  10:30–12:30\n                  Analyzing conjoint data for respondent preferences (§ 1)\n                \n                \n                  12:30–13:30\n                  Break\n                \n                \n                  13:30–15:00\n                  Analyzing conjoint data for respondent preferences (§ 2)\n                \n                \n                  Day 4 (June 5)\n                  Day 4 (June 5)\n                \n                \n                  10:30–12:30\n                  Implementing and fielding conjoint surveys (§ 1)\n                \n                \n                  12:30–13:30\n                  Break\n                \n                \n                  13:30–15:00\n                  Implementing and fielding conjoint surveys (§ 2)",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "Mastering Conjoint Analysis",
+    "section": "Instructor",
+    "text": "Instructor\nAndrew Heiss is an assistant professor in the Department of Public Management and Policy at the Andrew Young School of Policy Studies at Georgia State University. His research explores human rights and international nonprofit management, and focuses on authoritarian regulation of civil society and INGO responses to administrative crackdown. Heiss also studies and teaches quantitative research methods, causal inference, data visualization, and Bayesian analysis. He is an RStudio Certified Instructor whose work has appeared in journals such as the Journal of Politics, Nonprofit and Voluntary Sector Quarterly, the Journal of Statistical Software, the Journal of Human Rights, and International Interactions.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "materials/causal-inference/slides.html#section-2",
+    "href": "materials/causal-inference/slides.html#section-2",
+    "title": "Causal inferencewith conjoints",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(marginaleffects)\nlibrary(parameters)\n\npenguins &lt;- penguins |&gt; drop_na(sex)\n\nmodel1 &lt;- lm(body_mass ~ flipper_len, data = penguins)\nmodel2 &lt;- lm(body_mass ~ flipper_len + species, data = penguins)\n\n\n \n\nmodel_parameters(model1)\n\nParameter   | Coefficient |     SE |               95% CI | t(331) |      p\n---------------------------------------------------------------------------\n(Intercept) |    -5872.09 | 310.29 | [-6482.47, -5261.71] | -18.92 | &lt; .001\nflipper len |       50.15 |   1.54 | [   47.12,    53.18] |  32.56 | &lt; .001\n\n\n\n\n \n\nmodel_parameters(model2)\n\nParameter           | Coefficient |     SE |               95% CI | t(329) |      p\n-----------------------------------------------------------------------------------\n(Intercept)         |    -4013.18 | 586.25 | [-5166.44, -2859.92] |  -6.85 | &lt; .001\nflipper len         |       40.61 |   3.08 | [   34.55,    46.66] |  13.19 | &lt; .001\nspecies [Chinstrap] |     -205.38 |  57.57 | [ -318.62,   -92.13] |  -3.57 | &lt; .001\nspecies [Gentoo]    |      284.52 |  95.43 | [   96.79,   472.25] |   2.98 | 0.003"
+  },
+  {
+    "objectID": "materials/causal-inference/slides.html#marginaleffects",
+    "href": "materials/causal-inference/slides.html#marginaleffects",
+    "title": "Causal inferencewith conjoints",
+    "section": "{marginaleffects}",
+    "text": "{marginaleffects}\n\nQuit working with raw coefficients!\n\n\nArel-Bundock, Vincent, Noah Greifer, and Andrew Heiss. 2024. “How to Interpret Statistical Models Using marginaleffects for R and Python.” Journal of Statistical Software 111 (9): 1–32. https://doi.org/10.18637/jss.v111.i09.\nArel-Bundock, Vincent. 2026. Model to Meaning: How to Interpret Statistical Models with R and Python. A Chapman & Hall Book. CRC Press, Taylor & Francis Group. https://doi.org/10.1201/9781003560333, https://marginaleffects.com/"
+  },
+  {
+    "objectID": "materials/causal-inference/slides.html#section-3",
+    "href": "materials/causal-inference/slides.html#section-3",
+    "title": "Causal inferencewith conjoints",
+    "section": "",
+    "text": "Quantity: What is the quantity of interest? Do we want to report a prediction or a function of predictions (average, difference, ratio, derivative, etc.)?\nGrid: What predictor values are we interested in? Do we want to report estimates for the units in our dataset, or for hypothetical or representative individuals?\nAggregation: Do we report estimates for every observation in the grid or a global summary?\nUncertainty: How do we quantify uncertainty about our estimates?\nTest: Which (non-)linear hypothesis or equivalence tests do we conduct?"
+  },
+  {
+    "objectID": "materials/causal-inference/slides.html#section-4",
+    "href": "materials/causal-inference/slides.html#section-4",
+    "title": "Causal inferencewith conjoints",
+    "section": "",
+    "text": "model_parameters(model1)\n\nParameter   | Coefficient |     SE |               95% CI | t(331) |      p\n---------------------------------------------------------------------------\n(Intercept) |    -5872.09 | 310.29 | [-6482.47, -5261.71] | -18.92 | &lt; .001\nflipper len |       50.15 |   1.54 | [   47.12,    53.18] |  32.56 | &lt; .001\n\n\n\n \n\navg_comparisons(model1)\n\n\n Estimate Std. Error    z Pr(&gt;|z|)     S 2.5 % 97.5 %\n     50.2       1.54 32.6   &lt;0.001 770.2  47.1   53.2\n\nTerm: flipper_len\nType: response\nComparison: +1"
+  },
+  {
+    "objectID": "materials/causal-inference/slides.html#section-5",
+    "href": "materials/causal-inference/slides.html#section-5",
+    "title": "Causal inferencewith conjoints",
+    "section": "",
+    "text": "model_parameters(model2)\n\nParameter           | Coefficient |     SE |               95% CI | t(329) |      p\n-----------------------------------------------------------------------------------\n(Intercept)         |    -4013.18 | 586.25 | [-5166.44, -2859.92] |  -6.85 | &lt; .001\nflipper len         |       40.61 |   3.08 | [   34.55,    46.66] |  13.19 | &lt; .001\nspecies [Chinstrap] |     -205.38 |  57.57 | [ -318.62,   -92.13] |  -3.57 | &lt; .001\nspecies [Gentoo]    |      284.52 |  95.43 | [   96.79,   472.25] |   2.98 | 0.003 \n\n\n\n \n\navg_comparisons(model2)\n\n\n        Term           Contrast Estimate Std. Error     z Pr(&gt;|z|)     S  2.5 % 97.5 %\n flipper_len +1                     40.6       3.08 13.19  &lt; 0.001 129.5   34.6   46.6\n species     Chinstrap - Adelie   -205.4      57.57 -3.57  &lt; 0.001  11.4 -318.2  -92.5\n species     Gentoo - Adelie       284.5      95.43  2.98  0.00287   8.4   97.5  471.6\n\nType: response"
+  },
+  {
+    "objectID": "materials/causal-inference/slides.html#section-6",
+    "href": "materials/causal-inference/slides.html#section-6",
+    "title": "Causal inferencewith conjoints",
+    "section": "",
+    "text": "model3 &lt;-lm(body_mass ~ flipper_len * species, data = penguins)\nmodel_parameters(model3)\n\nParameter                         | Coefficient |      SE |               95% CI | t(327) |      p\n--------------------------------------------------------------------------------------------------\n(Intercept)                       |    -2508.09 |  892.41 | [-4263.68,  -752.49] |  -2.81 | 0.005 \nflipper len                       |       32.69 |    4.69 | [   23.46,    41.92] |   6.97 | &lt; .001\nspecies [Chinstrap]               |     -529.11 | 1525.11 | [-3529.37,  2471.16] |  -0.35 | 0.729 \nspecies [Gentoo]                  |    -4166.12 | 1431.58 | [-6982.39, -1349.84] |  -2.91 | 0.004 \nflipper len × species [Chinstrap] |        1.88 |    7.86 | [  -13.59,    17.36] |   0.24 | 0.811 \nflipper len × species [Gentoo]    |       21.48 |    6.97 | [    7.77,    35.18] |   3.08 | 0.002 \n\navg_comparisons(model3, by = \"species\")\n\n\n        Term           Contrast   species Estimate Std. Error      z Pr(&gt;|z|)    S  2.5 % 97.5 %\n flipper_len +1                 Adelie        32.7       4.69  6.967  &lt; 0.001 38.2   23.5   41.9\n flipper_len +1                 Chinstrap     34.6       6.31  5.478  &lt; 0.001 24.5   22.2   46.9\n flipper_len +1                 Gentoo        54.2       5.15 10.516  &lt; 0.001 83.5   44.1   64.3\n species     Chinstrap - Adelie Adelie      -170.9      65.04 -2.627  0.00861  6.9 -298.3  -43.4\n species     Gentoo - Adelie    Adelie       -83.4     146.97 -0.567  0.57052  0.8 -371.4  204.7\n species     Chinstrap - Adelie Chinstrap   -160.1      60.39 -2.651  0.00803  7.0 -278.4  -41.7\n species     Gentoo - Adelie    Chinstrap     39.5     122.28  0.323  0.74675  0.4 -200.2  279.2\n species     Chinstrap - Adelie Gentoo      -119.7     193.37 -0.619  0.53580  0.9 -498.7  259.3\n species     Gentoo - Adelie    Gentoo       499.3     135.18  3.694  &lt; 0.001 12.1  234.4  764.3\n\nType: response"
+  },
+  {
+    "objectID": "materials/causal-inference/slides.html#section-7",
+    "href": "materials/causal-inference/slides.html#section-7",
+    "title": "Causal inferencewith conjoints",
+    "section": "",
+    "text": "plot_predictions(model3, condition = c(\"flipper_len\", \"species\"))"
+  },
+  {
+    "objectID": "materials/causal-inference/slides.html#ols-with-categorical-predictors",
+    "href": "materials/causal-inference/slides.html#ols-with-categorical-predictors",
+    "title": "Causal inferencewith conjoints",
+    "section": "OLS with categorical predictors",
+    "text": "OLS with categorical predictors\n\nmodel &lt;- lm(body_mass ~ species + sex, data = penguins)"
+  },
+  {
+    "objectID": "materials/causal-inference/slides.html#predictions-across-balanced-grid",
+    "href": "materials/causal-inference/slides.html#predictions-across-balanced-grid",
+    "title": "Causal inferencewith conjoints",
+    "section": "Predictions across balanced grid",
+    "text": "Predictions across balanced grid\n\ngrid &lt;- datagrid(model = model, species = unique, sex = unique)\n\npreds &lt;- predictions(model, grid)\n\n \n\n\n\npreds |&gt; \n  as_tibble() |&gt; \n  select(species, sex, estimate)\n\n# A tibble: 6 × 3\n  species   sex    estimate\n  &lt;fct&gt;     &lt;fct&gt;     &lt;dbl&gt;\n1 Adelie    female    3372.\n2 Adelie    male      4040.\n3 Chinstrap female    3399.\n4 Chinstrap male      4067.\n5 Gentoo    female    4750.\n6 Gentoo    male      5418.\n\n\n\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n\n \nSex\n\n              \n                Species\n                Female\n                Male\n              \n        \n        \n        \n                \n                  Adelie\n                  3372\n                  4040\n                \n                \n                  Chinstrap\n                  3399\n                  4067\n                \n                \n                  Gentoo\n                  4750\n                  5418"
+  },
+  {
+    "objectID": "materials/causal-inference/slides.html#means-in-the-margins",
+    "href": "materials/causal-inference/slides.html#means-in-the-margins",
+    "title": "Causal inferencewith conjoints",
+    "section": "Means in the margins",
+    "text": "Means in the margins\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n\n \nSex\n \n\n              \n                Species\n                Female\n                Male\n                Marginal mean\n              \n        \n        \n        \n                \n                  Adelie\n                  3372\n                  4040\n                  3706(3372 + 4040) / 2\n                \n                \n                  Chinstrap\n                  3399\n                  4067\n                  3733(3399 + 4067) / 2\n                \n                \n                  Gentoo\n                  4750\n                  5418\n                  5084(4750 + 5418) / 2\n                \n                \n                  Marginal mean\n                  3841(3372 + 3399 + 4750) / 3\n                  4508(4040 + 4067 + 5418) / 3\n                   \n                \n        \n      \n    \n\n\n\n\nFor the sex-specific averages, all the between-species variation is “marginalized out” or accounted for; for the species-specific averages, all the between-sex variation is similarly marginalized out."
+  },
+  {
+    "objectID": "materials/causal-inference/slides.html#differences-in-marginal-means",
+    "href": "materials/causal-inference/slides.html#differences-in-marginal-means",
+    "title": "Causal inferencewith conjoints",
+    "section": "Differences in marginal means",
+    "text": "Differences in marginal means\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n\n \nSex\n \n \n\n              \n                Species\n                Female\n                Male\n                Marginal mean\n                ∆\n              \n        \n        \n        \n                \n                  Adelie\n                  3372\n                  4040\n                  3706(3372 + 4040) / 2\n                  —\n                \n                \n                  Chinstrap\n                  3399\n                  4067\n                  3733(3399 + 4067) / 2\n                  27Chinstrap−Adelie\n                \n                \n                  Gentoo\n                  4750\n                  5418\n                  5084(4750 + 5418) / 2\n                  1378Gentoo−Adelie\n                \n                \n                  Marginal mean\n                  3841(3372 + 3399 + 4750) / 3\n                  4508(4040 + 4067 + 5418) / 3\n                   \n                   \n                \n                \n                  ∆\n                  —\n                  668Male−Female"
+  },
+  {
+    "objectID": "materials/causal-inference/slides.html#coefficients-and-predictions",
+    "href": "materials/causal-inference/slides.html#coefficients-and-predictions",
+    "title": "Causal inferencewith conjoints",
+    "section": "Coefficients and predictions",
+    "text": "Coefficients and predictions\n\nparameters::model_parameters(model)\n\nParameter           | Coefficient |    SE |             95% CI | t(329) |      p\n--------------------------------------------------------------------------------\n(Intercept)         |     3372.39 | 31.43 | [3310.56, 3434.21] | 107.31 | &lt; .001\nspecies [Chinstrap] |       26.92 | 46.48 | [ -64.52,  118.37] |   0.58 | 0.563 \nspecies [Gentoo]    |     1377.86 | 39.10 | [1300.93, 1454.78] |  35.24 | &lt; .001\nsex [male]          |      667.56 | 34.70 | [ 599.29,  735.82] |  19.24 | &lt; .001\n\n\n\navg_predictions(model, by = \"species\", newdata = \"balanced\")\n\n\n   species Estimate Std. Error     z Pr(&gt;|z|)   S 2.5 % 97.5 %\n Adelie        3706       26.2 141.4   &lt;0.001 Inf  3655   3758\n Chinstrap     3733       38.4  97.2   &lt;0.001 Inf  3658   3808\n Gentoo        5084       29.0 175.1   &lt;0.001 Inf  5027   5141\n\nType: response\n\navg_predictions(model, by = \"sex\", newdata = \"balanced\")\n\n\n    sex Estimate Std. Error   z Pr(&gt;|z|)   S 2.5 % 97.5 %\n female     3841       25.3 152   &lt;0.001 Inf  3791   3890\n male       4508       25.1 180   &lt;0.001 Inf  4459   4557\n\nType: response"
+  },
+  {
+    "objectID": "materials/implementing/index.html",
+    "href": "materials/implementing/index.html",
+    "title": "Implementing and fielding conjoint surveys",
+    "section": "",
+    "text": "No slides for this one!",
+    "crumbs": [
+      "Materials",
+      "Implementing and fielding conjoint surveys"
+    ]
+  },
+  {
+    "objectID": "materials/implementing/index.html#slides",
+    "href": "materials/implementing/index.html#slides",
+    "title": "Implementing and fielding conjoint surveys",
+    "section": "",
+    "text": "No slides for this one!",
+    "crumbs": [
+      "Materials",
+      "Implementing and fielding conjoint surveys"
+    ]
+  },
+  {
+    "objectID": "materials/implementing/index.html#exercises-and-materials",
+    "href": "materials/implementing/index.html#exercises-and-materials",
+    "title": "Implementing and fielding conjoint surveys",
+    "section": "Exercises and materials",
+    "text": "Exercises and materials\nHere’s the code for the survey we took on the first day.\nWe’ll be building a survey together with {surveydown}. Make sure you grab the latest version of the workshop materials first!\nWe will use these:\n\nPosit Connect Cloud\n{surveydown}\n{sdstudio}\n{cbcTools}\nsupabase\n\nMake sure you install the latest development version of {sruveydown} and {sdstudio}:\n# install.packages(\"pak\")\npak::pak('surveydown-dev/surveydown')\npak::pak(\"surveydown-dev/sdstudio\")",
+    "crumbs": [
+      "Materials",
+      "Implementing and fielding conjoint surveys"
     ]
   },
   {
@@ -197,293 +527,53 @@
     "text": "Crossing traditions!\n\n\n\n\n\n\n\n\nChaudhry, Suparna, Marc Dotson, and Andrew Heiss. 2021. “Who Cares about Crackdowns? Exploring the Role of Trust in Individual Philanthropy.” Global Policy 12 (S5): 45–58. https://doi.org/10.1111/1758-5899.12984.\n\n\n\n\n\n\n\n\nChaudhry, Suparna, Marc Dotson, and Andrew Heiss. 2025. “Navigating Hostility: The Effect of Nonprofit Transparency and Accountability on Donor Preferences in the Face of Shrinking Civic Space.” Nonprofit and Voluntary Sector Quarterly, 1–27. https://doi.org/10.1177/08997640251348654."
   },
   {
-    "objectID": "materials/implementing/index.html",
-    "href": "materials/implementing/index.html",
-    "title": "Implementing and fielding conjoint surveys",
+    "objectID": "materials/setup/index.html",
+    "href": "materials/setup/index.html",
+    "title": "Setup",
     "section": "",
-    "text": "No slides for this one!",
+    "text": "To follow along with the course exercises, you’ll need R, Quarto, a code editor that supports R, and a few R packages.\nWhile the workshop isn’t centered around Quarto, the exercises and examples will all be based on Quarto documents so that text and code and output can all be included together, making a nicer resource for future you.",
     "crumbs": [
-      "Materials",
-      "Implementing and fielding conjoint surveys"
+      "Setup"
     ]
   },
   {
-    "objectID": "materials/implementing/index.html#slides",
-    "href": "materials/implementing/index.html#slides",
-    "title": "Implementing and fielding conjoint surveys",
-    "section": "",
-    "text": "No slides for this one!",
+    "objectID": "materials/setup/index.html#recommended-setup-options",
+    "href": "materials/setup/index.html#recommended-setup-options",
+    "title": "Setup",
+    "section": "Recommended setup options",
+    "text": "Recommended setup options\nThere are two ways to get set up for the workshop:\n\nLocal installation\nPosit Cloud\n\nWhile Posit Cloud lets you run RStudio directly in your browser and makes it so you don’t need to install anything on your computer (convenient!), I highly recommend installing R and RStudio/Positron on your computer. The Bayesian models we’ll run won’t run well on Posit Cloud, which by default only has once CPU core and limited RAM.\n\nOption 1: Local installation (most recommended)\nChoose one editor and follow the steps:\n\nRStudioPositron\n\n\n\nDownload and install R: https://cloud.r-project.org/\n\nMake sure R is version 4.5+\n\nDownload and install RStudio: https://posit.co/download/rstudio-desktop\n\nMake sure RStudio is version 2026.04+\n\nQuarto comes pre-installed with RStudio\n\nMake sure Quarto is version 1.9+; run quarto --version in RStudio’s terminal to confirm\n\n\n\n\n\nDownload and install R: https://cloud.r-project.org/\n\nMake sure R is version 4.5+\n\nDownload and install Positron: https://positron.posit.co/download.html\nDownload and install Quarto: https://quarto.org/docs/get-started/\n\nMake sure Quarto is version 1.9+\n\n\n\n\n\n\n\nOption 2: Posit Cloud (RStudio in the cloud)\n\nCreate a free account at https://posit.cloud/\nJoin the Posit Cloud workspace: https://posit.cloud/spaces/791899/join?access_code=irmcMZ3L9XLiffB-iP2a7RhtqsH8MZ78JVcgXndk\nClick “Yes” to join the space\nClick Content and select the mastering-conjoint-analysis-materials_2026-06 project\nTo save a copy of the project to your workspace, click “Save a permanent copy”",
     "crumbs": [
-      "Materials",
-      "Implementing and fielding conjoint surveys"
+      "Setup"
     ]
   },
   {
-    "objectID": "materials/implementing/index.html#exercises-and-materials",
-    "href": "materials/implementing/index.html#exercises-and-materials",
-    "title": "Implementing and fielding conjoint surveys",
-    "section": "Exercises and materials",
-    "text": "Exercises and materials\nHere’s the code for the survey we took on the first day.\nWe’ll be building a survey together with {surveydown}. Make sure you grab the latest version of the workshop materials first!\nWe will use these:\n\nPosit Connect Cloud\n{surveydown}\n{sdstudio}\n{cbcTools}\nsupabase\n\nMake sure you install the latest development version of {sruveydown} and {sdstudio}:\n# install.packages(\"pak\")\npak::pak('surveydown-dev/surveydown')\npak::pak(\"surveydown-dev/sdstudio\")",
+    "objectID": "materials/setup/index.html#accessing-the-course-materials",
+    "href": "materials/setup/index.html#accessing-the-course-materials",
+    "title": "Setup",
+    "section": "Accessing the course materials",
+    "text": "Accessing the course materials\nIf you are using Posit Cloud option, the files will be included.\nIf you are using RStudio or Positron locally:\n\nIf you don’t use Git/GitHubIf you use Git/GitHub\n\n\n\nGo to the GitHub repository for the course materials:\n\nhttps://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06\n\nClick the green “Code” button → “Download ZIP”.\nUnzip the folder and open it in your chosen editor.\n\n\n\n\nCourse materials are available here:\n\nhttps://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06\n\nClone the repository with Git:\ngit clone https://github.com/andrewheiss/mastering-conjoint-analysis-materials_2026-06.git",
     "crumbs": [
-      "Materials",
-      "Implementing and fielding conjoint surveys"
+      "Setup"
     ]
   },
   {
-    "objectID": "materials/causal-inference/slides.html#section-2",
-    "href": "materials/causal-inference/slides.html#section-2",
-    "title": "Causal inferencewith conjoints",
-    "section": "",
-    "text": "library(tidyverse)\nlibrary(marginaleffects)\nlibrary(parameters)\n\npenguins &lt;- penguins |&gt; drop_na(sex)\n\nmodel1 &lt;- lm(body_mass ~ flipper_len, data = penguins)\nmodel2 &lt;- lm(body_mass ~ flipper_len + species, data = penguins)\n\n\n \n\nmodel_parameters(model1)\n\nParameter   | Coefficient |     SE |               95% CI | t(331) |      p\n---------------------------------------------------------------------------\n(Intercept) |    -5872.09 | 310.29 | [-6482.47, -5261.71] | -18.92 | &lt; .001\nflipper len |       50.15 |   1.54 | [   47.12,    53.18] |  32.56 | &lt; .001\n\n\n\n\n \n\nmodel_parameters(model2)\n\nParameter           | Coefficient |     SE |               95% CI | t(329) |      p\n-----------------------------------------------------------------------------------\n(Intercept)         |    -4013.18 | 586.25 | [-5166.44, -2859.92] |  -6.85 | &lt; .001\nflipper len         |       40.61 |   3.08 | [   34.55,    46.66] |  13.19 | &lt; .001\nspecies [Chinstrap] |     -205.38 |  57.57 | [ -318.62,   -92.13] |  -3.57 | &lt; .001\nspecies [Gentoo]    |      284.52 |  95.43 | [   96.79,   472.25] |   2.98 | 0.003"
-  },
-  {
-    "objectID": "materials/causal-inference/slides.html#marginaleffects",
-    "href": "materials/causal-inference/slides.html#marginaleffects",
-    "title": "Causal inferencewith conjoints",
-    "section": "{marginaleffects}",
-    "text": "{marginaleffects}\n\nQuit working with raw coefficients!\n\n\nArel-Bundock, Vincent, Noah Greifer, and Andrew Heiss. 2024. “How to Interpret Statistical Models Using marginaleffects for R and Python.” Journal of Statistical Software 111 (9): 1–32. https://doi.org/10.18637/jss.v111.i09.\nArel-Bundock, Vincent. 2026. Model to Meaning: How to Interpret Statistical Models with R and Python. A Chapman & Hall Book. CRC Press, Taylor & Francis Group. https://doi.org/10.1201/9781003560333, https://marginaleffects.com/"
-  },
-  {
-    "objectID": "materials/causal-inference/slides.html#section-3",
-    "href": "materials/causal-inference/slides.html#section-3",
-    "title": "Causal inferencewith conjoints",
-    "section": "",
-    "text": "Quantity: What is the quantity of interest? Do we want to report a prediction or a function of predictions (average, difference, ratio, derivative, etc.)?\nGrid: What predictor values are we interested in? Do we want to report estimates for the units in our dataset, or for hypothetical or representative individuals?\nAggregation: Do we report estimates for every observation in the grid or a global summary?\nUncertainty: How do we quantify uncertainty about our estimates?\nTest: Which (non-)linear hypothesis or equivalence tests do we conduct?"
-  },
-  {
-    "objectID": "materials/causal-inference/slides.html#section-4",
-    "href": "materials/causal-inference/slides.html#section-4",
-    "title": "Causal inferencewith conjoints",
-    "section": "",
-    "text": "model_parameters(model1)\n\nParameter   | Coefficient |     SE |               95% CI | t(331) |      p\n---------------------------------------------------------------------------\n(Intercept) |    -5872.09 | 310.29 | [-6482.47, -5261.71] | -18.92 | &lt; .001\nflipper len |       50.15 |   1.54 | [   47.12,    53.18] |  32.56 | &lt; .001\n\n\n\n \n\navg_comparisons(model1)\n\n\n Estimate Std. Error    z Pr(&gt;|z|)     S 2.5 % 97.5 %\n     50.2       1.54 32.6   &lt;0.001 770.2  47.1   53.2\n\nTerm: flipper_len\nType: response\nComparison: +1"
-  },
-  {
-    "objectID": "materials/causal-inference/slides.html#section-5",
-    "href": "materials/causal-inference/slides.html#section-5",
-    "title": "Causal inferencewith conjoints",
-    "section": "",
-    "text": "model_parameters(model2)\n\nParameter           | Coefficient |     SE |               95% CI | t(329) |      p\n-----------------------------------------------------------------------------------\n(Intercept)         |    -4013.18 | 586.25 | [-5166.44, -2859.92] |  -6.85 | &lt; .001\nflipper len         |       40.61 |   3.08 | [   34.55,    46.66] |  13.19 | &lt; .001\nspecies [Chinstrap] |     -205.38 |  57.57 | [ -318.62,   -92.13] |  -3.57 | &lt; .001\nspecies [Gentoo]    |      284.52 |  95.43 | [   96.79,   472.25] |   2.98 | 0.003 \n\n\n\n \n\navg_comparisons(model2)\n\n\n        Term           Contrast Estimate Std. Error     z Pr(&gt;|z|)     S  2.5 % 97.5 %\n flipper_len +1                     40.6       3.08 13.19  &lt; 0.001 129.5   34.6   46.6\n species     Chinstrap - Adelie   -205.4      57.57 -3.57  &lt; 0.001  11.4 -318.2  -92.5\n species     Gentoo - Adelie       284.5      95.43  2.98  0.00287   8.4   97.5  471.6\n\nType: response"
-  },
-  {
-    "objectID": "materials/causal-inference/slides.html#section-6",
-    "href": "materials/causal-inference/slides.html#section-6",
-    "title": "Causal inferencewith conjoints",
-    "section": "",
-    "text": "model3 &lt;-lm(body_mass ~ flipper_len * species, data = penguins)\nmodel_parameters(model3)\n\nParameter                         | Coefficient |      SE |               95% CI | t(327) |      p\n--------------------------------------------------------------------------------------------------\n(Intercept)                       |    -2508.09 |  892.41 | [-4263.68,  -752.49] |  -2.81 | 0.005 \nflipper len                       |       32.69 |    4.69 | [   23.46,    41.92] |   6.97 | &lt; .001\nspecies [Chinstrap]               |     -529.11 | 1525.11 | [-3529.37,  2471.16] |  -0.35 | 0.729 \nspecies [Gentoo]                  |    -4166.12 | 1431.58 | [-6982.39, -1349.84] |  -2.91 | 0.004 \nflipper len × species [Chinstrap] |        1.88 |    7.86 | [  -13.59,    17.36] |   0.24 | 0.811 \nflipper len × species [Gentoo]    |       21.48 |    6.97 | [    7.77,    35.18] |   3.08 | 0.002 \n\navg_comparisons(model3, by = \"species\")\n\n\n        Term           Contrast   species Estimate Std. Error      z Pr(&gt;|z|)    S  2.5 % 97.5 %\n flipper_len +1                 Adelie        32.7       4.69  6.967  &lt; 0.001 38.2   23.5   41.9\n flipper_len +1                 Chinstrap     34.6       6.31  5.478  &lt; 0.001 24.5   22.2   46.9\n flipper_len +1                 Gentoo        54.2       5.15 10.516  &lt; 0.001 83.5   44.1   64.3\n species     Chinstrap - Adelie Adelie      -170.9      65.04 -2.627  0.00861  6.9 -298.3  -43.4\n species     Gentoo - Adelie    Adelie       -83.4     146.97 -0.567  0.57052  0.8 -371.4  204.7\n species     Chinstrap - Adelie Chinstrap   -160.1      60.39 -2.651  0.00803  7.0 -278.4  -41.7\n species     Gentoo - Adelie    Chinstrap     39.5     122.28  0.323  0.74675  0.4 -200.2  279.2\n species     Chinstrap - Adelie Gentoo      -119.7     193.37 -0.619  0.53580  0.9 -498.7  259.3\n species     Gentoo - Adelie    Gentoo       499.3     135.18  3.694  &lt; 0.001 12.1  234.4  764.3\n\nType: response"
-  },
-  {
-    "objectID": "materials/causal-inference/slides.html#section-7",
-    "href": "materials/causal-inference/slides.html#section-7",
-    "title": "Causal inferencewith conjoints",
-    "section": "",
-    "text": "plot_predictions(model3, condition = c(\"flipper_len\", \"species\"))"
-  },
-  {
-    "objectID": "materials/causal-inference/slides.html#ols-with-categorical-predictors",
-    "href": "materials/causal-inference/slides.html#ols-with-categorical-predictors",
-    "title": "Causal inferencewith conjoints",
-    "section": "OLS with categorical predictors",
-    "text": "OLS with categorical predictors\n\nmodel &lt;- lm(body_mass ~ species + sex, data = penguins)"
-  },
-  {
-    "objectID": "materials/causal-inference/slides.html#predictions-across-balanced-grid",
-    "href": "materials/causal-inference/slides.html#predictions-across-balanced-grid",
-    "title": "Causal inferencewith conjoints",
-    "section": "Predictions across balanced grid",
-    "text": "Predictions across balanced grid\n\ngrid &lt;- datagrid(model = model, species = unique, sex = unique)\n\npreds &lt;- predictions(model, grid)\n\n \n\n\n\npreds |&gt; \n  as_tibble() |&gt; \n  select(species, sex, estimate)\n\n# A tibble: 6 × 3\n  species   sex    estimate\n  &lt;fct&gt;     &lt;fct&gt;     &lt;dbl&gt;\n1 Adelie    female    3372.\n2 Adelie    male      4040.\n3 Chinstrap female    3399.\n4 Chinstrap male      4067.\n5 Gentoo    female    4750.\n6 Gentoo    male      5418.\n\n\n\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n\n \nSex\n\n              \n                Species\n                Female\n                Male\n              \n        \n        \n        \n                \n                  Adelie\n                  3372\n                  4040\n                \n                \n                  Chinstrap\n                  3399\n                  4067\n                \n                \n                  Gentoo\n                  4750\n                  5418"
-  },
-  {
-    "objectID": "materials/causal-inference/slides.html#means-in-the-margins",
-    "href": "materials/causal-inference/slides.html#means-in-the-margins",
-    "title": "Causal inferencewith conjoints",
-    "section": "Means in the margins",
-    "text": "Means in the margins\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n\n \nSex\n \n\n              \n                Species\n                Female\n                Male\n                Marginal mean\n              \n        \n        \n        \n                \n                  Adelie\n                  3372\n                  4040\n                  3706(3372 + 4040) / 2\n                \n                \n                  Chinstrap\n                  3399\n                  4067\n                  3733(3399 + 4067) / 2\n                \n                \n                  Gentoo\n                  4750\n                  5418\n                  5084(4750 + 5418) / 2\n                \n                \n                  Marginal mean\n                  3841(3372 + 3399 + 4750) / 3\n                  4508(4040 + 4067 + 5418) / 3\n                   \n                \n        \n      \n    \n\n\n\n\nFor the sex-specific averages, all the between-species variation is “marginalized out” or accounted for; for the species-specific averages, all the between-sex variation is similarly marginalized out."
-  },
-  {
-    "objectID": "materials/causal-inference/slides.html#differences-in-marginal-means",
-    "href": "materials/causal-inference/slides.html#differences-in-marginal-means",
-    "title": "Causal inferencewith conjoints",
-    "section": "Differences in marginal means",
-    "text": "Differences in marginal means\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n\n \nSex\n \n \n\n              \n                Species\n                Female\n                Male\n                Marginal mean\n                ∆\n              \n        \n        \n        \n                \n                  Adelie\n                  3372\n                  4040\n                  3706(3372 + 4040) / 2\n                  —\n                \n                \n                  Chinstrap\n                  3399\n                  4067\n                  3733(3399 + 4067) / 2\n                  27Chinstrap−Adelie\n                \n                \n                  Gentoo\n                  4750\n                  5418\n                  5084(4750 + 5418) / 2\n                  1378Gentoo−Adelie\n                \n                \n                  Marginal mean\n                  3841(3372 + 3399 + 4750) / 3\n                  4508(4040 + 4067 + 5418) / 3\n                   \n                   \n                \n                \n                  ∆\n                  —\n                  668Male−Female"
-  },
-  {
-    "objectID": "materials/causal-inference/slides.html#coefficients-and-predictions",
-    "href": "materials/causal-inference/slides.html#coefficients-and-predictions",
-    "title": "Causal inferencewith conjoints",
-    "section": "Coefficients and predictions",
-    "text": "Coefficients and predictions\n\nparameters::model_parameters(model)\n\nParameter           | Coefficient |    SE |             95% CI | t(329) |      p\n--------------------------------------------------------------------------------\n(Intercept)         |     3372.39 | 31.43 | [3310.56, 3434.21] | 107.31 | &lt; .001\nspecies [Chinstrap] |       26.92 | 46.48 | [ -64.52,  118.37] |   0.58 | 0.563 \nspecies [Gentoo]    |     1377.86 | 39.10 | [1300.93, 1454.78] |  35.24 | &lt; .001\nsex [male]          |      667.56 | 34.70 | [ 599.29,  735.82] |  19.24 | &lt; .001\n\n\n\navg_predictions(model, by = \"species\", newdata = \"balanced\")\n\n\n   species Estimate Std. Error     z Pr(&gt;|z|)   S 2.5 % 97.5 %\n Adelie        3706       26.2 141.4   &lt;0.001 Inf  3655   3758\n Chinstrap     3733       38.4  97.2   &lt;0.001 Inf  3658   3808\n Gentoo        5084       29.0 175.1   &lt;0.001 Inf  5027   5141\n\nType: response\n\navg_predictions(model, by = \"sex\", newdata = \"balanced\")\n\n\n    sex Estimate Std. Error   z Pr(&gt;|z|)   S 2.5 % 97.5 %\n female     3841       25.3 152   &lt;0.001 Inf  3791   3890\n male       4508       25.1 180   &lt;0.001 Inf  4459   4557\n\nType: response"
-  },
-  {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
-    "title": "Mastering Conjoint Analysis",
-    "section": "Overview",
-    "text": "Overview\nConjoint experiments have become a popular tool in both social science and marketing research for understanding how people make decisions and what attributes matter most in their choices. Originally developed by marketers to measure consumer preferences for new products, conjoint analysis has expanded into political science, economics, sociology, and other fields as a powerful method for testing multiple causal effects simultaneously and eliciting respondent preferences. With a single well-designed survey, you can answer complex research questions about decision-making that would require dozens of traditional experiments.\nIn this course, you’ll learn the theory behind forced choice conjoint experiments, how to design studies that answer your research questions, how to program and field these survey experiments in online platforms, and how to analyze and visualize the results using open source tools like R, Quarto, {marginaleffects}, and {ggplot2}. You’ll explore key causal estimands like average marginal component effects (AMCEs) and marginal means (MMs), as well as preference-focused measures like part-worth utilities and willingness-to-pay. By the end of the course, you’ll be able to design and field your own conjoint experiments, analyze the results with appropriate methods, and communicate your findings effectively with publication-ready tables and figures.",
+    "objectID": "materials/setup/index.html#install-the-necessary-r-packages",
+    "href": "materials/setup/index.html#install-the-necessary-r-packages",
+    "title": "Setup",
+    "section": "Install the necessary R packages",
+    "text": "Install the necessary R packages\nIf you are using Posit Cloud, the packages will be pre-installed (kind of! there won’t be any Bayesian stuff).\nIf you are using RStudio or Positron locally, install all the packages we’ll use with:\ninstall.packages(\n  c(\n    \"tidyverse\", \n    \"patchwork\", \n    \"marginaleffects\", \n    \"easystats\", \n    \"cbcTools\", \n    \"mclogit\", \n    \"lme4\", \n    \"logitr\", \n    \"remotes\", \n    \"pak\", \n    \"brms\", \n    \"rstan\", \n    \"rstanarm\", \n    \"collapse\", \n    \"shiny\", \n    \"bslib\", \n    \"bsicons\", \n    \"tidybayes\", \n    \"ggdist\", \n    \"modelsummary\", \n    \"ggforce\", \n    \"ggh4x\", \n    \"broom\", \n    \"broom.mixed\"\n  )\n)\n\npak::pak(\"surveydown-dev/surveydown\")",
     "crumbs": [
-      "Home"
+      "Setup"
     ]
   },
   {
-    "objectID": "index.html#schedule",
-    "href": "index.html#schedule",
-    "title": "Mastering Conjoint Analysis",
-    "section": "Schedule",
-    "text": "Schedule\nAll times are US Eastern (New York) time:\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n        \n        \n        \n                \n                  Day 1 (June 2)\n                  Day 1 (June 2)\n                \n                \n                  10:30–12:30\n                  Introduction to conjoint analysis\n                \n                \n                  12:30–13:30\n                  Break\n                \n                \n                  13:30–15:00\n                  Designing conjoint experiments\n                \n                \n                  Day 2 (June 3)\n                  Day 2 (June 3)\n                \n                \n                  10:30–12:30\n                  Analyzing conjoint data for causal inference (§ 1)\n                \n                \n                  12:30–13:30\n                  Break\n                \n                \n                  13:30–15:00\n                  Analyzing conjoint data for causal inference (§ 2)\n                \n                \n                  Day 3 (June 4)\n                  Day 3 (June 4)\n                \n                \n                  10:30–12:30\n                  Analyzing conjoint data for respondent preferences (§ 1)\n                \n                \n                  12:30–13:30\n                  Break\n                \n                \n                  13:30–15:00\n                  Analyzing conjoint data for respondent preferences (§ 2)\n                \n                \n                  Day 4 (June 5)\n                  Day 4 (June 5)\n                \n                \n                  10:30–12:30\n                  Implementing and fielding conjoint surveys (§ 1)\n                \n                \n                  12:30–13:30\n                  Break\n                \n                \n                  13:30–15:00\n                  Implementing and fielding conjoint surveys (§ 2)",
+    "objectID": "materials/setup/index.html#install-cmdstanr",
+    "href": "materials/setup/index.html#install-cmdstanr",
+    "title": "Setup",
+    "section": "Install {CmdStanR}",
+    "text": "Install {CmdStanR}\nWe’ll use Stan through {brms} to run the Bayesian models. You should have already installed {brms} in the install.packages() command above.\n\n\n\n\n\n\nNoteRaw Stan\n\n\n\nIf you’ve never worked with Stan, don’t worry! You won’t have to write a single line of Stan code in this workshop. {brms} translates familiar R model syntax into Stan code, runs the MCMC sampler, and bring the results back into R, all without you needing to see what’s happening. It’s magical.\n\n\nStan has two R-based interfaces for communicating between the two programs: RStan and CmdStanR. {brms} works with both backends. I recommend installing CmdStan. CmdStan is newer and has more modern features (like speeding up sampling with multi-threading), and it works nicely with the more complex multinomial models we’ll be running.\nThe {CmdStanR} package helps you install CmdStan on your computer and provides the actual interface to bridge Stan and R. It is not on CRAN because it requires other binary software for connecting to Stan, so you have to install it a little differently:\n\nInstall the {CmdStanR} package. Use this command in R to install the package from Stan’s R-Universe repository:\ninstall.packages(\"cmdstanr\", repos = c('https://stan-dev.r-universe.dev', getOption(\"repos\")))\nInstall a C++ toolchain. Stan models need to be compiled to binary programs to run. See here for complete instructions for installing the required tools. In short:\n\nOn Windows, download and install Rtools45: https://cran.r-project.org/bin/windows/Rtools/\nOn macOS, install Xcode’s command line tools by running this in a terminal:\nxcode-select --install\nOn Linux, install g++ and make. make is typically pre-installed, and g++ is generally also installed. If not, run something like this to install them (this assumes a Debian-based distribution like Ubuntu; adapt the command as necessary for your distribution):\nsudo apt install g++ make\n\nMake sure the C++ toolchain is working. In R, run this in your console to make sure everything’s set up correctly:\ncmdstanr::check_cmdstan_toolchain()\nInstall CmdStan. Finally, you need to compile and install CmdStan. You can do that with {cmdstanr} in R. Run this in your console:\ncmdstanr::install_cmdstan()\nMake sure everything works. Run this in R to make sure everything’s working correctly:\nlibrary(brms)\n\nmodel &lt;- brm(\n  bf(mpg ~ disp + am),\n  data = mtcars,\n  family = gaussian(),\n  backend = \"cmdstan\"\n)\nYou should see something like this:\nmodel\n#&gt;  Family: gaussian \n#&gt;   Links: mu = identity \n#&gt; Formula: mpg ~ disp + am \n#&gt;    Data: mtcars (Number of observations: 32) \n#&gt;   Draws: 4 chains, each with iter = 2000; warmup = 1000; thin = 1;\n#&gt;          total post-warmup draws = 4000\n#&gt; \n#&gt; Regression Coefficients:\n#&gt;           Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS\n#&gt; Intercept    27.81      1.90    24.08    31.52 1.00     2910     2508\n#&gt; disp         -0.04      0.01    -0.05    -0.03 1.00     3233     2894\n#&gt; am            1.87      1.48    -1.02     4.78 1.00     3117     2897\n#&gt; \n#&gt; Further Distributional Parameters:\n#&gt;       Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS\n#&gt; sigma     3.33      0.47     2.56     4.38 1.00     3026     2881\n#&gt; \n#&gt; Draws were sampled using sample(hmc). For each parameter, Bulk_ESS\n#&gt; and Tail_ESS are effective sample size measures, and Rhat is the potential\n#&gt; scale reduction factor on split chains (at convergence, Rhat = 1).",
     "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#instructor",
-    "href": "index.html#instructor",
-    "title": "Mastering Conjoint Analysis",
-    "section": "Instructor",
-    "text": "Instructor\nAndrew Heiss is an assistant professor in the Department of Public Management and Policy at the Andrew Young School of Policy Studies at Georgia State University. His research explores human rights and international nonprofit management, and focuses on authoritarian regulation of civil society and INGO responses to administrative crackdown. Heiss also studies and teaches quantitative research methods, causal inference, data visualization, and Bayesian analysis. He is an RStudio Certified Instructor whose work has appeared in journals such as the Journal of Politics, Nonprofit and Voluntary Sector Quarterly, the Journal of Statistical Software, the Journal of Human Rights, and International Interactions.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "materials/causal-inference/index.html",
-    "href": "materials/causal-inference/index.html",
-    "title": "Analyzing conjoint data for causal inference",
-    "section": "",
-    "text": "Open slides in new window   Download PDF of slides",
-    "crumbs": [
-      "Materials",
-      "Causal inference analysis"
-    ]
-  },
-  {
-    "objectID": "materials/causal-inference/index.html#slides",
-    "href": "materials/causal-inference/index.html#slides",
-    "title": "Analyzing conjoint data for causal inference",
-    "section": "",
-    "text": "Open slides in new window   Download PDF of slides",
-    "crumbs": [
-      "Materials",
-      "Causal inference analysis"
-    ]
-  },
-  {
-    "objectID": "materials/causal-inference/index.html#exercises-and-materials",
-    "href": "materials/causal-inference/index.html#exercises-and-materials",
-    "title": "Analyzing conjoint data for causal inference",
-    "section": "Exercises and materials",
-    "text": "Exercises and materials\nWe’ll be working through 02-1_causal-conjoints_exercise.qmd and 02-2_causal-conjoints_exercise.qmd together. Make sure you grab the latest version of the workshop materials first!\nDownload the pre-run Bayesian models:\n\nmodels.zip\n\nUnzip that file and put these:\n\nmodel_cand_brms.rds\nmodel_cand_brms_mega.rds\n\n…in the models/ folder in your project. This will make it so you don’t have re-run the models on your computer.\nHere’s a helpful little illustration of the offset-approach to multilevel models.",
-    "crumbs": [
-      "Materials",
-      "Causal inference analysis"
-    ]
-  },
-  {
-    "objectID": "materials/designing/index.html",
-    "href": "materials/designing/index.html",
-    "title": "Designing conjoint experiments",
-    "section": "",
-    "text": "No slides for this one!",
-    "crumbs": [
-      "Materials",
-      "Designing conjoint experiments"
-    ]
-  },
-  {
-    "objectID": "materials/designing/index.html#slides",
-    "href": "materials/designing/index.html#slides",
-    "title": "Designing conjoint experiments",
-    "section": "",
-    "text": "No slides for this one!",
-    "crumbs": [
-      "Materials",
-      "Designing conjoint experiments"
-    ]
-  },
-  {
-    "objectID": "materials/designing/index.html#exercises-and-materials",
-    "href": "materials/designing/index.html#exercises-and-materials",
-    "title": "Designing conjoint experiments",
-    "section": "Exercises and materials",
-    "text": "Exercises and materials\nMake sure you grab the latest version of the workshop materials first!\nWe will use these resources:\n\nStatistical testing in null worlds\n{cbcTools}",
-    "crumbs": [
-      "Materials",
-      "Designing conjoint experiments"
-    ]
-  },
-  {
-    "objectID": "materials/intro/index.html",
-    "href": "materials/intro/index.html",
-    "title": "Introduction to conjoint analysis",
-    "section": "",
-    "text": "Open slides in new window   Download PDF of slides",
-    "crumbs": [
-      "Materials",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "materials/intro/index.html#slides",
-    "href": "materials/intro/index.html#slides",
-    "title": "Introduction to conjoint analysis",
-    "section": "",
-    "text": "Open slides in new window   Download PDF of slides",
-    "crumbs": [
-      "Materials",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "materials/intro/index.html#exercises-and-materials",
-    "href": "materials/intro/index.html#exercises-and-materials",
-    "title": "Introduction to conjoint analysis",
-    "section": "Exercises and materials",
-    "text": "Exercises and materials\nWe’ll be working through 01_intro-to-conjoints_exercise.qmd together. Make sure you grab the latest version of the workshop materials first!",
-    "crumbs": [
-      "Materials",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "materials/preferences/index.html",
-    "href": "materials/preferences/index.html",
-    "title": "Analyzing conjoint data for respondent preferences",
-    "section": "",
-    "text": "No slides for this one!",
-    "crumbs": [
-      "Materials",
-      "Preference analysis"
-    ]
-  },
-  {
-    "objectID": "materials/preferences/index.html#slides",
-    "href": "materials/preferences/index.html#slides",
-    "title": "Analyzing conjoint data for respondent preferences",
-    "section": "",
-    "text": "No slides for this one!",
-    "crumbs": [
-      "Materials",
-      "Preference analysis"
-    ]
-  },
-  {
-    "objectID": "materials/preferences/index.html#exercises-and-materials",
-    "href": "materials/preferences/index.html#exercises-and-materials",
-    "title": "Analyzing conjoint data for respondent preferences",
-    "section": "Exercises and materials",
-    "text": "Exercises and materials\nWe’ll be working through these things together:\n\n03-1_preference-conjoints_exercise.qmd\n03-2_preferences-hierarchical-bayes.qmd\n03-3_shiny-example.qmd\n03-4_market-simulator.qmd\n\nMake sure you grab the latest version of the workshop materials first!\nDownload the pre-run Bayesian models:\n\nmodels.zip\n\nUnzip that file and put these:\n\nmodel_brms_minivan_carpool.rds\nmodel_brms_minivan_hb.rds\nmodel_brms_minivan_wtp.rds\nmodel_brms_minivan.rds\n\n…in the models/ folder in your project. This will make it so you don’t have re-run the models on your computer.",
-    "crumbs": [
-      "Materials",
-      "Preference analysis"
-    ]
-  },
-  {
-    "objectID": "materials/preferences/index.html#crash-course-in-shiny",
-    "href": "materials/preferences/index.html#crash-course-in-shiny",
-    "title": "Analyzing conjoint data for respondent preferences",
-    "section": "Crash course in Shiny",
-    "text": "Crash course in Shiny\n\nGeneral resources\n\nWelcome to Shiny\nShiny components\nShiny layouts\n{bslib}\n\n\n\nShinylive\n\n{shinylive}\nShinylive examples\nShinylive Quarto extension\nWebR and Quarto Live\nwebRios and webRoid\n\n\n\nPublishing\n\nPosit Connect Cloud\n\n\n\nBare minimum app skeleton\nlibrary(shiny)\nlibrary(bslib)\n\n# Define UI ----\nui &lt;- page_sidebar(\n \n)\n\n# Define server logic ----\nserver &lt;- function(input, output) {\n\n}\n\n# Run the app ----\nshinyApp(ui = ui, server = server)",
-    "crumbs": [
-      "Materials",
-      "Preference analysis"
+      "Setup"
     ]
   }
 ]
